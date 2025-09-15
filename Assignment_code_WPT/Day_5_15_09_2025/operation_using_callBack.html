@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+</head>
+<body>
+
+    <div>
+        <lable for="fnum">First Number :</lable>
+        <input type="number" name="fnum" id="fnum" placeholder="Enter first Number">
+        <br>
+
+                <lable for="fnum">Second Number :</lable>
+        <input type="number" name="snum" id="snum" placeholder="Enter second Number">
+   <br>
+   <select id="operations">
+    <option value="add">Addition(+)</option>
+    <option value="sub">Subtraction(-)</option>
+    <option value="mul">Multiplication(*)</option>
+    <option value="div">Division(/)</option>
+   </select>
+
+   <button type="button" onclick="if(validate()){calculate()}">Calculate</button>
+    </div>
+    <div id="result"></div></body>
+<script>
+
+
+function validate(){
+      let num1 = document.getElementById('fnum').value;
+    let num2 = document.getElementById('snum').value;
+    let valid = true;
+    if(num1.trim()==='' || num2.trim() === ""){
+         valid= false;
+        window.alert("Plese enter number before further operation");
+       
+    }
+    return valid;
+}
+    function display(result){
+   document.getElementById('result').innerText ="Result = " +result;
+}
+
+function calculation(n1,n2,callback){
+    callback(n1,n2, display)
+}
+
+
+function addition(n1,n2, callback){
+    callback(n1+n2)
+}
+
+function subtraction(n1,n2, callback){
+    callback(n1-n2)
+}
+
+function multiplication(n1,n2, callback){
+    callback(n1*n2)
+}
+
+function division(n1,n2, callback){
+    if(n2 == 0){
+        window.alert("Value of second number cant be zero for division.")
+
+    }
+    else{
+ callback(n1/n2)
+    }
+   
+}
+
+
+
+    function calculate(){
+        console.log("Inside calculate")
+        
+    let num1=parseFloat(document.getElementById('fnum').value);
+    let num2 = parseFloat(document.getElementById('snum').value);
+
+    let choice =document.getElementById('operations').value;
+
+    switch(choice){
+
+        case "add" :
+            calculation(num1,num2,addition);
+            break;
+        case "sub" :
+            calculation(num1,num2,subtraction);
+            break;
+        case "mul" :
+            calculation(num1,num2,multiplication);
+            break;
+        case "div" :
+            calculation(num1,num2,division);
+            break;
+        default :
+          window.alert("Invalid choice");
+          break;
+
+
+    }
+}
+
+
+</script>
+</html>

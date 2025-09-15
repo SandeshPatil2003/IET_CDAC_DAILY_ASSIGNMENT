@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .errorMessage{
+              color: rgb(255, 0, 0);
+            visibility: hidden;
+            margin: 0;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<p1>
+
+    <h2>Employee Data</h2>
+
+    <label for="f1">First Name  :</label>
+<input type = "text" name="fname" id="f1"></input>
+<p class="errorMessage">First Name is required</p>
+<br>
+
+
+<label for="l1">Last Name   :</label>
+
+<input type = "text" name="lname" id="l1"></input>
+<p class="errorMessage">Last Name is required</p>
+<br>
+
+<label for="e1">E-mail  :</label>
+<input type="email" name="email" id="e1"></input>
+<p class="errorMessage">email is required.</p>
+<br>
+
+<label for="d1">Date of Birth:</label>
+<input type="date" name="d" id="d1"></input>
+<p class="errorMessage">Date of birth is required</p>
+
+<button type="button" onclick="if(validate()){acceptData()}">ADD</button>
+
+
+
+<table id="t1">
+
+    <tr>
+        <th>
+            First Name  &ensp;
+        </th>
+        <th>
+            Last Name   &ensp;
+        </th>
+        <th>
+            Email   &ensp;
+        </th>
+        <th>
+            Date of Birth   &ensp;
+        </th>
+        <th>
+            Edit    &ensp;
+        </th>
+        <th>
+            Delete  &ensp;
+        </th>
+    </tr>
+</table>
+
+</p1>
+
+<script>
+       
+        function validate(){
+        let valid = true;
+       
+        let fname= document.getElementById("f1").value;
+        let lname= document.getElementById("l1").value;
+        let email= document.getElementById("e1").value;
+        let dob= document.getElementById("d1").value;
+
+           // First, hide both error messages on every validation attempt
+        document.getElementsByClassName("errorMessage")[0].style.visibility = 'hidden';
+        document.getElementsByClassName("errorMessage")[1].style.visibility = 'hidden';
+
+           if(fname.trim() == ""){
+            document.getElementsByClassName("errorMessage")[0].style.visibility='visible';
+            valid = false;
+           }
+
+           if(lname.trim() == ""){
+            document.getElementsByClassName("errorMessage")[1].style.visibility='visible';
+            valid = false;
+           }
+
+           if(email.trim() == ""){
+            document.getElementsByClassName("errorMessage")[2].style.visibility='visible';
+            valid = false;
+           }
+            if(dob.trim() == ""){
+            document.getElementsByClassName("errorMessage")[3].style.visibility='visible';
+            valid = false;
+           }
+
+           
+            return valid;
+        }
+
+
+    function acceptData()
+    {
+
+        let fname= document.getElementById("f1").value;
+        let lname= document.getElementById("l1").value;
+        let email= document.getElementById("e1").value;
+        let date= document.getElementById("d1").value;
+
+        let table=document.getElementById("t1");
+        let newRow= table.insertRow(table.rows.length);
+
+        newRow.insertCell(0).innerHTML=fname;
+        newRow.insertCell(1).innerHTML=lname;
+        newRow.insertCell(2).innerHTML=email;
+        newRow.insertCell(3).innerHTML=date;
+        newRow.insertCell(4).innerHTML= '<button onclick="editData(this)">Edit</button>'
+        newRow.insertCell(5).innerHTML= '<button onclick="deleteData(this)">Delete</button>'
+
+
+        clearInputs();
+
+
+
+    }
+
+
+
+    function editData(button)
+    {
+
+            let row= button.parentNode.parentNode;
+
+
+            let fnameCell= row.cells[0];
+            let lnameCell= row.cells[1];
+            let emailCell= row.cells[2];
+            let dobCell= row.cells[3];
+
+
+            let fnamePrompt= prompt("Enter the changed First Name:", fnameCell.innerHTML )//,fnameCell.innerHTML)
+            let lnamePrompt= prompt("Enter the changed Last Name:", lnameCell.innerHTML)//,fnameCell.innerHTML)
+            let emailPrompt= prompt("Enter the changed Email:",emailCell.innerHTML )//,fnameCell.innerHTML)
+            let dobPrompt= prompt("Enter the changed Date of Birth:", dobCell.innerHTML )//,fnameCell.innerHTML)
+
+                fnameCell.innerHTML=fnamePrompt;
+                lnameCell.innerHTML=lnamePrompt;
+                emailCell.innerHTML = emailPrompt;
+                dobCell.innerHTML = dobPrompt;
+
+    }
+
+    function deleteData(button)
+    {
+
+        let row=button.parentNode.parentNode;
+
+        row.parentNode.removeChild(row);
+
+
+
+    }
+
+
+    function clearInputs()
+    {
+
+        document.getElementById("f1").value="";
+        document.getElementById("l1").value="";
+        document.getElementById("e1").value="";
+        document.getElementById("d1").value="";
+
+    }
+
+
+
+    
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

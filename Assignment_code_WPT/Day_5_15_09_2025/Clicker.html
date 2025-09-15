@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Counter</title>
+</head>
+
+<style>
+    .disabled-button {
+            
+            cursor: not-allowed; /* Change mouse cursor */
+            
+        }
+</style>
+<body>
+
+    <button id="myButton" onclick="countClick()">Click Me</button>
+    <p id="clickCount">You have clicked 0 times.</p>
+
+
+
+<script >
+
+        let count = 0;
+
+// Get references to the button and the paragraph element by their IDs
+const button = document.getElementById("myButton");
+const countDisplay = document.getElementById("clickCount");
+
+
+function countClick(){
+    count++;
+    countDisplay.innerText = "You have clicked "+count+" times";
+    if(count>=10){
+         button.disabled = true;
+         button.classList.add("disabled-button");
+         window.alert("Limit reached count disabled")
+    }
+   // console.log(count)
+}
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Array Function</title>
+
+       <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #arr_el{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+        }
+       </style>
+</head>
+<body>
+    <label for="arr_el">MAIN</label><p id="arr_el"></p>
+    <label for="arr_odd">ODD</label><p id="arr_odd"></p>
+    <label for="arr_even">EVEN</label><p id="arr_even"></p>
+    
+    
+    
+    <!-- document.write("hello","Bye") -->
+    Enter Element : <input type="number" name="arr_input" id="el">
+
+    <br>
+    <br>
+    <button type="submit" onclick="addAtEnd()">
+        Add at End
+    </button>
+       <button type="submit" onclick="addAtStart()">
+        Add at Start
+    </button>
+
+       <button type="submit" onclick="deleteFromEnd()">
+        Delete From End
+    </button>
+
+       <button type="submit" onclick="deleteFromStart()">
+        Delete From Start
+    </button>
+
+       <button type="submit" onclick="showOdd()">
+        Show Odd
+    </button>
+
+       <button type="submit" onclick="showEven()">
+        Show Even
+    </button>
+    <button type="submit" onclick="addRandom()">
+       Add Random
+    </button>
+
+
+    
+
+</body>
+<script>
+    let arr =[1,2,3]
+
+   let para =  document.getElementById('arr_el')
+   let para_odd =  document.getElementById('arr_odd')
+     let para_even =  document.getElementById('arr_even')
+   
+  //  para.document.write(arr)
+
+
+  function addAtEnd(){
+    let userInput = document.getElementById('el').value;
+    arr.push(userInput);
+     para.textContent = arr.join(' ');
+     document.getElementById('el').value = ""; 
+     showOdd();
+    showEven();
+     
+  }
+
+  function addAtStart(){
+    let userInput = document.getElementById('el').value;
+    arr.unshift(userInput);
+       para.textContent = arr.join(' ');
+     document.getElementById('el').value = ""; 
+     showOdd();
+    showEven();
+  }
+
+  function deleteFromEnd(){
+        arr.pop();
+        para.textContent = arr.join(' ')  
+        showOdd();
+    showEven();  
+  }
+
+   function deleteFromStart(){
+        arr.shift();
+        para.textContent = arr.join(' ')  
+        showOdd();
+    showEven();  
+  }
+
+  function showOdd(){
+     let oddArr =   arr.filter((el)=>{
+        if(el%2!=0)
+        
+        return el;
+        }
+       
+  )
+        para_odd.textContent = oddArr.join(' ')    
+  }
+
+   function showEven(){
+     let evenArr =   arr.filter((el)=>{
+        if(el%2==0)
+        
+        return el;
+        }
+       
+  )
+        para_even.textContent = evenArr.join(' ')    
+  }
+
+  function addRandom(){
+    let randomNum = Math.floor(Math.random() * 100) + 1;
+        arr.push(randomNum);
+    para.textContent = arr.join(' ');
+    showOdd();
+    showEven();
+
+  }
+    para.textContent += arr.join(' ');
+</script>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+<style>
+    p.errorMessage{
+        visibility: hidden;
+    }
+</style>
+    </head>
+
+    <body>
+
+        <form action="" name="form1" onsubmit="return validate()">
+            
+        Student Name :<input  type= "text" name="studName" placeholder="Enter Name" >
+        <p class="errorMessage">name must be provided</p>
+        
+        
+        Student Age : <input type="number" name="studAge" value="0" placeholder="Enter Age">
+        <p class="errorMessage">age should be greater than 10</p>
+
+            
+        <button type="submit">Submit</button>
+        <!-- <input type="button" value="action"> -->
+    </form>
+        
+    </body>
+    <script>
+        function validate(){
+        let valid = true;
+
+           let studentName= document.forms["form1"]["studName"].value;
+           let studentAge = document.forms["form1"]["studAge"].value;
+
+           // First, hide both error messages on every validation attempt
+        document.getElementsByClassName("errorMessage")[0].style.visibility = 'hidden';
+        document.getElementsByClassName("errorMessage")[1].style.visibility = 'hidden';
+
+           if(studentName.trim() == ""){
+            document.getElementsByClassName("errorMessage")[0].style.visibility='visible';
+            valid = false;
+           }
+
+           if(studentAge <= 10)
+           {
+            document.getElementsByClassName("errorMessage")[1].style.visibility='visible';
+          
+          valid = false;
+           }
+            return valid;
+        }
+    </script>
+    </html>

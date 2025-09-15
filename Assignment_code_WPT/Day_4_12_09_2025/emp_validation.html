@@ -1,0 +1,129 @@
+<html>
+    <head>
+<style>
+    p.errorMessage{
+        visibility: hidden;
+    }
+    table,thead,th,tr,td{
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+</style>
+    </head>
+
+    <body>
+
+        <form action="" name="form1">
+            
+        First Name :<input  type= "text" name="fName" placeholder="Enter First Name" >
+        <p class="errorMessage">first name must be provided</p>
+        
+        
+        Last Name :<input  type= "text" name="lName" placeholder="Enter Last Name" >
+        <p class="errorMessage">last name must be provided</p>
+
+        Email : <input type="email" name="em" placeholder="Enter Email">
+        <p class="errorMessage">email must be provided</p>
+
+        DOB : <input type="date" name="dob"  placeholder="Enter Date of Birth" >
+        <p class="errorMessage">date of birth must be provided</p>
+
+            
+        <button type="button" onclick="if(validate()){generateTable();}">Submit</button>
+        <br><br>
+        <h2>Employee Data</h2>
+        <table>
+            
+             <thead>
+                <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Date of birth</th>
+                </tr>
+            </thead>
+                       
+             <tbody id="tableBody">
+        </tbody>
+        </table>
+        <!-- <input type="button" value="action"> -->
+    </form>
+        
+    </body>
+    <script>
+        let submissions = [];
+
+        function generateTable(){
+            
+             let firstName= document.forms["form1"]["fName"].value;
+           let lastName = document.forms["form1"]["lName"].value;
+           let email= document.forms["form1"]["em"].value;
+           let dob = document.forms["form1"]["dob"].value;
+
+           submissions.push({ firstName, lastName, email, dob });
+
+           let rows = document.getElementById('tableBody')
+            let cellHtml = '';
+               rows.innerHTML = '';
+
+            // cellHtml += `<td> ${firstName} </td>`
+            // cellHtml += `<td> ${lastName} </td>`
+
+            // cellHtml += `<td> ${email} </td>`
+
+            // cellHtml += `<td> ${dob} </td>`
+
+
+            // rows.innerHTML = cellHtml;
+
+             submissions.forEach(sub => {
+        rows.innerHTML += `<tr>
+            <td>${sub.firstName}</td>
+            <td>${sub.lastName}</td>
+            <td>${sub.email}</td>
+            <td>${sub.dob}</td>
+        </tr>`;
+    });
+
+              document.forms["form1"].reset();
+        
+    }
+ 
+        
+        function validate(){
+        let valid = true;
+
+           let firstName= document.forms["form1"]["fName"].value;
+           let lastName = document.forms["form1"]["lName"].value;
+           let email= document.forms["form1"]["em"].value;
+           let dob = document.forms["form1"]["dob"].value;
+
+           // First, hide both error messages on every validation attempt
+        document.getElementsByClassName("errorMessage")[0].style.visibility = 'hidden';
+        document.getElementsByClassName("errorMessage")[1].style.visibility = 'hidden';
+
+           if(firstName.trim() == ""){
+            document.getElementsByClassName("errorMessage")[0].style.visibility='visible';
+            valid = false;
+           }
+
+           if(lastName.trim() == ""){
+            document.getElementsByClassName("errorMessage")[1].style.visibility='visible';
+            valid = false;
+           }
+
+           if(email.trim() == ""){
+            document.getElementsByClassName("errorMessage")[2].style.visibility='visible';
+            valid = false;
+           }
+            if(dob.trim() == ""){
+            document.getElementsByClassName("errorMessage")[3].style.visibility='visible';
+            valid = false;
+           }
+
+           
+            return valid;
+        }
+    </script>
+    </html>

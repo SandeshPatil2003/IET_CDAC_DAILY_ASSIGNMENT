@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Callback Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 8px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple Calculator (Callback Based)</h2>
+
+ 
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+
+  <select id="operation">
+    <option value="add">Addition (+)</option>
+    <option value="sub">Subtraction (-)</option>
+    <option value="mul">Multiplication (*)</option>
+    <option value="div">Division (÷)</option>
+  </select>
+
+  <button onclick="performCalculation()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script>
+   
+    function display(output) {
+      document.getElementById('result').innerText = "Result: " + output;
+    }
+
+    // addition function
+    function addition(a, b, callback) {
+      callback(a + b);
+    }
+
+    // subtraction function
+    function subtraction(a, b, callback) {
+      callback(a - b);
+    }
+
+    // multiply function
+    function multiply(a, b, callback) {
+      callback(a * b);
+    }
+
+    // division function (with error handling)
+    function division(a, b, callback) {
+      if (b === 0) {
+        callback("Error: Division by zero is not allowed");
+      } else {
+        callback(a / b);
+      }
+    }
+
+    // calculate: higher-order function taking callback
+    function calculate(a, b, operationCallback) {
+      operationCallback(a, b, display);
+    }
+
+    // Main logic triggered on button click
+    function performCalculation() {
+      let num1 = document.getElementById('num1').value;
+      let num2 = document.getElementById('num2').value;
+      let operation = document.getElementById('operation').value;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        display("Error: Please enter valid numbers");
+        return;
+      }
+
+      switch (operation) {
+        case "add":
+          calculate(num1, num2, addition);
+          break;
+        case "sub":
+          calculate(num1, num2, subtraction);
+          break;
+        case "mul":
+          calculate(num1, num2, multiply);
+          break;
+        case "div":
+          calculate(num1, num2, division);
+          break;
+        default:
+          display("Error: Unknown operation");
+      }
+    }
+  </script>
+</body>
+</html>
