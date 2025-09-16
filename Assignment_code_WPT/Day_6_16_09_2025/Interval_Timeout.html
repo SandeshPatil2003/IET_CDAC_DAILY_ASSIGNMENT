@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        #counter{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="counter">
+        
+
+        
+
+    </div>
+    <button onClick="reset()">reset</button>
+    
+
+
+<script>
+
+    let count=0;
+
+    const a=setInterval(timer,1000);
+
+
+    function timer()
+    {
+
+        count++;
+        document.getElementById("counter").innerHTML="Time since page opened:  "+count+"  seconds";
+    }
+
+
+
+ setTimeout(()=>clearInterval(a),5000);
+        
+
+
+
+</script>
+</body>
+</html>

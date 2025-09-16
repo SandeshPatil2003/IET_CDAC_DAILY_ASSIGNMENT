@@ -1,0 +1,69 @@
+<!-- 	  
+4)	using same elements from assignment 3 
+    create username of User dynamically 
+      take 1st 2 characters from firstName
+	  take last 2 characters from lastName
+	  and age 
+	  
+	  eg Amit Patil 30 === amil30 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   </style>
+    <title>Regex Username</title>
+</head>
+<body>
+          First Name: <input type="text" id="f1">
+        Last Name: <input type="text"  id="l1"> 
+        Age:<input type="number"  id="a1"> 
+
+        <button onclick="submitData()">submit</button>
+
+        <p id="usern"></p>
+
+
+    
+</body>
+
+<script>
+    function submitData(){
+            let fname = document.getElementById('f1').value;
+            let lname = document.getElementById('l1').value;
+            let age = document.getElementById('a1').value;
+
+           // const name = "Christopher";
+            const pattern = /^(.{2})/;
+                const match = fname.match(pattern);
+
+
+                const pattern2 =/(.{2}$)/
+
+                const match2 = lname.match(pattern2);
+
+
+// The matched characters are in the first capturing group (index 1)
+            const firstTwo = match[1];
+            const lastTwo = match2[1];
+
+                console.log(firstTwo);
+                console.log(lastTwo);
+                let newusername=firstTwo+lastTwo+age
+
+                console.log(newusername);
+
+                document.getElementById("usern").innerHTML="Username : "+newusername;
+                 // Output: "Ch"
+
+            document.getElementById('f1').value="";
+            document.getElementById('l1').value="";
+            document.getElementById('a1').value="";
+                
+    }
+</script>
+</html>

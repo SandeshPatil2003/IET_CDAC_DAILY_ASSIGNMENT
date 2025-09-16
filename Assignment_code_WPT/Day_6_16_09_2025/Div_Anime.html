@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <style>
+        #red1{
+            width:30px ;
+            height: 30px;
+            background-color: red;
+            display: inline-block;
+             position: absolute;
+        }
+            #blue1{
+            width:30px ;
+            height: 30px;
+            background-color: blue;
+            position: relative;
+            top: 0%;
+            left: 950px;
+            display: inline-block;
+           
+            
+        }
+   
+    
+    </style> -->
+    <style>
+    body {
+        /* Set the body as the positioning context */
+        position: relative; 
+        height: 100vh;
+        margin: 0;
+        overflow: hidden; /* Prevents scrollbars from appearing */
+    }
+
+    #red1 {
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        position: absolute; /* Ensures the element can be freely moved */
+        top: 0; /* Starting position */
+        left: 0; /* Starting position */
+    }
+
+    #blue1 {
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+        position: absolute; /* Ensures the element can be freely moved */
+         /* Starting position */
+         /* Starting position further to the right */
+    }
+
+    #yellow1 {
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        position: absolute; /* Ensures the element can be freely moved */
+         /* Starting position */
+         /* Starting position further to the right */
+    }
+</style>
+
+    </head>
+    <body>
+    <div id="yellow1"></div>
+
+    
+    
+
+    <div id="red1">
+
+    </div>
+
+    <div id="blue1">
+
+    </div>
+    
+
+
+    
+</body>
+<script>
+
+    let pos=0;
+    let pos2=0
+
+    setInterval(()=>{
+        pos+=10;
+        if(pos ==490){
+            pos=0;
+        }
+        else{
+         
+        document.getElementById('red1').style.left= pos +"px";
+        document.getElementById('red1').style.top = pos +"px";
+
+        document.getElementById('blue1').style.right = pos +"px";
+        document.getElementById('blue1').style.top = pos +"px";
+
+        
+        }
+    },1000)
+
+    setInterval(()=>{pos2+=10; document.getElementById('yellow1').style.left = (pos-9) +"px";
+        document.getElementById('yellow1').style.top = pos2 +"px";},2000)
+
+</script>
+</html>
