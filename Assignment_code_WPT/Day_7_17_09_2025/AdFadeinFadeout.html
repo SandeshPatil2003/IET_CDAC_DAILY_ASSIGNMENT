@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+
+   <style>
+    #i1 {
+            display: none;
+            opacity: 0;
+        }
+
+         /* Add this to your style block */
+    .image-container {
+        position: relative; /* Container for absolute positioning */
+        max-width: 800px; /* Optional: Adjust width for layout */
+        margin: 20px auto; /* Optional: Center the container */
+    }
+
+    #i1 {
+
+        
+        position: absolute; /* Position the image relative to its container */
+        top: 40%;          /* Position vertically in the middle */
+        left: 40%;         /* Position horizontally in the middle */
+        transform: translate(-50%, -50%); /* Precisely center the image */
+        z-index: 1; /* Ensure the image is on top of the paragraph */
+        display: none; /* Hide the image initially for animation */
+        width: 700px; /* Set a specific size for the image */
+        box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: Add a shadow */
+    }
+
+    p {
+        position: relative; /* Set a positioning context for the paragraph */
+        z-index: 0; /* Place the paragraph behind the image */
+    }
+   </style>
+    <title>AD Page</title>
+</head>
+<body>
+
+    <p>hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content  
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content content
+        hello hello hello hello content content content contentv
+    </p>
+
+    <img id="i1" src="/Day_7_17_09_2025/iphonead.jpg" alt="iphonead">
+
+
+    <script>
+
+        delay(5000).setInterval(adcall,6000)
+
+        // $(document).ready(
+
+        //     ()=>{
+        //         $("#i1").fadeIn(2000).slideDown;
+
+        //     }
+
+            
+
+        // )
+
+        $(document).ready(() => {
+
+
+            
+            
+            $("#i1").delay(3000).animate({
+                opacity: 1,
+                height: 'toggle' 
+            }, 1000);
+
+
+            $("#i1").click(
+                function(){
+                     $("#i1").fadeOut();
+                }
+            )
+        });
+
+
+function adcall(){
+
+        $("#i1").delay(3000).animate({
+                opacity: 1,
+                height: 'toggle' 
+            }, 1000);
+
+
+            $("#i1").click(
+                function(){
+                     $("#i1").fadeOut();
+                }
+            )
+            }
+
+
+
+    </script>
+    
+</body>
+</html>

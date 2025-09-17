@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+
+    <title>AD Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for absolute positioning context */
+        .image-container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        #i1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            display: none; /* Keep hidden initially */
+            width: 700px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            cursor: pointer; /* Add a cursor to indicate it's clickable */
+        }
+
+        p {
+            position: relative;
+            z-index: 0;
+            text-align: center; 
+            
+        }
+    </style>
+</head><body>
+       <div class="image-container">
+
+        <div id="wrapper" style="height: 800px; overflow: hidden; position: relative;">
+        <p id="p1"> hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content  
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+            hello hello hello hello content content content content
+        </p></div>
+
+        <img id="i1" src="/Day_7_17_09_2025/iphonead.jpg" alt="iphonead">
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            // Function to show the ad
+            const showAd = () => {
+                $("#i1").delay(3000).animate({
+                    opacity: 1,
+                    height: 'toggle'
+                }, 1000);
+            };
+
+            // Function to hide the ad and restart the cycle
+            const hideAd = () => {
+                $("#i1").fadeOut(1000, () => {
+                    setTimeout(showAd, 6000);
+                });
+            };
+
+            // Bind the click event handler
+        $("#i1").on('click', hideAd);
+
+
+
+            $("#p1").slideDown(500);
+
+
+            $("#p1").click(()=>{
+
+                $("#p1").slideToggle();
+
+            })
+
+            // Start the cycle for the first time
+            showAd();
+        });
+    </script>
+</body>
+</html>

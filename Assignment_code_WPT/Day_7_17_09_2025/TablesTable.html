@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+<style>
+    *{
+        font-family:Arial, Helvetica, sans-serif;
+        margin-left: 10px
+    }
+table,tr,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+</style>
+</head>
+<body>
+<br><br>
+    <label for="n1"> NUMBER</label>
+   <input id="n1"type="number">
+
+   <label for="f1"> FROM</label>
+   <input id="f1"type="number">
+
+
+   <label for="t1"> TO</label>
+   <input id="t1"type="number">
+
+
+   <button id="b1">SUBMIT</button>
+
+<br><br><br><br>
+   <table>
+    <tbody id="tb1">
+
+        <!-- <tr><th>num1</th><th>num2</th><th>value</th></tr> -->
+          <tr><th>Number</th><th>Value</th></tr>
+
+
+    </tbody>
+
+   </table>
+   
+   
+    
+
+<script>
+
+    $().ready( function(){
+    
+
+
+            $("#b1").click(
+                function() {
+            
+
+                    let num=parseInt($("#n1").val())
+                    let start=parseInt($("#f1").val())
+                    let end=parseInt($("#t1").val())
+
+                    let ans=0;
+
+                    
+                    for(let i=start;i<=end;i++){
+
+                        ans=num*i;
+
+                // let newRow = `<tr><td>${num}</td><td>${i}</td><td>${ans}</td></tr>`;
+                let newRow = `<tr><td>${num}&nbsp X &nbsp${i}</td><td>=&nbsp${ans}</td></tr>`;
+
+                        $("#tb1").append(newRow);
+                    }
+
+                    })}
+                
+            )
+        
+    
+</script>
+</body>
+</html>

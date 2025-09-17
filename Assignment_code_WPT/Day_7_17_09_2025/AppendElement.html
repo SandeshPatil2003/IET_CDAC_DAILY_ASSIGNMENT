@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+<style>
+    textarea{
+        height: 200;
+        width :400;
+    }
+
+</style>
+</head>
+<body>
+
+    <textarea name="para1" id="paraid1"></textarea>
+    <button id="b1">Submit</button>
+    
+
+<script>
+
+    $().ready(
+        function(){
+            $("#b1").click(
+                function(){
+
+                    let para=$("#paraid1").val()
+
+                    $('#b1').after("<p id='p2'><i>HELLO</i></p>")
+                    $('#p2').after("<p id='p3'><u>HELLO</u></p>")
+                }
+            )
+        }
+    )
+</script>
+</body>
+</html>

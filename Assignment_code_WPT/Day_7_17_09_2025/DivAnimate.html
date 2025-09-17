@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DIV ANIMATION</title>
+
+    <style>
+        #d{
+            display: flex;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:lighter;
+            background-color:rgb(255, 0, 0);
+            color:rgb(251, 255, 0);
+            height: 100px;
+            width:170px;
+            align-items: center;
+            padding: 10px;
+            position: absolute;
+            font-size: 90px;
+            
+            
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+     <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="d">
+       <b>LOL</b><!-- Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. -->
+    </div>
+<br><br><br><br><br><br><br><br><br><br>
+    <button type="button" id="b1">click</button>
+</body>
+
+<script>
+
+    
+    $().ready(()=>{
+        $("#b1").click(()=>{
+
+            const screenWidth = $(window).width()
+
+            // // function animate1 (){
+            //     $("#d").animate({"left": 800},2000);
+            //     $("#d").animate({"left": -20},1);
+            //     $("#d").animate({"left": 800},2000);
+            //     $("#d").animate({"left": -20},1);
+            //     $("#d").animate({"left": 800},2000);
+            //     $("#d").animate({"left": -20},1);
+            //     $("#d").animate({"left": 800},2000);
+            //     $("#d").animate({"left": 0},2000);
+
+
+                  $("#d").animate({"left": screenWidth},4000);
+                $("#d").animate({"left": -200},1);
+                $("#d").animate({"left": screenWidth},3000);
+                $("#d").animate({"left": -200},1);
+                $("#d").animate({"left": screenWidth},2000);
+                $("#d").animate({"left": -200},1);
+                $("#d").animate({"left": screenWidth},1000);
+                $("#d").animate({"left": 0},2000);
+
+                $("#d").stop;
+                
+            // }
+        
+            
+        })
+    })
+</script>
+</html>

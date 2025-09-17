@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+<style>
+    *{
+        font-family:Arial, Helvetica, sans-serif
+    }
+
+</style>
+</head>
+<body>
+
+   <p id="p1">HELLO</p>
+    
+
+<script>
+
+    $().ready(
+        function(){
+            
+
+                    let para=$("#p1").text()
+
+                    $('#p1').after(`<p id='p2'><i>${para}</i></p>`)
+                    $('#p2').after(`<p id='p3'><u>${para}</u></p>`)
+                }
+            )
+        
+    
+</script>
+</body>
+</html>

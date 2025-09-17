@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style></style>
+    <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <label for="num">Enter Number</label>
+    <input type="number" id="num">
+    <button id="b1">submit</button>
+
+    <script>
+
+        $(document).ready(
+            function(){
+
+
+            $("#b1").click(
+                function(){
+
+                    let n=$("#num").val()
+
+                    let i=0,fact=1;
+
+                    for(i=1;i<=n;i++)
+                {
+                   fact=i*fact;
+
+                   
+                    
+                }
+                $("#b1").after(`<p id=p1>${fact}</p>`)
+
+
+
+
+
+                }
+            )
+
+            }
+        )
+
+    </script>
+</body>
+</html>

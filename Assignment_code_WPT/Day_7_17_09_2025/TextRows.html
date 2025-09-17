@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        textarea{
+            height:285px;
+            width:970px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <label for="t1">Enter your Paragraph</label>
+    <textarea id="t1" placeholder="Start Typing"></textarea>
+    <label for="t2">Enter your Number of Rows</label>
+    <input type="number" id="r1">
+    <button id="b1">Submit</button>
+    
+    
+   
+    <script src="/Day_7_17_09_2025/jquery-3.7.1.min.js"></script>
+<script>
+
+
+console.log("2"*"23");
+$(document).ready(
+
+$("#b1").click(
+    function(){
+        let data = $("#t1").val();
+        let rows =$("#r1").val(); 
+        let l = data.length;
+ console.log(l)
+        let linelength = Math.floor(l/rows);
+        let line1=linelength;
+let a=0;let b;
+
+        for(let i=0; i<rows ; i++){
+
+        console.log(b=data.slice(a,line1),b.length)
+
+        a=line1;
+        line1=line1+linelength;
+        
+        };
+
+
+     
+        
+
+
+    }
+)
+
+)
+
+
+</script>
+</body>
+</html>
