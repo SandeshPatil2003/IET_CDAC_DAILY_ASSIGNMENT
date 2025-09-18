@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Try Catch Finally</title>
+</head>
+<body>
+
+    <p id="p1"></p>
+     <p id="p2"></p>
+    <script>
+
+        // ()=>{
+            try
+            {   
+                 data="Dog";
+                    let data;    
+                  // console.log(data)
+                  document.getElementById("p1").innerHTML=data;
+            }
+
+            catch(err)
+            {
+        document.getElementById("p1").innerHTML=err;
+                    //console.log(err)
+            }
+            finally 
+            {
+                document.getElementById("p2").innerHTML="This will always execute";
+            }
+        // }
+
+
+
+    </script>
+    
+</body>
+</html>

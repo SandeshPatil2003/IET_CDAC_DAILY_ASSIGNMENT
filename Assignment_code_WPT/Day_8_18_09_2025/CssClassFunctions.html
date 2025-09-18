@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/Day_8_18_09_2025/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .class1{
+
+             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+             color: blue;
+        }
+    </style>
+    
+    <title>CSS Class Functions</title>
+</head>
+<body>
+
+
+    <p id="p1">HELLO THIS IS PARA</p>
+
+    <button id="b1" >ADD</button>
+    <button id="b2" >REMOVE</button>
+    <button id="b3">TOGGLE</button>
+
+
+
+    <script>
+
+        
+$().ready(()=>{
+    
+        $("#b1").click(function (){
+             $("#p1").addClass("class1");
+        })
+        // function add()
+        // {
+
+        //     $("#p1").addClass("class1");
+
+
+        // }
+
+         $("#b2").click(function (){
+             $("#p1").removeClass("class1");
+        })
+
+        // function remove()
+        // {
+        //     $("#p1").removeClass("class1");
+
+            
+        // };
+
+         $("#b3").click(function (){
+             $("#p1").toggleClass("class1");
+        })
+
+        // function toggle()
+        // {
+        //     $("#p1").toggleClass("class1");
+
+            
+        // };
+   
+    })
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+             border-collapse:collapse;
+        padding: 10px;
+        margin-top: 50px;
+            }
+    </style>
+    
+    <title>Ajax Table</title>
+</head>
+<body>
+
+    <button id="b1" onclick="show()">GET</button>
+
+    <table>    
+
+        <tbody id="tb1">
+
+
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    TITLE
+                </th>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+    
+
+
+
+
+
+    <script >
+
+        function show()
+        {
+
+            
+            
+            let request= new XMLHttpRequest();
+
+            request.open("GET","https://jsonplaceholder.typicode.com/posts")
+            request.send();
+            request.onload=function(){
+
+                let JSONparsed =JSON.parse(this.response);
+                //console.log(JSONparsed);
+
+        for(let i=0;i<JSONparsed.length;i++)
+            {
+                //console.log(JSONparsed[i].id);
+                //console.log(JSONparsed[i].title);
+
+                let id=JSONparsed[i].id;
+                let title=JSONparsed[i].title;
+
+                let table =document.getElementById("tb1")
+
+                let newRow=table.insertRow(table.rows.length)
+
+                newRow.insertCell(0).innerHTML=id
+                newRow.insertCell(1).innerHTML=title
+
+            }
+
+            }
+
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

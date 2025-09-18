@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Predefined Validations</title>
+</head>
+<body>
+
+
+    <input id="t1" type="text" minlength="5" maxlength="10" required>
+    <button id="b1" type="button" onclick="validate()">submit</button>
+
+
+
+
+    <script>
+
+        function validate()
+            {
+                document.getElementById("t1").reportValidity()
+                
+
+            }
+        
+    </script>
+
+
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Data Display</title>
+</head>
+<body>
+
+    <button id="b1" onclick="showData()">Show</button>
+    <p id="p1"></p>
+
+
+
+    <script>
+        function showData()
+        {
+            let request = new XMLHttpRequest();
+
+            request.open("GET","data.txt");
+            request.send();
+            request.onload=function()
+            {
+                document.getElementById("p1").innerHTML=this.response;
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>
