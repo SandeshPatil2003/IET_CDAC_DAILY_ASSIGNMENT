@@ -1,0 +1,52 @@
+Docker
+
+sudo yum install docker
+
+docker --version
+
+
+docker login
+docker images
+
+
+
+//to start docker
+sudo service docker start
+
+
+sudo docker images
+
+sudo docker pull ubuntu/redis/etc
+
+sudo docker images
+
+
+sudo docker ps // show only running images
+
+sudo docker ps -a // will show all the images
+
+
+docker run images // will fit in a container
+
+sudo docker run ubuntu
+
+sudo docker build .
+
+
+// inside docker file
+FROM ubuntu
+RUN apt-get update
+MAINTAINER Sandesh Patil
+
+
+docker can
+
+ls
+
+
+dockerFile
+
+docker build -t testimage // until this-f dockerFile .
+
+
+sudo docker build -t name:version(1.0) .

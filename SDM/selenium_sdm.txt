@@ -1,0 +1,17 @@
+Relative xPath in seleniun
+
+
+//*[@id="user-name"]
+
+
+username == by xpath
+password == by name
+
+login by id
+
+radiobtns
+
+
+guru 99 demo site radio btn
+
+select by isvisible text method
