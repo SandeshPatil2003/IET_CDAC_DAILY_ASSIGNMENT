@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <title>Data Display</title>
+</head>
+<body>
+    <button id="b1" onclick="showData()">Show</button>
+    <p id="p1"></p>
+
+    <script>
+        function showData() {
+            // Use the reliable cors.sh proxy
+            const proxyUrl = "https://proxy.cors.sh/";
+            const targetUrl = "https://www.apple.com";
+            const finalUrl = proxyUrl + targetUrl;
+
+            let promise = new Promise((res, rej) => {
+                let x = new XMLHttpRequest();
+                x.open("GET", finalUrl);
+                x.send();
+                x.onload = function() {
+                    if (x.status === 200) {
+                        return res(x.responseText);
+                    } else {
+                        return rej("Error fetching data from the proxy: " + x.status);
+                    }
+                };
+                x.onerror = function() {
+                    return rej("Network error occurred with the proxy.");
+                };
+            });
+
+            promise.then((data) => {
+                // This will output the raw HTML of apple.com to your console
+                console.log(data);
+                $("p").text("Data fetched successfully! Check the browser console for the raw HTML.");
+            }).catch((e) => {
+                $("p").html("Error: " + e + ". Please check your network and that the proxy is operational.");
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <script src="jquery-3.7.1.min.js"></script>
+    <title>Data Display</title>
+</head>
+<body>
+
+    <button id="b1" onclick="showData()">Show</button>
+    <p id="p1"></p>
+</body>
+   
+
+    <script>
+        function showData(){
+
+       
+       let promise = new Promise((res , rej)=>{
+        let x=new XMLHttpRequest();
+        x.open("GET" , "https://www.apple.com");
+        x.send();
+        x.onload=function(){
+            if(x.status==200){
+                return res(x.responseText);
+            }
+            else{
+                return rej("error");
+            }
+        }
+       }) 
+
+       promise.then((data)=>{
+        $("p").html(data);
+       }).catch((e)=>{
+        $("p").html(e);
+       })
+        }
+    </script>
+    
+
+</html>

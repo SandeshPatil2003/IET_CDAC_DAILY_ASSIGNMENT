@@ -1,0 +1,1 @@
+ d = new Date(); let dd;let mm; let yy; dd=d.getDate();mm=d.getMonth()+1; yy=d.getFullYear() ; console.log(dd+"/"+mm+"/"+yy)

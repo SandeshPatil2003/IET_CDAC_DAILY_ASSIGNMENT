@@ -1,0 +1,1 @@
+Hello from node to fileHello from node to file version 2
