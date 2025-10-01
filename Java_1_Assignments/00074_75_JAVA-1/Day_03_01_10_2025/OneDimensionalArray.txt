@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class OneDimensionalArray{
+
+public static void main(String args []){
+
+	ArrayServices.displayMenu();
+	
+
+
+}
+}

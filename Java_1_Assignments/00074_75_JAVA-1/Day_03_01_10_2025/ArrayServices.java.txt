@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class ArrayServices{
+
+
+	public static void displayMenu(){
+	Scanner sc = new Scanner(System.in);
+	byte choice ;
+	
+	do{
+	System.out.println("Welcome to Menu :");
+	System.out.println("1.Display all Primes");
+	System.out.println("2.Addition of all Odd Numbers");
+	System.out.println("3.Factorial of all Numbers less than 7");
+	System.out.println("4.Find Nth Maximum Prime Number");
+	System.out.println("5.Find Nth Minimum Prime Number");
+	System.out.println("6.Exit");
+	
+	System.out.println("Enter Your Choice :");
+	choice=sc.nextByte();
+	
+	}while(choice != 6);
+	}
+}
