@@ -1,0 +1,9 @@
+package com.student.service;
+
+public interface StudentService {
+
+	boolean addNewStudent();
+
+	void displayAll();
+
+}

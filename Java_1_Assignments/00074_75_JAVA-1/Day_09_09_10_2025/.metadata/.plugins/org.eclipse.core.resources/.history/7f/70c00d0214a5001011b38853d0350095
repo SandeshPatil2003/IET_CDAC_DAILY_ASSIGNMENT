@@ -1,0 +1,17 @@
+package com.student.dao;
+
+import com.student.beans.Student;
+
+public class StudentDaoImpl implements StudentDao {
+	
+	
+	List<Student> slist= new ArrayList<>;
+
+	@Override
+	public void save(Student s) {
+
+
+		
+	}
+
+}

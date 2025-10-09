@@ -1,0 +1,8 @@
+package com.student.beans;
+
+public class Student {
+	
+	private int sid;
+	private String snna;
+
+}

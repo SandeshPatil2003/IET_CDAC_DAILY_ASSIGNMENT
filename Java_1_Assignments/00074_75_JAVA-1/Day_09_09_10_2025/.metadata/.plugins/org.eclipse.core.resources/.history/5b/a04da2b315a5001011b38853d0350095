@@ -1,0 +1,71 @@
+package com.student.test;
+
+import com.student.service.StudentService;
+import com.student.service.StudentServiceImpl;
+
+public class TestStudentApp {
+
+	public static void main(String[] args) {
+		
+		
+		
+		StudentService sservice = new StudentServiceImpl();
+
+
+		byte choice =0;
+		
+		do {
+			
+			System.out.println("Welcome to Student Menu:");
+			System.out.println("1.Add New Student\n 2.Display All Students\n 3.Search by id");
+			System.out.println("4.Update Marks 1\n 5.Update Marks 1 & 2\n 6.Delete by id");
+			System.out.println("7.Delete by Avg Marks (lower) 1\n 8.Search by Avg Marks (higher)");
+			System.out.println(" 9.Sort by id\n 10.Sort by Name\n 11.Sort by Marks 1\n 12.exit");
+			
+			
+			switch(choice)
+			{
+			
+			case 1->{
+				
+						boolean status=sservice.addNewStudent();
+						
+						if(status)
+						{
+							System.out.println("Student Added Successfully!");
+						}
+						else
+						{
+							System.out.println("!Student Added Successfully");
+						}
+						
+						
+				
+					}
+						
+					
+					
+				
+				
+					
+			
+			case 2->{
+				
+				
+				
+				
+					}
+			
+			default->{System.out.println("Invalid Choice");}
+			
+			}
+			
+		}
+		while(choice!=12);
+		
+		
+		
+
+	}
+
+}

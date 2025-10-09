@@ -1,0 +1,23 @@
+package com.student.test;
+
+public class TestStudentApp {
+
+	public static void main(String[] args) {
+
+
+		byte choice =0;
+		
+		do {
+			
+			System.out.println("1.Add Student\n 2.Display All Students\n 3.Search by id");
+			System.out.println("4.Add Student\n 5.Display All Students\n 3.Search by id");
+			
+		}
+		while(choice!=10);
+		
+		
+		
+
+	}
+
+}

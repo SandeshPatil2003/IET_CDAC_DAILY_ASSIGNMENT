@@ -1,0 +1,25 @@
+package com.student.test;
+
+public class TestStudentApp {
+
+	public static void main(String[] args) {
+
+
+		byte choice =0;
+		
+		do {
+			
+			System.out.println("1.Add Student\n 2.Display All Students\n 3.Search by id");
+			System.out.println("4.Update Marks 1\n 5.Update Marks 1 & 2\n 6.Delete by id");
+			System.out.println("7.Delete by Avg Marks (lower) 1\n 8.Search by Avg Marks (higher)");
+			System.out.println(" 9.Delete by id");
+			
+		}
+		while(choice!=10);
+		
+		
+		
+
+	}
+
+}

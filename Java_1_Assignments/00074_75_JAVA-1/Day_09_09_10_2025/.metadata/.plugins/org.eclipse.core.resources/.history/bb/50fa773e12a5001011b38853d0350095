@@ -1,0 +1,13 @@
+package com.student.service;
+
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public boolean addNewStudent() {
+
+
+		
+		
+	}
+
+}

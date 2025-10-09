@@ -1,0 +1,51 @@
+package com.student.dao;
+
+import java.util.*;
+
+
+ 
+
+import com.student.beans.Student;
+
+public class StudentDaoImpl implements StudentDao {
+	
+	
+	List<Student> slist= new ArrayList<>();
+	
+static{
+	.add(new Student(1,"sandesh",12,22,44,58));
+    slist.add(new Student(2,"pratik",50,60,70,80)); 
+}
+
+	@Override
+	public boolean save(Student s) {
+		
+		slist.add(s);
+		
+		return true;
+
+
+		
+	}
+
+	@Override
+	public List<Student> getData() {
+		
+				return slist;
+	}
+
+	@Override
+	public Student searchById(int id) {
+		
+		int pos = slist.indexOf(new Student(id));
+		
+		if(pos!=-1) {
+			return slist.get(pos);
+		}
+		else {
+			return null;
+		}
+		
+	}
+
+}

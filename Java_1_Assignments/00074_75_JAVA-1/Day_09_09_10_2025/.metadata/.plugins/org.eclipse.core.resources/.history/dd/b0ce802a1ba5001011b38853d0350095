@@ -1,0 +1,101 @@
+package com.student.test;
+
+
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.student.beans.Student;
+import com.student.service.StudentService;
+import com.student.service.StudentServiceImpl;
+
+public class TestStudentApp {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		
+		
+		
+		
+		StudentService sservice = new StudentServiceImpl();
+
+
+		byte choice =0;
+		
+		do {
+			
+			System.out.println("Welcome to Student Menu:");
+			System.out.println("1.Add New Student\n2.Display All Students\n3.Search by id");
+			System.out.println("4.Update Marks 1\n5.Update Marks 1 & 2\n6.Delete by id");
+			System.out.println("7.Delete by Avg Marks (lower) 1\n8.Search by Avg Marks (higher)");
+			System.out.println("9.Sort by id\n10.Sort by Name\n11.Sort by Marks 1\n12.exit");
+			System.out.println("Enter your choice :");
+			
+			choice=sc.nextByte();
+			
+			
+			switch(choice)
+			{
+			
+			case 1->{
+				
+						boolean status=sservice.addNewStudent();
+						
+						if(status)
+						{
+							System.out.println("Student Added Successfully!");
+						}
+						else
+						{
+							System.out.println("!Student Added Successfully");
+						}
+						
+						
+				
+					}
+			
+			case 2->{
+				
+						List<Student> slist = sservice.displayAll();
+						if(slist!=null)							
+							slist.forEach(System.out::println);	
+							else
+							System.out.println("no data");
+					}
+			
+			case 3->{
+						System.out.println("Enter id to search :");
+						int id = sc.nextInt();
+						sservice
+					}
+					
+					
+				
+				
+					
+			
+			case 12->{
+				
+				
+				System.out.println("Goodbye!");
+				
+				
+				sc.close();
+				
+					}
+			
+			default->{System.out.println("Invalid Choice");}
+			
+			}
+			
+		}
+		while(choice!=12);
+		
+		
+		
+
+	}
+
+}

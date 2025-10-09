@@ -1,0 +1,136 @@
+package com.student.test;
+
+
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.student.beans.Student;
+import com.student.service.StudentService;
+import com.student.service.StudentServiceImpl;
+
+public class TestStudentApp {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		
+		
+		
+		
+		StudentService sservice = new StudentServiceImpl();
+
+
+		byte choice =0;
+		
+		do {
+			
+			System.out.println("Welcome to Student Menu:");
+			System.out.println("1.Add New Student\n2.Display All Students\n3.Search by id");
+			System.out.println("4.Update Marks 1\n5.Update Marks 1 & 2\n6.Delete by id");
+			System.out.println("7.Delete by Avg Marks (lower) 1\n8.Search by Avg Marks (higher)");
+			System.out.println("9.Sort by id\n10.Sort by Name\n11.Sort by Marks 1\n12.exit");
+			System.out.println("Enter your choice :");
+			
+			choice=sc.nextByte();
+			
+			
+			switch(choice)
+			{
+			
+			case 1->{
+				
+						boolean status=sservice.addNewStudent();
+						
+						if(status)
+						{
+							System.out.println("Student Added Successfully!");
+						}
+						else
+						{
+							System.out.println("!Student Added Successfully");
+						}
+						
+						
+				
+					}
+			
+			case 2->{
+				
+						List<Student> slist = sservice.displayAll();
+						if(slist!=null)							
+							slist.forEach(System.out::println);	
+							else
+							System.out.println("no data");
+					}
+			
+			case 3->{
+						System.out.println("Enter id to search :");
+						int id = sc.nextInt();
+						Student s = sservice.searchById(id);
+						
+						if(s!=null) {
+							System.out.println(s);
+						}
+						else {
+							System.out.println("Not found");
+						}
+					}
+					
+			case 4->{
+						System.out.println("Enter student id whose mark 1 need to be updated :");
+						int id = sc.nextInt();
+						System.out.println("Enter student  mark 1 need to be updated :");
+						double m1 = sc.nextDouble();
+						
+						boolean status = sservice.updateMark1(id,m1);
+						if(status) {
+							System.out.println("Marks 1 updated successfully");
+						}
+						else {
+							System.out.println("Error updating Marks 1 ");
+						}
+					}
+				
+			case 5->{
+				System.out.println("Enter student id whose mark 1 & 2 need to be updated :");
+				int id = sc.nextInt();
+				System.out.println("Enter new mark 1 :");
+				double m1 = sc.nextDouble();
+				System.out.println("Enter new mark 2 :");
+				double m2 = sc.nextDouble();
+				
+				boolean status = sservice.updateMark1_2(id,m1,m2);
+				if(status) {
+					System.out.println("Marks 1 & 2 updated successfully");
+				}
+				else {
+					System.out.println("Error updating Marks 1 & 2 ");
+				}
+			}
+					
+			
+			case 12->{
+				
+				
+				System.out.println("Goodbye!");
+				
+				
+				sc.close();
+				
+					}
+			
+			default->{System.out.println("Invalid Choice");}
+			
+			}
+			
+		}
+		while(choice!=12);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.student.service;
+
+import java.util.*;
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public boolean addNewStudent() {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		
+		System.out.println("Enter Student id : ");
+		
+		int id=
+		
+
+
+		return false;
+		
+	}
+
+}

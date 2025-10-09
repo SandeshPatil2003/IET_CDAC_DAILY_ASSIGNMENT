@@ -1,0 +1,16 @@
+package com.student.service;
+
+import java.ut
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public boolean addNewStudent() {
+		
+		Scanner sc = new Scanner (System.in);
+
+
+		return false;
+		
+	}
+
+}

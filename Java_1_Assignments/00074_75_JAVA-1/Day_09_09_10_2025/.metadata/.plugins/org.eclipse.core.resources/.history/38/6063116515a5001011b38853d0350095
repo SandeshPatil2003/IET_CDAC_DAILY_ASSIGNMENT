@@ -1,0 +1,59 @@
+package com.student.service;
+
+import java.util.*;
+
+import com.student.beans.*;
+import com.student.dao.StudentDao;
+import com.student.dao.StudentDaoImpl;
+public class StudentServiceImpl implements StudentService {
+	
+	
+	StudentDao sdao = new StudentDaoImpl();
+
+	@Override
+	public boolean addNewStudent() {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		
+		
+		
+		System.out.println("Enter Student id : ");
+		
+		int id=sc.nextInt();
+		
+		System.out.println("Enter Student Name : ");
+		
+		String name=sc.nextLine();
+		sc.next();
+		
+		System.out.println("Enter Student Marks 1 : ");
+		
+		double m1=sc.nextDouble();
+		
+		System.out.println("Enter Student Marks 2 : ");
+		
+		double m2=sc.nextDouble();
+		
+		System.out.println("Enter Student Marks 3 : ");
+		
+		double m3=sc.nextDouble();
+		
+		double avg=(m1+m2+m3)/3;
+		
+		
+		Student s= new Student(id,name,m1,m2,m3,avg);
+		
+		boolean stat=sdao.save(s);
+		
+		if(stat)
+		
+		return stat;}
+		else {
+
+
+		return false;}
+		
+	}
+
+}

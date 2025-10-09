@@ -1,0 +1,11 @@
+package com.student.service;
+
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public void addNewStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.student.dao;
+
+import java.util.*;
+
+
+ 
+
+import com.student.beans.Student;
+
+public class StudentDaoImpl implements StudentDao {
+	
+	
+	List<Student> slist= new ArrayList<>();
+
+	@Override
+	public boolean save(Student s) {
+		
+		slist.add(s);
+		
+		return true;
+
+
+		
+	}
+
+	@Override
+	public List<Student> getData() {
+		
+		re
+		return null;
+	}
+
+}

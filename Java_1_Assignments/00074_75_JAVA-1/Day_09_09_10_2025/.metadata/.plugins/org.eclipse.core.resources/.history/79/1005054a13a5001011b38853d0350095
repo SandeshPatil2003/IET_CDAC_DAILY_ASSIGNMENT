@@ -1,0 +1,44 @@
+package com.student.service;
+
+import java.util.*;
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public boolean addNewStudent() {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		
+		System.out.println("Enter Student id : ");
+		
+		int id=sc.nextInt();
+		
+		System.out.println("Enter Student Name : ");
+		
+		String name=sc.nextLine();
+		sc.next();
+		
+		System.out.println("Enter Student Marks 1 : ");
+		
+		double m1=sc.nextDouble();
+		
+		System.out.println("Enter Student Marks 2 : ");
+		
+		double m2=sc.nextDouble();
+		
+		System.out.println("Enter Student Marks 3 : ");
+		
+		double m3=sc.nextDouble();
+		
+		double avg=
+		
+		
+		Student s= new Student(id,name,m1,m2,m3,avg)
+		
+
+
+		return false;
+		
+	}
+
+}

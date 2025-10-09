@@ -1,0 +1,15 @@
+package com.student.dao;
+
+import java.util.List;
+
+import com.student.beans.Student;
+
+public interface StudentDao {
+
+	boolean save(Student s);
+
+	List<Student> getData();
+
+	void searchById(int id);
+
+}
