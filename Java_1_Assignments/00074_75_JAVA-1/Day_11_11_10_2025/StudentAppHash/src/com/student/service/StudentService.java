@@ -1,0 +1,35 @@
+package com.student.service;
+
+import java.util.List;
+
+import com.student.beans.Student;
+
+public interface StudentService {
+
+	boolean addStudent();
+
+	List<Student> displayAll();
+
+	Student searchById(int id);
+
+	List<Student>  searchByName(String name);
+
+	boolean updateM1(int id, double m1);
+
+	boolean updateM1_M2_M3(int id, double m1, double m2, double m3);
+
+	boolean deleteById(int id);
+
+	boolean deleteByMarks(double avg);
+
+	List<Student> searchByMarks(double avg);
+
+	List<Student> sortByMarks();
+
+	List<Student> sortByName();
+
+	List<Student> sortById();
+
+	List<Student> sortByMarksOpt();
+
+}

@@ -1,0 +1,250 @@
+package com.student.dao;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+import com.student.beans.Student;
+
+public class StudentDaoImpl implements StudentDao {
+	
+	static Set<Student> sset = new HashSet <>();
+	
+	private static double avg(double m1,double m2,double m3)
+	{
+		return(m1+m2+m3)/3;
+		
+	};
+	
+	static {
+		
+		
+		sset.add(new Student(32,"john",24,25,25,avg(24,25,25)));
+		
+		sset.add(new Student(55,"tom",53,63,89,avg(53,63,89)));
+		sset.add(new Student(36,"jerry",73,29,38,avg(73,29,38)));
+		sset.add(new Student(79,"michael",83,23,71,avg(83,23,71)));
+		sset.add(new Student(45,"tom",53,63,89,avg(53,63,89)));
+		sset.add(new Student(2,"tom",53,63,89,avg(53,63,89)));
+		sset.add(new Student(2,"tom",53,63,89,avg(53,63,89)));
+		
+	
+	}
+	
+
+	@Override
+	public boolean addStudent(Student s) {
+		
+		return sset.add(s);
+		
+		
+	}
+
+
+
+	@Override
+	public List<Student> displayAll() {
+		
+		List<Student> temp = new ArrayList <>(sset);
+		
+		
+		return temp;
+	}
+
+
+
+	@Override
+	public Student searchById(int id) {
+		
+//		for(Student s : sset) {
+//			if(s == null) {
+//				return null;
+//			}
+//			else {
+//				if(s.getId() == id) {
+//					return s;
+//				}
+//			}
+//			
+//		}
+		Student s = sset.stream()
+	            .filter(user -> user.getId() == id)
+	            .findFirst()
+	            .orElse(null);
+		return s;
+	}
+
+
+
+	@Override
+	public List<Student> searchByName(String name) {
+		
+		 List<Student>  s = sset.stream()
+	            .filter(user -> user.getName().equals(name))
+	            .collect(Collectors.toList());
+		 
+		return s;	
+	}
+
+
+
+	@Override
+	public boolean updateM1(int id, double m1) {
+		Student s = sset.stream()
+	            .filter(user -> user.getId() == id)
+	            .findFirst()
+	            .orElse(null);
+		
+		if(s!=null) {
+			s.setM1(m1);
+			s.setAvg((m1+s.getM2()+s.getM3())/3);
+			return true;
+		}
+		return false;
+	}
+
+
+
+	@Override
+	public boolean updateM1_M2_M3(int id, double m1, double m2, double m3) {
+		Student s = sset.stream()
+	            .filter(user -> user.getId() == id)
+	            .findFirst()
+	            .orElse(null);
+		
+		if(s!=null) {
+			s.setM1(m1);
+			s.setM2(m2);
+			s.setM3(m3);
+			s.setAvg((m1+m2+m3)/3);
+			return true;
+		}
+		return false;
+	}
+
+
+
+	@Override
+	public boolean deleteById(Student s) {
+		return sset.remove(s);
+		 
+	}
+
+
+
+	@Override
+	public boolean deleteByMarks(double avg) {
+		
+		
+		return sset.removeIf(s-> s.getAvg()<avg);
+	}
+
+
+
+	@Override
+	public List<Student> searchByMarks(double avg) {
+		
+		List<Student>  s = sset.stream()
+	            .filter(user -> user.getAvg()>(avg))
+	            .collect(Collectors.toList());
+		return s;
+		
+		
+		
+	
+	}
+
+
+
+	@Override
+	public List<Student> sortByMarks() {
+		
+		Comparator<Student> c =(o1,o2)->{
+			return (int)(o1.getAvg()-o2.getAvg());
+		};
+		
+		List<Student> temp = new ArrayList <>(sset);
+		
+		 temp.sort(c);
+		 
+		 return temp;
+		
+		
+
+
+		
+	}
+
+
+
+	@Override
+	public List<Student> sortByName() {
+		
+		Comparator <Student> c=(o1,o2)->{
+			return o1.getName().compareTo(o2.getName());
+		};
+		
+		
+		List<Student> temp = new ArrayList<>(sset);
+		
+		temp.sort(c);
+		return temp;
+	}
+
+
+
+	@Override
+	public List<Student> sortById() {
+		
+		List<Student> temp = new ArrayList<>(sset);
+		
+		Collections.sort(temp);
+		
+		return temp;
+	}
+
+
+
+	@Override
+	public List<Student> sortByM1() {
+		Comparator <Student> c=(o1,o2)->{
+			return (int)(o1.getM1()-o2.getM1());
+		};
+		
+		
+		List<Student> temp = new ArrayList<>(sset);
+		
+		temp.sort(c);
+		return temp;
+	}
+
+
+
+	@Override
+	public List<Student> sortByM2() {
+		Comparator <Student> c=(o1,o2)->{
+			return (int)(o1.getM2()-o2.getM2());
+		};
+		
+		
+		List<Student> temp = new ArrayList<>(sset);
+		
+		temp.sort(c);
+		return temp;
+	}
+
+
+
+	@Override
+	public List<Student> sortByM3() {
+		Comparator <Student> c=(o1,o2)->{
+			return (int)(o1.getM3()-o2.getM3());
+		};
+		
+		
+		List<Student> temp = new ArrayList<>(sset);
+		
+		temp.sort(c);
+		return temp;
+	}
+
+}

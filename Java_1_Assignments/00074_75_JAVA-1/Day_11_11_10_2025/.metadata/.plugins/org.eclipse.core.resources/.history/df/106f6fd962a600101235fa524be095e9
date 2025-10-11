@@ -1,0 +1,100 @@
+package com.student.beans;
+
+import java.util.Objects;
+
+public class Student {
+	
+	
+	private int id;
+	private String name;
+	private double m1;
+	private double m2;
+	private double m3;
+	private double avg;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public Student() {
+		super();
+	}
+	public Student(int id, String name, double m1, double m2, double m3, double avg) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.m1 = m1;
+		this.m2 = m2;
+		this.m3 = m3;
+		this.avg = avg;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getM1() {
+		return m1;
+	}
+	public void setM1(double m1) {
+		this.m1 = m1;
+	}
+	public double getM2() {
+		return m2;
+	}
+	public void setM2(double m2) {
+		this.m2 = m2;
+	}
+	public double getM3() {
+		return m3;
+	}
+	public void setM3(double m3) {
+		this.m3 = m3;
+	}
+	public double getAvg() {
+		return avg;
+	}
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", m1=" + m1 + ", m2=" + m2 + ", m3=" + m3 + ", avg=" + avg
+				+ "]";
+	}
+	@Override
+	public int hashCode() {
+		
+		System.out.println("Inside hashcode "+);
+
+		
+		return id;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		
+		System.out.println("Inside equals ");
+		
+		return id == ((Student)obj).id;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

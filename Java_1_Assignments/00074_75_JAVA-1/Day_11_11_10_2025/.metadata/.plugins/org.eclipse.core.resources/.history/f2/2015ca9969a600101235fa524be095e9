@@ -1,0 +1,129 @@
+package com.student.service;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.student.dao.StudentDao;
+import com.student.dao.StudentDaoImpl;
+
+import com.student.beans.*;
+
+public class StudentServiceImpl implements StudentService {
+	
+	StudentDao sdao = new StudentDaoImpl();
+
+	@Override
+	public boolean addStudent() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Student Id:");
+		int id=sc.nextInt();
+		
+		System.out.println("Enter Student Name:");
+		sc.nextLine();
+		String name=sc.nextLine();
+		System.out.println("Enter Marks 1:");
+		double m1=sc.nextDouble();
+		System.out.println("Enter Marks 2:");
+		double m2=sc.nextDouble();
+		System.out.println("Enter Marks 3:");
+		double m3=sc.nextDouble();
+		
+		double avg=(m1+m2+m3)/3;
+		
+		
+		Student s = new Student(id,name,m1,m2,m3,avg);
+		
+		
+		 return sdao.addStudent(s);
+		
+
+		
+	}
+
+	@Override
+	public List<Student> displayAll() {
+	
+		return sdao.displayAll();
+		
+	}
+
+	@Override
+	public Student searchById(int id) {
+		return sdao.searchById(id);
+			}
+
+	@Override
+	public List<Student> searchByName(String name) {
+	
+		 return sdao.searchByName(name);
+	}
+
+	@Override
+	public boolean updateM1(int id, double m1) {
+		return sdao.updateM1(id,m1);
+	}
+
+	@Override
+	public boolean updateM1_M2_M3(int id, double m1, double m2, double m3) {
+		 return sdao.updateM1_M2_M3(id,m1,m2,m3);
+	}
+
+	@Override
+	public boolean deleteById(int id) {
+		Student s = sdao.searchById(id);
+		return sdao.deleteById(s);
+		
+	}
+
+	@Override
+	public boolean deleteByMarks(double avg) {
+		
+		
+		return sdao.deleteByMarks(avg);
+	}
+
+	@Override
+	public List<Student> searchByMarks(double avg) {
+		
+		return sdao.searchByMarks(avg);
+	}
+
+	@Override
+	public List<Student> sortByMarks() {
+		
+		return sdao.sortByMarks();
+	}
+
+	@Override
+	public List<Student> sortByName() {
+		return sdao.sortByName();
+	}
+
+	@Override
+	public List<Student> sortById() {
+	
+		return sdao.sortById();
+	}
+
+	@Override
+	public List<Student> sortByMarksOpt() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		byte choice=0;
+		
+		System.out.println("Enter which Marks to sort ");
+		
+		switch(choice)
+		
+		
+		
+		
+		return null;
+	}
+	
+
+}

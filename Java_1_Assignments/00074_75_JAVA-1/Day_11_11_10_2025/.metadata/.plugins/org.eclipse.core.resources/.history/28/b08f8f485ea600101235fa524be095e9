@@ -1,0 +1,19 @@
+package com.student.service;
+
+import java.util.List;
+
+import com.student.beans.Student;
+
+public interface StudentService {
+
+	boolean addStudent();
+
+	List<Student> displayAll();
+
+	Student searchById(int id);
+
+	List<Student>  searchByName(String name);
+
+	boolean updateM1(int id, double m1);
+
+}

@@ -1,0 +1,208 @@
+package com.student.test;
+
+import com.student.beans.Student;
+import com.student.service.StudentService;
+import com.student.service.StudentServiceImpl;
+
+import java.util.*;
+
+public class TestStudentMain {
+
+	public static void main(String[] args) {
+		
+		StudentService sservice = new StudentServiceImpl();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		byte choice=0;
+		
+		do {
+			
+			
+			System.out.println("Welcome to Student Management Menu");
+			System.out.println(" 1.Add Student\n 2.Display All\n 3.Search By Id");
+			System.out.println(" 4.Search By Name\n 5.Update M1\n 6.Update M1,M2,M3");
+			System.out.println(" 7.Delete By Id\n 8.Delete By Avg Marks \n 9.Search By Avg Marks");
+			System.out.println(" 10.Sort By Avg Marks\n 11.Sort By Name \n 12.Sort By Id");
+			System.out.println(" 13.Sort By M1,M2 or M3\n 14.Exit");
+			System.out.println("Enter your Choice : ");
+			choice = sc.nextByte();
+			
+			
+			
+			
+			switch(choice)
+			{
+			case 1->{
+						if(sservice.addStudent())
+							System.out.println("Added Successfully");
+						else
+							System.out.println("Unsuccessful");
+						
+				
+					}
+			
+			case 2->{
+						
+						List<Student> slist = sservice.displayAll();
+						
+						
+						if(slist!=null)
+							slist.forEach(System.out::println);
+						else
+							System.out.println("Empty");
+						
+		
+					}
+			case 3->{
+						System.out.println("Enter id to search student :");
+						int id = sc.nextInt();
+						
+						Student s = sservice.searchById(id);
+						if(s == null) {
+							System.out.println("Student not found");
+						}
+						System.out.println(s);
+				
+		
+					}
+			case 4->{
+				System.out.println("Enter name to search student :");
+				sc.nextLine();
+				String name = sc.nextLine();
+				
+				List<Student> slist= sservice.searchByName(name);
+				if(slist == null) {
+					System.out.println("Students data not found");
+				}
+				slist.forEach(System.out::println);
+		
+
+			}
+			case 5->{
+				System.out.println("Enter id of student to update m1  :");
+				int id = sc.nextInt();
+				System.out.println("Enter M1 to update :");
+				double m1 = sc.nextDouble();
+				boolean status = sservice.updateM1(id,m1);
+				if(status) {
+					System.out.println("M1 updated successfully");
+				}
+				else
+				System.out.println("M1 not updated successfully");
+
+			}
+			case 6->{
+				System.out.println("Enter id of student to update m1, m2 & m3 :");
+				int id = sc.nextInt();
+				System.out.println("Enter M1 to update :");
+				double m1 = sc.nextDouble();
+				System.out.println("Enter M2 to update :");
+				double m2 = sc.nextDouble();
+				System.out.println("Enter M3 to update :");
+				double m3 = sc.nextDouble();
+				boolean status = sservice.updateM1_M2_M3(id,m1,m2,m3);
+				if(status) {
+					System.out.println("All marks updated successfully");
+				}
+				else
+				System.out.println("marks not updated successfully");
+
+			}
+			case 7->{
+				System.out.println("Enter id to delete student :");
+				int id = sc.nextInt();
+				
+				boolean status = sservice.deleteById(id);
+				if(status) {
+					System.out.println("Student deleted successfully");
+				}
+				else
+				System.out.println("Student not found");
+		
+
+			}
+			case 8->{
+				System.out.println("Enter Avg marks to delete students with less than avg marks :");
+				double avg = sc.nextDouble();
+				
+				boolean status = sservice.deleteByMarks(avg);
+				if(status) {
+					System.out.println("Students deleted successfully");
+				}
+				else
+				System.out.println("Students not found");
+		
+
+			}
+			
+			case 9->{
+				
+				System.out.println("Enter marks to search student above :");
+				
+				double avg=sc.nextDouble();
+				
+				List<Student> slist= sservice.searchByMarks(avg);
+				if(slist == null) {
+					System.out.println("Students data not found");
+				}
+				slist.forEach(System.out::println);
+				
+				
+				
+			}
+			
+			
+			case 10->{
+				
+
+				List<Student> slist = sservice.sortByMarks();
+				
+				
+				if(slist!=null)
+					slist.forEach(System.out::println);
+				else
+					System.out.println("Empty");
+							
+				
+			}
+			
+			
+			
+			case 10->{
+				
+
+				List<Student> slist = sservice.sortByMarks();
+				
+				
+				if(slist!=null)
+					slist.forEach(System.out::println);
+				else
+					System.out.println("Empty");
+							
+				
+			}
+			
+			
+			case 14->	{
+								System.out.println("Thank you");
+				
+						
+						}
+			
+			default->{ System.out.println("Invalid Chocie");}
+			}
+		}
+		
+		while(choice!=14);
+		
+		sc.close();
+		
+		
+		
+		
+		
+
+	}
+
+}

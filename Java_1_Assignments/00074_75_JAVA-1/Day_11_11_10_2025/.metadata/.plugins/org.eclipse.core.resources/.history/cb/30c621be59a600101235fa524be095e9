@@ -1,0 +1,13 @@
+package com.student.dao;
+
+import java.util.List;
+
+import com.student.beans.Student;
+
+public interface StudentDao {
+
+	boolean addStudent(Student s);
+
+	List<Student> displayAll();
+
+}
