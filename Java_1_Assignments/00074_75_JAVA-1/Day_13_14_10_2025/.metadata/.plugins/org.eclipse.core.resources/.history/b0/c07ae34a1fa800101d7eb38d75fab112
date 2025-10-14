@@ -1,0 +1,137 @@
+package com.shop.test;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+import com.shop.beans.Customer;
+import com.shop.beans.Item;
+import com.shop.service.ShopService;
+import com.shop.service.ShopServiceImpl;
+
+public class TestShopMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		
+		
+		ShopService shservice= new ShopServiceImpl();
+		
+		
+		
+		
+		byte choice=0;
+		
+		
+		do {
+			
+			System.out.println("Shop MAIN MENU");
+			System.out.println("1.Add New Customer\n2.Display All");
+			System.out.println("3.Display by Customer\n4.Delete Customer");
+			System.out.println("5.Add new item in Existing Order");
+			System.out.println("6.Delete new item from Existing Order");
+			System.out.println("7.Exit");
+			System.out.println("Enter Choice");
+			
+			choice=sc.nextByte();
+			
+			
+			
+			switch(choice)
+			{
+			case 1->{ 
+				
+						boolean status=shservice.addNewCustomer();
+						
+						if(status)
+							System.out.println("Customer added successfully");
+						else
+							System.out.println("add new customer fail");
+						
+			
+			
+			}
+			
+			case 2->{ 
+				
+				Map<Customer,List<Item>> rmap =shservice.displayAll();
+				
+				Set<Customer> keys= rmap.keySet();
+				
+				if(rmap!=null)
+					
+					keys.forEach(c-> System.out.println(c+"---->"+rmap.get(c)));
+				else
+					System.out.println("displayFailed");
+				
+	
+	
+	}
+			
+			case 3->{
+				System.out.println("Enter Customer Id");
+				int id=sc.nextInt();
+				
+				
+				Map<Customer,List<Item>> rmap = shservice.findByID(id);
+				
+				Set<Customer> keys= rmap.keySet();
+				
+				keys.forEach(c->
+				{if(c.getCid()==id)
+				{ System.out.println(c+"---->"+rmap.get(c));}
+				
+				
+				});}
+				
+				
+			
+				
+				
+				
+				
+				
+				
+			//	Map<Customer,List<Item>> rmap =shservice.displayById(id);
+				
+			case 4->{
+				System.out.println("Enter Customer Id");
+				int id=sc.nextInt();
+				
+				
+				boolean status = shservice.deleteById();
+				
+				
+			
+			
+			}
+				
+				
+				
+				
+			
+			
+			
+			
+			
+			
+			case 7->{System.out.println("Thank you");}
+			
+			default->{System.out.println("Invalid Choice");}
+			
+			
+			
+			}
+			
+			
+			
+			
+		}
+		while(choice!=7);
+		
+
+	}
+
+}

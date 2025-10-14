@@ -1,0 +1,8 @@
+package com.shop.beans;
+
+public class Item {
+	
+	private iid;
+	
+
+}

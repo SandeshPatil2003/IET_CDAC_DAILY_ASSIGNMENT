@@ -1,0 +1,20 @@
+package com.shop.test;
+
+import com.shop.enums.Coffee;
+
+public class TestEnum {
+	
+	public static void main (String[] args)
+	{
+		
+		System.out.println(Coffee.small);
+		System.out.println(Coffee.medium);
+		System.out.println(Coffee.large);
+		System.out.println("Enter what size coffee you want");
+		
+		
+		
+		
+	}
+
+}

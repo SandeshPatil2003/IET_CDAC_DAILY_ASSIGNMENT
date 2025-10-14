@@ -1,0 +1,6 @@
+package com.shop.enums;
+
+public enum Coffee {
+
+	small(200,500.00),medium,large;
+}

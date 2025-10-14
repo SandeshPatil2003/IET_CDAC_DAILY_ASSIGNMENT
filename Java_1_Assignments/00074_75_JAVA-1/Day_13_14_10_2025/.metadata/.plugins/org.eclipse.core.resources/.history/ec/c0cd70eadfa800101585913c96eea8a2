@@ -1,0 +1,10 @@
+package com.shop.enums;
+
+public enum Coffee {
+
+	small(200,500.00),medium(300,700.00),large(400,900.00);
+
+	Coffee(int i, double d) {
+		// TODO Auto-generated constructor stub
+	}
+}

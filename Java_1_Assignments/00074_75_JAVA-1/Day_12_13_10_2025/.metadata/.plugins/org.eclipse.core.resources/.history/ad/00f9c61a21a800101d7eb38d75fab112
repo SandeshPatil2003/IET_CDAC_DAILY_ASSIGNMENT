@@ -1,0 +1,122 @@
+package com.shop.dao;
+
+import java.util.*;
+
+import com.shop.beans.Customer;
+import com.shop.beans.Item;
+
+public class ShopDaoImpl implements ShopDao {
+	
+	
+	static Map<Customer,List<Item>> imap;
+	
+	
+	static {
+		
+		
+		imap=new HashMap <>();
+		
+		Customer customer1 = new Customer(1, "Alice","52345232");
+        Customer customer2 = new Customer(2, "Bob","5345252352");
+        Customer customer3 = new Customer(3, "Bran","53454332352");
+        
+        
+        List<Item> items1 = new ArrayList<>(Arrays.asList(new Item(1,"Laptop",42,2232315), new Item(2,"Mouse",22,23135)));
+        List<Item> items2 = new ArrayList<>(Arrays.asList(new Item(1,"PC",42,224315), new Item(2,"Wireless Mouse",12,2735)));
+        List<Item> items3 = new ArrayList<>(Arrays.asList(new Item(1,"Tablet",49,223755), new Item(2,"Keyboard",22,26435)));
+        
+        imap.put(customer1, items1);
+        imap.put(customer2, items2);
+        imap.put(customer3, items3);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	
+
+	
+
+
+	@Override
+	public boolean addNewCustomer(Customer customer, List<Item> ilist) {
+		
+		imap.put(customer, ilist);
+		if(imap.containsKey(customer)){
+		
+		
+		
+		return true;
+	}
+		return false;
+	}
+
+
+
+
+
+
+	@Override
+	public Map<Customer, List<Item>> displayAll() {
+		
+		return imap;
+	}
+
+
+
+
+
+
+	@Override
+	public Map<Customer, List<Item>> findById(int id) {
+		
+		
+		return imap;
+	}
+
+
+
+
+
+
+	@Override
+	public boolean deleteByID(int id) {
+		
+		
+		Set<Customer> keys= imap.keySet();
+		Iterator<Customer> it = keys.iterator();
+		
+		while(it.hasNext())
+		
+//		if(imap.containsKey(keys))
+		
+//		keys.forEach(c->
+//		{
+//			if(c.getCid()==id)
+//		{
+//			imap.remove(c);
+//			
+//		}
+		
+//		});
+		
+		
+		
+		
+		
+		return false;
+	}
+
+
+
+
+
+}

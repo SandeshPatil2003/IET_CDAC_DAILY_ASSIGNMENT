@@ -1,0 +1,16 @@
+package com.shop.beans;
+
+public class Item {
+	
+	private int iid;
+	private String iname;
+	private int qty;
+	private double price;
+	
+	
+	
+	
+	
+	
+
+}
