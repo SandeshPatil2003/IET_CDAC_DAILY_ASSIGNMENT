@@ -1,0 +1,77 @@
+package com.filehandling.service;
+import java.util.List;
+import java.util.Scanner;
+
+import com.filehandling.dao.*;
+import com.filehandling.beans.*;
+public class EmployeeServiceImpl implements EmployeeService {
+
+	EmployeeDao edao = new EmployeeDaoImpl();
+	
+	
+	@Override
+	public boolean addNewEmployee(Scanner sc) {
+		
+		System.out.println("Enter employee id :");
+		int id = sc.nextInt();
+		
+		System.out.println("Enter employee name :");
+		String name = sc.next();
+		
+		System.out.println("Enter employee designation :");
+		String desg = sc.next();
+		System.out.println("Enter employee salary :");
+		double sal = sc.nextDouble();
+		
+		Employee e = new Employee(id,name,desg,sal);
+		
+		return edao.save(e);
+	}
+
+
+	@Override
+	public void readFile(String fname) {
+		edao.readFile(fname);
+		
+	}
+
+
+	@Override
+	public List<Employee> displayAll() {
+	
+		return edao.displayAll();
+	}
+
+
+	@Override
+	public Employee findById(int id) {
+		// TODO Auto-generated method stub
+		return edao.findById(id);
+	}
+
+
+	@Override
+	public boolean modifyById(int id, Scanner sc) {
+		System.out.println("Enter updated name :");
+		String name = sc.next();
+		
+		System.out.println("Enter updated designation");
+		String d = sc.next();
+		
+		
+		System.out.println("Enter updated salary");
+		double sal = sc.nextDouble();
+		
+		return edao.modifyById(id,name,d,sal);
+	}
+
+
+	@Override
+	public boolean deleteById(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+}

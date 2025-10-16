@@ -1,0 +1,11 @@
+package com.multithreading.threads;
+
+import com.multithreading.beans.MyOperationClass;
+
+public class MyPrimeCheckThread extends Thread{
+	
+	private int n;
+	private MyOperationClass ob;
+	
+
+}

@@ -1,0 +1,97 @@
+package com.filehandling.dao;
+
+import com.filehandling.beans.*;
+import java.util.*;
+import java.io.*;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	
+	static List<Employee> elist ;
+	
+	static {
+		elist = new ArrayList<>();
+//		elist.add(new Employee(1,"sandesh","SE",60000.00));
+//		elist.add(new Employee(2,"yash","support",65000.00));
+//		elist.add(new Employee(3,"Rohit","Tester",58000.00));
+//		
+	}
+
+	@Override
+	public boolean save(Employee e) {
+		return elist.add(e);
+		
+	}
+
+	@Override
+	public void readFile(String fname) {
+		File f = new File(fname);
+		
+		if(f.exists()) {
+			
+			try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("emp_data.txt"));) {
+				
+				while(true) {
+					Employee e = (Employee) ois.readObject();
+					elist.add(e);
+				}
+				
+			} catch (FileNotFoundException e) {
+				
+				System.out.println(e.getMessage());
+			} catch (IOException e) {
+				System.out.println(e.getMessage());
+				
+			} catch (ClassNotFoundException e) {
+				System.out.println(e.getMessage());
+			}
+		}
+		System.out.println("size: "+elist.size());
+		
+		
+	}
+
+	@Override
+	public List<Employee> displayAll() {
+		return elist;
+	}
+
+	@Override
+	public Employee findById(int id) {
+		int epos = elist.indexOf(new Employee(id));
+		
+		if(epos!=-1) {
+			return elist.get(epos);
+		}
+		return null;
+	}
+
+	@Override
+	public boolean modifyById(int id, String name, String d, double sal) {
+		// TODO Auto-generated method stub
+		Employee e  = findById(id);
+		if(e!=null) {
+		e.seteName(name);
+		e.setDesg(d);
+		e.setSal(sal);
+		return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean deleteById(int id) {
+		Employee e = findById(id);
+		return elist.remove(e);
+	}
+
+	@Override
+	public void writeToFile(String fname) {
+		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOUtputStream("em_data.txt"))){
+			
+		}
+		
+	}
+
+
+
+}

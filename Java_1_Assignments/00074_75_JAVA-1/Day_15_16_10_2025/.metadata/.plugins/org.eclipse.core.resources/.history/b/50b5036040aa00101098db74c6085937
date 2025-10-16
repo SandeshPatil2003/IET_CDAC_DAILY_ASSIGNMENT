@@ -1,0 +1,78 @@
+package com.filehandling.test;
+import com.filehandling.beans.Employee;
+import com.filehandling.service.*;
+
+import java.util.*;
+
+public class TestFileHandlineMain {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		EmployeeService eservice = new EmployeeServiceImpl();
+		
+		
+		eservice.readFile("emp_data.txt");
+		
+		int choice = 0;
+		do {
+
+			System.out.println("welcome to file handling menu");
+			System.out.println(
+				"1.Add new Employee \n2.Display All \n3.Search by id"
+				+ " \n4.Modify by id \n5.Delete By Id \n6.Exit");
+			System.out.print("\nEnter your choice :");
+			choice = sc.nextInt();
+
+			switch (choice) {
+
+			case 1 -> {
+						boolean status = eservice.addNewEmployee(sc);
+						if(status) {
+							System.out.println("Employee added successfully.");
+						}
+						else {
+							System.out.println("Failed to add Employee");
+						}
+			}
+			case 2 -> {
+					List<Employee> lst = eservice.displayAll();
+					if(lst.size()>0) {
+						lst.forEach(System.out::println);
+					}
+					else {
+						System.out.println("Employee Data Not found");
+					}
+			}
+			case 3 -> {
+					System.out.println("Enter id to search employee :");
+					int id = sc.nextInt();
+					
+					Employee e= eservice.findById(id);
+					
+					if(e!=null) {
+						System.out.println(e);
+					}
+					else {
+						System.out.println("Not found");
+					}
+			}
+			case 4 -> {
+				System.out.println("Enter id to search employee :");
+				int id = sc.nextInt();
+				
+				boolean status = 
+
+			}
+			case 5 -> {
+
+			}
+			case 6 -> {
+
+			}
+			}
+
+		} while (choice !=6);
+		
+	}
+
+}

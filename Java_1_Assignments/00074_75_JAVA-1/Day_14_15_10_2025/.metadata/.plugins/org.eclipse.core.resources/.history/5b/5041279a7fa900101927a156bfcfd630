@@ -1,0 +1,33 @@
+package com.shop.test;
+import java.util.*;
+
+public class TestGuessGame {
+	
+	public static void main(String[] args) {
+		
+		int num = 87;
+		System.out.println("Welcome to guess game");
+		
+		while(true) {
+			try(Scanner sc = new Scanner(System.in);) {
+				System.out.println("Enter your Guess :");
+				int guess = sc.nextInt();
+				
+				if(guess == num) {
+					System.out.println("Congrats you win guess was correct."+num+ "=="+guess);
+				}
+				
+				else if(guess>40 && guess <50) {
+					throw new WrongGuessException("Wrong guess , --Hint-> guess was within +10 range");
+				}
+				else if(guess<num) {
+					throw new WrongGuessException("Wrong guess , guess is less than actual number");
+				}
+				else if(guess>num) {
+					throw new WrongGuessException("Wrong guess , guess is greater than actual number");
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.shop.exceptions;
+
+public class WrongGuessException extends Exception {
+
+}

@@ -1,0 +1,73 @@
+package com.shop.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import com.shop.beans.Customer;
+import com.shop.beans.Item;
+import com.shop.dao.ShopDao;
+import com.shop.dao.ShopDaoImpl;
+
+public class ShopServiceImpl implements ShopService {
+	
+	
+	ShopDao shdao;
+	
+	public ShopServiceImpl() {
+		super();
+		
+		shdao = new ShopDaoImpl();
+	}
+
+	@Override
+	public boolean addNewCustomer() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Customer Id");
+		int id=sc.nextInt();
+		System.out.println("Enter Customer Name");
+		sc.nextLine();
+		String nm=sc.nextLine();
+		System.out.println("Enter Customer Mobile Number");
+		String mob=sc.next();
+		char choice='n';
+		
+		do
+		{
+			System.out.println("Enter Item Id");
+			int iid=sc.nextInt();
+			System.out.println("Enter Item Name");
+			sc.nextLine();
+			String inm=sc.nextLine();
+			System.out.println("Enter Item Quantity");
+			int qty=sc.nextInt();
+			
+			System.out.println("Enter Item Price");
+			double price=sc.nextDouble();
+			
+			System.out.println("Do you want to add another item? y/Y");
+			 choice= sc.next().charAt(0);
+		}
+		while(choice=='y'||choice=='Y');
+		
+		
+		Customer c=new Customer(id,nm,mob);
+		
+		List<Item> ilist= new ArrayList<>();
+		
+		return shdao.addNewCustomer(c,ilist);
+	}
+
+	@Override
+	public Map<Customer, List<Item>> displayAll() {
+		
+		return shdao.displayALL;
+	}
+
+
+	
+
+	
+}

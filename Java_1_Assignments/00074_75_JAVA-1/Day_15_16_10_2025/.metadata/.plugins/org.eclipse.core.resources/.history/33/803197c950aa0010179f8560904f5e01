@@ -1,0 +1,25 @@
+package com.multithreading.threads;
+
+import com.multithreading.beans.MyOperationClass;
+
+public class MyPrimeCheckThread extends Thread{
+	
+	private int n;
+	private MyOperationClass ob;
+	
+	
+	public MyPrimeCheckThread(int n, MyOperationClass ob) {
+		super();
+		this.n = n;
+		this.ob = ob;
+	}
+	
+	public void run() {
+	 boolean status = 	ob.checkIsPrime(n);
+	 if(status)
+	 {
+		 System.out.println("Number");
+	  }
+	}
+
+}

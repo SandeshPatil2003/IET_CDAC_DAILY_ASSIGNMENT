@@ -1,0 +1,11 @@
+package com.multithreading.test;
+
+public class TestMultiThreading {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.shop.dao;
+
+import java.util.List;
+
+import com.shop.beans.Customer;
+import com.shop.beans.Item;
+
+public interface ShopDao {
+
+	
+
+	boolean addNewCustomer(Customer customer, List<Item> ilist);
+
+	
+
+}

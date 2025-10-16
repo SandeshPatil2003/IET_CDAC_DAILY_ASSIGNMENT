@@ -1,0 +1,22 @@
+package com.multithreading.test;
+
+import com.multithreading.beans.*;
+import com.multithreading.threads.*;
+
+public class TestMultiThreading {
+
+	public static void main(String[] args) {
+		
+		MyOperationClass ob = new MyOperationClass();
+		
+		MyFactorialThread fth = new MyFactorialThread(5,ob);
+		
+		fth.start();
+		
+		MyPrimeCheckThread pth = new MyPrimeCheckThread(9, ob);
+		pth.start();
+		
+
+	}
+
+}

@@ -1,0 +1,97 @@
+package com.shop.test;
+import java.util.*;
+import java.util.stream.Collectors;
+public class TestStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<String> lstr = new ArrayList<>();
+		
+		List<String> lstr1 =Arrays.asList("h1llo","dfgd","sdgfdfgrh");
+		
+		//System.out.println(lstr1);
+		List<Integer> ilst = Arrays.asList(12,44,6,2,78,12,90);
+		List<Integer> milst =new ArrayList<>();
+		
+		milst.add(56);
+		milst.add(36);
+		milst.add(16);
+		milst.add(34);
+		milst.add(15);
+		milst.add(11);
+		milst.add(101);
+		
+		lstr.add("Hello");
+		lstr.add("implement");
+		lstr.add("good");
+		lstr.add("thank you");
+		lstr.add("thanks");
+		
+		
+		
+		List<String> lst = lstr.stream().filter(str->str.length()>5).collect(Collectors.toList());
+		System.out.println(lstr);
+		
+		System.out.println("String greater than length 5");
+		
+		System.out.println(lst);
+		
+		List<Integer> lst1 = ilst.stream().filter(e->e>15).collect(Collectors.toList());
+	
+		System.out.println(lst1);
+		
+		
+		Optional <String> lst2 = lstr.stream().reduce((acc,str)->
+		{
+			System.out.println("Acc="+acc);
+			System.out.println("str="+str);
+			if(acc.length()>str.length()) {
+			
+				return acc;
+			
+			}
+			System.out.println("str="+str);
+			return str;
+			
+		} );
+		
+		System.out.println(lst2);
+		
+		
+		System.out.println("Round 2");
+		String lst3 = lstr.stream().reduce("thank you tooo",(acc,str)->
+		{
+		
+			if(acc.length()>str.length()) {
+			
+				return acc;
+			
+			}
+		
+			return str;
+			
+		} );
+		
+		System.out.println(lst3);
+		
+		
+		
+		System.out.println("OG List  :");
+		
+		System.out.println(ilst);
+		
+		
+		System.out.println(".stream.().allMatch()");
+		
+		System.out.println(ilst.stream().allMatch(c->c<100));
+		
+		System.out.println(".stream.().noneMatch()");
+		
+		System.out.println(ilst.stream().allMatch(c->c<100));
+		
+		System.out.println(".stream.().anyMatch()");
+	
+	}
+
+}

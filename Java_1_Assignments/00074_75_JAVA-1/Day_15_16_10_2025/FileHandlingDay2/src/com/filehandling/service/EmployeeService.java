@@ -1,0 +1,24 @@
+package com.filehandling.service;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.filehandling.beans.Employee;
+
+public interface EmployeeService {
+
+	boolean addNewEmployee(Scanner sc);
+
+	void readFile(String fname);
+
+	List<Employee> displayAll();
+
+	Employee findById(int id);
+
+	boolean modifyById(int id, Scanner sc);
+
+	boolean deleteById(int id);
+
+	void writeToFile(String string);
+
+}

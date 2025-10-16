@@ -1,0 +1,8 @@
+package com.multithreading.threads;
+
+public class MyTimesTableThread extends Thread{
+	
+	private int n;
+	private MyOperation
+
+}

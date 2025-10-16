@@ -1,0 +1,25 @@
+package com.filehandling.dao;
+
+import java.util.List;
+
+import com.filehandling.beans.Employee;
+
+public interface EmployeeDao {
+
+	boolean save(Employee e);
+
+	void readFile(String fname);
+
+	List<Employee> displayAll();
+
+	Employee findById(int id);
+
+	boolean modifyById(int id, String name, String d, double sal);
+
+	boolean deleteById(int id);
+
+	void writeToFile(String fname);
+
+	
+
+}

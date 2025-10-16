@@ -1,0 +1,10 @@
+package com.shop.beans;
+
+public class Customer {
+ private int cid;
+ private String cname;
+ private String mobno;
+
+ 
+ 
+}

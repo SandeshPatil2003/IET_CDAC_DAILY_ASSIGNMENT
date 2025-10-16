@@ -1,0 +1,13 @@
+package com.multithreading.threads;
+
+import com.multithreading.beans.MyOperationClass;
+
+public class MyFactorialThread extends Thread{
+
+	public MyFactorialThread(MyOperationClass ob, int i) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

@@ -1,0 +1,6 @@
+package com.multithreading.threads;
+
+public class MyFactorialThread extends Thread{
+	
+
+}

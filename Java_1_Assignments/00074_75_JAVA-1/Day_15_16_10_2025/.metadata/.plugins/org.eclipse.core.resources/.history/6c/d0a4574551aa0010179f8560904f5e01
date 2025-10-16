@@ -1,0 +1,20 @@
+package com.multithreading.threads;
+
+import com.multithreading.beans.MyOperationClass;
+
+public class MyTimesTableThread extends Thread{
+	
+	private int n;
+	private MyOperationClass ob;
+	
+	
+	public MyTimesTableThread(int n, MyOperationClass ob) {
+		super();
+		this.n = n;
+		this.ob = ob;
+	}
+	
+	public void run
+	
+
+}

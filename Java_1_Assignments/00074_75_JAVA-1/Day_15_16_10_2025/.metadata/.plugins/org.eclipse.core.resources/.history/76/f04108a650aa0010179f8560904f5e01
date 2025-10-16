@@ -1,0 +1,9 @@
+package com.multithreading.threads;
+
+public class MyPrimeCheckThread extends Thread{
+	
+	private int n;
+	private MyOperationClass ob;
+	
+
+}

@@ -1,0 +1,41 @@
+package com.shop.test;
+import java.util.*;
+
+import com.shop.exceptions.WrongGuessException;
+
+public class TestGuessGame {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = 45;
+		int guess = 0;
+		System.out.println("Welcome to guess game");
+		int cn
+		
+		while(true) {
+			
+			try {
+				System.out.println("Enter your Guess :");
+				 guess = sc.nextInt();
+				
+				if(guess == num) {
+					System.out.println("Congrats you win guess was correct."+num+ "=="+guess);
+					break;
+				}
+				
+//				else if(guess>40 && guess <50) {
+//					throw new WrongGuessException("Wrong guess , --Hint-> guess was within +10 range");
+//				}
+				else if(guess<num) {
+					throw new WrongGuessException("Wrong guess , guess is less than actual number");
+				}
+				else if(guess>num) {
+					throw new WrongGuessException("Wrong guess , guess is greater than actual number");
+				}
+			}catch(WrongGuessException e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+
+}

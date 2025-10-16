@@ -1,0 +1,11 @@
+package com.multithreading.threads;
+
+import com.multithreading.beans.MyOperationClass;
+
+public class MyFactorialThread extends Thread{
+
+	private int n;
+	private My
+	
+
+}

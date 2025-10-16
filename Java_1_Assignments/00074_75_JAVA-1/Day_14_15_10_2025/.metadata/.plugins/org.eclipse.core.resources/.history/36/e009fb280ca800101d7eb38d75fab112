@@ -1,0 +1,18 @@
+package com.shop.beans;
+
+public class Customer {
+ private int cid;
+ private String cname;
+ private String mobno;
+public Customer() {
+	super();
+}
+public Customer(int cid, String cname, String mobno) {
+	super();
+	this.cid = cid;
+	this.cname = cname;
+	this.mobno = mobno;
+}
+ 
+ 
+}

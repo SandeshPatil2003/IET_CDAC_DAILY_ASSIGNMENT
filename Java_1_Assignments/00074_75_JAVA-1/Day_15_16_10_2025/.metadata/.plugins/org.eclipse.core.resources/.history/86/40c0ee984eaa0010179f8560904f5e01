@@ -1,0 +1,5 @@
+package com.multithreading.threads;
+
+public class MyTimesTableThread {
+
+}

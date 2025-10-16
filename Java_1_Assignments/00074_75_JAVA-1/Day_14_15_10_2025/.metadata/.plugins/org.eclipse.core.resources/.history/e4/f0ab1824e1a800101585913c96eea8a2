@@ -1,0 +1,27 @@
+package com.shop.test;
+
+import java.util.Scanner;
+
+import com.shop.enums.Coffee;
+
+public class TestEnum {
+	
+	public static void main (String[] args)
+	{
+		
+			Scanner sc = new Scanner(System.in);
+		
+		System.out.println(Coffee.small);
+		System.out.println(Coffee.medium);
+		System.out.println(Coffee.large);
+		System.out.println("Enter what size coffee you want");
+		
+		String choice=sc.next();
+		
+		choice.getV
+		System.out.println(Coffee.choice);
+		
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.multithreading.beans;
+
+public class MyOperationClass {
+	
+	public int factorial(int n)
+}

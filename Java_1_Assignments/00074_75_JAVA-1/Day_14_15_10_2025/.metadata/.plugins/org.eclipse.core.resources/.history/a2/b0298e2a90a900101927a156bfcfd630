@@ -1,0 +1,62 @@
+package com.shop.test;
+import java.io.*;
+import java.util.*;
+import java.nio.*;
+import java.nio.charset.StandardCharsets;
+
+public class TestFileHandlingMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	try {
+		
+		FileOutputStream fos = new FileOutputStream("data.txt",true);
+		
+		System.out.println("Enter data to write in file");
+		String data = sc.nextLine();                     
+		
+		byte[] dataBytes = data.getBytes();
+		
+		String newstr = new String(dataBytes, StandardCharsets.UTF_8);
+		fos.write(dataBytes);
+		
+		
+		
+		FileOutputStream fos1 = new FileOutputStream("data1.txt");
+		
+        System.out.println("Successfully wrote data to user_data.txt");
+
+        
+		FileInputStream fis = new FileInputStream("data.txt");
+		byte b[] = new byte [1000];
+		
+		 b[0] = (byte)fis.read();
+		int i=0;
+		int len = b.length;
+		while(b[i]!=-1 ) {
+			
+			fos1.write(b[i]);
+			if(!b)
+			b[i+1] = (byte)fis.read();
+			++i;
+			
+		}
+		
+		System.out.println(len);
+		b[len-1]=65;
+		String newstr1 = new String(b, StandardCharsets.UTF_8);
+		System.out.println("Data from file is :"+newstr1);
+		System.out.println(b[10]);
+		
+		
+		
+		
+	}catch(Exception e) {
+		
+	}
+		
+
+	}
+
+}

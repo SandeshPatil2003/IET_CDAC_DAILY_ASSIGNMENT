@@ -1,0 +1,17 @@
+package com.shop.test;
+
+public class TestExceptionHandling {
+
+	public static void main(String[] args) {
+		
+		
+		try(Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter salary :");
+			double sal = sc.nextDOuble();
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

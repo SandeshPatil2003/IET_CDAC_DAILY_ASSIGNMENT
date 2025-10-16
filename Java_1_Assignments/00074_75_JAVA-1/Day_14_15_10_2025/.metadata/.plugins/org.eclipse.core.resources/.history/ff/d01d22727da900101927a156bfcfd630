@@ -1,0 +1,16 @@
+package com.shop.test;
+
+public class TestExceptionHandling {
+
+	public static void main(String[] args) {
+		
+		try {
+			System.out.println("Enter salary :");
+			
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

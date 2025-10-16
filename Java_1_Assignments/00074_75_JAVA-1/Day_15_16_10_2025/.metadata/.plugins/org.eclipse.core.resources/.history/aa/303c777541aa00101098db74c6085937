@@ -1,0 +1,52 @@
+package com.filehandling.beans;
+
+import java.util.Objects;
+
+public class Employee {
+	private int eId;
+	private String eName;
+	private String desg;
+	private double sal;
+	
+	
+	
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(eId);
+//	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		Employee other = (Employee) obj;
+		return this.eId == other.eId;
+	}
+
+
+	public Employee() {
+		super();
+	}
+	
+	
+	public Employee(int eId) {
+		super();
+		this.eId = eId;
+	}
+
+
+	public Employee(int eId, String eName, String desg, double sal) {
+		super();
+		this.eId = eId;
+		this.eName = eName;
+		this.desg = desg;
+		this.sal = sal;
+	}
+	@Override
+	public String toString() {
+		return "Employee [eId=" + eId + ", eName=" + eName + ", desg=" + desg + ", sal=" + sal + "]";
+	}
+	
+	
+	
+
+}

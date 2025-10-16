@@ -1,0 +1,23 @@
+package com.shop.test;
+import java.util.*;
+
+import com.shop.exceptions.NegativeSalaryException;
+public class TestExceptionHandling {
+
+	public static void main(String[] args) {
+		
+		
+		try(Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter salary :");
+			double sal = sc.nextDouble();
+			
+			if(sal<0) {
+				throw new NegativeSalaryException("salary cannot be negative.");
+			}
+			
+		}catch( e) {
+			System.out.println(e);
+		}
+	}
+
+}

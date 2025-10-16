@@ -1,0 +1,5 @@
+package com.filehandling.dao;
+
+public interface EmployeeDao {
+
+}

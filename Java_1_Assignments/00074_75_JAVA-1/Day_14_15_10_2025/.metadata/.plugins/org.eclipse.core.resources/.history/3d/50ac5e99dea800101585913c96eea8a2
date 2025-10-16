@@ -1,0 +1,23 @@
+package com.shop.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.shop.beans.Customer;
+import com.shop.beans.Item;
+
+public interface ShopDao {
+
+	
+
+	boolean addNewCustomer(Customer customer, List<Item> ilist);
+
+	Map<Customer, List<Item>> displayAll();
+
+	Map<Customer, List<Item>> findById(int id);
+
+	boolean deleteByID(int id);
+
+	
+
+}

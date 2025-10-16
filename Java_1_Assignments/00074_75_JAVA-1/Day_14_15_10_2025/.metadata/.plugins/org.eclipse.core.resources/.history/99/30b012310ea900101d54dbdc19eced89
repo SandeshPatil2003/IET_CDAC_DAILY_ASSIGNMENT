@@ -1,0 +1,85 @@
+package com.shop.test;
+
+
+import java.util.*;
+
+import com.shop.enums.Gender;
+
+public class TestDemo {
+	
+	
+
+	public static void main(String[] args) {
+		List<Integer> lst = new ArrayList<>();
+		lst.add(20);
+		lst.add(6);
+		lst.add(50);
+		lst.add(2);
+		lst.add(260);
+		
+		
+		lst.stream().map(c->{c>200);
+		
+	}
+//		
+//		List<Integer> lst=Arrays.asList(12,53,35,75,53,97,24,54);
+//		
+//		TreeSet<Integer> cset =new TreeSet<>();
+//		
+//		for(int i=0;i<10;i++)
+//		{
+//			cset.add(20+i);
+//			cset.add(15-i);
+//		}
+//		
+//		System.out.println(cset);
+//		
+//		System.out.println(cset.headSet(15));
+//		
+//		for(int i=0;i<10;i++)
+//		{
+//			
+//			cset.add(15-2*(i));
+//		}
+//		System.out.println(cset);
+//		
+//		System.out.println(cset.headSet(15));
+//		System.out.println(cset.tailSet(15));
+//		
+//		
+//		System.out.println("og"+lst);
+//		Collections.shuffle(lst);
+//		System.out.println("shuffle"+lst);
+//		Collections.sort(lst);
+//		System.out.println("sorted"+lst);
+//		System.out.println("max"+Collections.max(lst));
+//		System.out.println("min"+Collections.min(lst));
+//		
+//		
+//		Queue <Integer> que = new PriorityQueue<>();
+//		
+//		que.add(45);
+//		que.add(34);
+//		que.add(34);
+//		que.add(50);
+//		
+//		
+//		System.out.println("que"+que);
+//		System.out.println("que peek"+que.peek());
+//		System.out.println("que"+que);
+//		System.out.println("que poll"+que.poll());
+//		System.out.println("que"+que);
+//		
+//		System.out.println(que);
+////		System.out.println("que poll"+que.poll());
+////		System.out.println("que poll"+que.poll());
+////		System.out.println("que poll"+que.poll());
+////		System.out.println("que poll"+que.poll());
+//		
+//	    que.remove(50);
+//		System.out.println(que);
+//		
+//		cset.stream().filter(c-> c>11).forEach(System.out::println);
+//	}
+
+}
