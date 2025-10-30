@@ -1,0 +1,16 @@
+package com.search.test;
+
+import com.search.service.*;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		SearchService ob = new SearchService();
+		
+
+	}
+
+}

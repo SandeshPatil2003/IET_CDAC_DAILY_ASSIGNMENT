@@ -1,0 +1,63 @@
+package com.arrays.test;
+
+import java.util.Arrays;
+
+import com.arrays.beans.*;
+
+public class TestArray {
+
+	public static void main(String[] args) {
+		
+		MyArray o= new MyArray();
+		
+//		o.accept();
+		o.add(4);
+		o.add(5);
+		o.add(12);
+		o.add(18);
+		o.add(3);
+		
+		o.add(9);
+		System.out.println(o);
+		
+		o.deleteByPos(3);
+		System.out.println("o.deleteByPos(3): "+o);
+		o.add(17);
+		System.out.println("o.add(17): "+o);
+		o.deleteByVal(17);
+		System.out.println("o.deleteByVal(17): "+o);
+		
+		o.add(3,270);
+		System.out.println("o.add(3,270): "+o);
+		
+		
+		
+		System.out.println("o.search(3) pos : "+o.search(3));
+		
+		o.rotate(true, 2);
+		
+		System.out.println("o.rotate(true, 2): "+o);
+		
+		
+		o.rotate(false, 2);
+		
+		System.out.println("o.rotate(false, 2): "+o);
+		
+		
+		
+		System.out.println("o.reverse(true): "+Arrays.toString(o.reverse(true)));
+		
+		
+		
+		System.out.println("o.reverse(false): "+Arrays.toString(o.reverse(false)));
+		
+		
+		
+		
+		
+		
+
+
+	}
+
+}

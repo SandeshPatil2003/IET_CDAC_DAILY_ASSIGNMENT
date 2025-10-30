@@ -1,0 +1,51 @@
+package com.arrays.beans;
+
+public class My2DArray {
+	
+	
+	private int [][] arr;
+	
+	
+
+	public int[][] getArr() {
+		return arr;
+	}
+
+	public void setArr(int[][] arr) {
+		this.arr = arr;
+	}
+
+	public My2DArray(int[][] arr) {
+		super();
+		this.arr = arr;
+	}
+	
+	public My2DArray() {
+		super();
+		
+		
+		arr = new int [3][3];
+	}
+	
+	public void accept()
+	{
+		
+		 System.out.println("Enter matrix elements for : "+arr.length+"x"+arr[0].length);
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr[0].length;j++)
+			{
+				
+				arr[i][j]=sc.
+				
+			
+			}
+			
+		}
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,290 @@
+package com.arrays.beans;
+
+import java .util.*;
+
+public class MyArray {
+	
+	private int [] arr;
+	private int count;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public MyArray() {
+		super();
+		
+		arr = new int [10];
+		count=0;
+	}
+	
+	public MyArray(int size) {
+		super();
+		
+		arr = new int [size];
+		count=0;
+	}
+	
+	public MyArray(int[] arr, int count) {
+		super();
+		
+		this.arr = arr;
+		this.count=count;
+	}
+	
+	
+	
+	
+	
+	public int[] getArr() {
+		return arr;
+	}
+	public void setArr(int[] arr) {
+		this.arr = arr;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
+	public int getCapacity() {
+		return arr.length;
+	}
+	
+	
+	
+	public void accept()
+	{
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter how many elements you want");
+		int n=sc.nextInt();
+		
+		System.out.println("Enter "+n+"elements");
+		
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+			count++;
+		}
+	}
+	
+	
+	public boolean add(int x )
+	{
+		if(count<getCapacity())
+			{arr[count]=x;
+			count++;
+		
+		return true;}
+		
+		else { return false;}
+		
+	}
+	
+	public boolean add(int pos,int val)
+	{
+		if(pos==count)
+		{
+			
+			
+			return add(val);
+		}
+		
+		else if(pos<count)
+		{
+			
+			
+			
+			
+			for(int i =count;i>pos;i--)
+			{
+				arr[i]=arr[i-1];
+			}
+			
+			arr[pos]=val;
+			count++;
+			
+			return true;
+		}
+		
+		return false;
+	}
+	
+	
+	public boolean deleteByPos(int pos)
+	{
+		
+		if(pos<count)
+		{
+		for(int i =pos;i<count;i++)
+		{
+			arr[i]=arr[i+1];
+		}
+		count--;
+		
+		return true;}
+		
+		return false;
+	}
+	
+	
+	public int search(int val)
+	{
+		for(int i =0;i<count;i++)
+		{
+			if(arr[i]==val)return i;
+		}
+		return -1;
+	}
+	
+	public boolean deleteByVal(int val)
+	{
+		int pos=search(val);
+		
+		if(pos!=-1)
+		{
+			return deleteByPos(pos);
+		}
+		
+		return false;
+	}
+	
+	public void rotate(boolean flag,int num)
+	{
+		if(flag)
+		{
+			for(int i=0;i<num;i++)
+			{
+				int temp = arr[count-1];
+			
+				
+				for(int j=count-1;j>0;j--)
+				{
+					
+					arr[j]=arr[j-1];
+				}
+				
+				arr[0]=temp;
+			}
+		}
+		
+		else
+		{
+			for(int i=0;i<num;i++)
+			{
+				int temp = arr[0];
+			
+				
+				for(int j=0;j<count-1;j++)
+				{
+					
+					arr[j]=arr[j+1];
+				}
+				
+				arr[count-1]=temp;
+			}
+			
+		}
+	}
+	
+	
+	public int[] reverse(boolean flag)
+	{
+		if(flag)
+		{
+			for(int i=0,j=count-1;i<count/2;i++,j--)
+			{
+				int temp =arr[i];
+				arr[i]=arr[j];
+				arr[j]= temp;
+			}
+			
+			return arr;
+		}
+		
+		else {
+			int [] temp = new int [count];
+			
+			for(int i=0,j=count-1;i<count;i++,j--)
+			{
+				temp[j]=arr[i];
+			}
+			
+			return temp;
+		}
+	}
+
+	
+	
+	
+	public int max()
+	{
+		int max=arr[0];
+		
+		for(int i =0;i<count;i++)
+		{
+			if(arr[i]>max)max=arr[i];
+		}
+		
+		return max;
+	}
+	
+	
+	public int[] indexEx()
+	{
+		int size = max();
+		
+		int[] temp = new int [size+1];
+		
+		for(int i=count;i<size+1;i++)
+		{
+			temp[i]=-1;
+		}
+		
+		for(int i=0;i<count;i++)
+		{
+			
+			
+			int x = arr[i];
+			
+			if(temp[i]>0)
+			temp[i]=-1;
+			
+			
+			if(arr[i]==3)
+				System.out.println("i = "+i+x);
+			temp[x] = i;
+			if(arr[i]==3)
+			System.out.println("temp = "+temp[x]);
+			
+			
+		}
+		return temp;
+	}
+
+	@Override
+	public String toString() {
+		return "MyArray [arr=" + Arrays.toString(arr) + ", count=" + count + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

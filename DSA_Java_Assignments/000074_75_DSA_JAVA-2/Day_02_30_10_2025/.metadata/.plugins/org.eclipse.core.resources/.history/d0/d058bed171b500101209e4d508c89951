@@ -1,0 +1,32 @@
+package com.search.test;
+
+import com.search.service.*;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		SearchService ob = new SearchService();
+		
+		int [] arr = { 1, 3 ,4, 7 , 23 ,64 ,221};
+		
+		ob.seq(arr, );
+		System.out.println(" ob.seq(arr, 7) found at index :"+ob.seq(arr, 7));
+		
+		ob.bin(arr, 7);
+		
+		System.out.println(" ob.bin(arr, 7) found at index :"+ob.bin(arr, 7));
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.search.service;
+
+public class SearchService {
+
+	
+	
+	public int seq(int[] arr, int val)
+	{
+		if()
+		
+		return -1;
+	}
+}
