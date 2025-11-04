@@ -1,0 +1,12 @@
+package com.list.test;
+
+public class TestList {
+
+	public static void main(String[] args) {
+		
+		
+		SinglyLinkedList list = new Singly
+
+	}
+
+}

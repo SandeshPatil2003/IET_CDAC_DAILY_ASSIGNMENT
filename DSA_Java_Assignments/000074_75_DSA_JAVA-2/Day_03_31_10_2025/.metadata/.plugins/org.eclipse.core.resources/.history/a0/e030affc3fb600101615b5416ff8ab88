@@ -1,0 +1,178 @@
+package com.sort.service;
+
+public class SortService {
+	
+	
+	public void bubble(int arr[])
+	{
+		int n=arr.length;
+		
+		int cnt=0;
+		
+		
+		for(;0<n;n--)
+		{
+			for(int i=0;i<n-1;i++)
+			{ cnt++;
+				if(arr[i]>arr[i+1])
+				{
+					int temp=arr[i];
+					arr[i]=arr[i+1];
+					arr[i+1]=temp;
+					
+				}
+			}
+		}
+		
+		System.out.println("iterations n :"+cnt);
+		
+	}
+	
+	
+	
+	
+	public void bubbleI(int arr[])
+	{
+		int n=arr.length;
+		int cnt=0;
+		
+		for(;0<n;n--)
+		{ boolean flag=false;
+			for(int i=0;i<n-1;i++)
+			{cnt++;
+				if(arr[i]>arr[i+1])
+				{
+					int temp=arr[i];
+					arr[i]=arr[i+1];
+					arr[i+1]=temp;
+					flag=true;
+					
+				}
+			}
+			
+			if(!flag)
+				break;
+		}
+		
+		System.out.println("iterations i :"+cnt);
+		
+	}
+	
+	
+	public void quick(int arr[],int low, int high)
+	{
+		if(low>=high)
+		{return;
+		
+		}
+		
+		
+		int p =low;
+		int pivot=arr[p];
+		
+		while(low<=high) {
+		
+		while(arr[low]<pivot) {
+			low++;}
+		
+		while(arr[high]>pivot) {
+			high--;}
+		
+		if(arr[low]>pivot && arr[high]<pivot)
+		{
+			int temp = arr[low];
+			arr[low]=arr[high];
+			arr[high]=temp;
+			low++;
+			high--;
+		}
+		
+		}
+		
+		if(low>high)
+		{
+			int temp = arr[p];
+			arr[p]=arr[high];
+			arr[high]=temp;
+			
+			
+			
+		
+		
+		quick(arr, p+1, high);
+		quick(arr, low,  p-1);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	public void quicka(int arr[],int low, int high)
+	{
+	
+	 if (low >= high) {
+	        return;
+	    }
+
+	    int p = low;
+	    int pivot = arr[low];
+	    int i = low;
+	    int j = high;
+
+	    // 2. Corrected main partitioning loop
+	    while (i <= j) {
+	        // Find element on the left that needs to be swapped
+	        while (arr[i] < pivot) {
+	            i++;
+	        }
+	        
+	        // Find element on the right that needs to be swapped
+	        while (arr[j] > pivot) {
+	            j--;
+	        }
+
+	        // Swap out-of-place elements and move pointers
+	        if (i <= j) {
+	            int temp = arr[i];
+	            arr[i] = arr[j];
+	            arr[j] = temp;
+	            i++;
+	            j--;
+	        }
+	    }
+
+	    // 3. Final placement of pivot and recursive calls
+	    // The previous code had incorrect and misplaced logic for this.
+	    // The correct recursive calls are made after the partitioning loop is complete.
+	    if (low < j) {
+	        quicka(arr, low, j);
+	    }
+	    if (i < high) {
+	        quicka(arr, i, high);
+	    }
+	    
+	    
+	    
+	    public void display(int n)
+	    {
+	    	if(n==0)
+	    }
+	    
+}
+	
+	
+	
+
+}
+
+
+
+

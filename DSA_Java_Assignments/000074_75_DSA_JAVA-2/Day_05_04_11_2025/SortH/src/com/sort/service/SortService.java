@@ -1,0 +1,117 @@
+package com.sort.service;
+
+public class SortService {
+	
+	
+	
+	public void heapSortAsc(int arr[])
+	{
+		
+		for(int i =(arr.length/2)-1;i>=0;i--)
+		{
+			heapifyAsc(arr,arr.length,i);
+		}
+		
+		int n=arr.length;
+		
+		
+		for(int i= n-1;i>=0;i--)
+		{
+				int temp = arr[0];
+				arr[0]=arr[i];
+				arr[i]=temp;
+				
+			heapifyAsc(arr,i,0);
+		}
+		
+	}
+
+	private void heapifyAsc(int[] arr, int length, int i) {
+		
+		int largest=i;
+		int leftChild= 2*i+1;
+		int rightChild= 2*i+2;
+		
+		
+		if(leftChild<length && arr[leftChild]>arr[largest])
+		{
+			largest=leftChild;
+		}
+		
+		if(rightChild<length && arr[rightChild]>arr[largest])
+		{
+			largest=rightChild;
+		}
+		
+		if(largest!=i)
+		{
+			int temp = arr[i];
+			arr[i]=arr[largest];
+			arr[largest]=temp;
+			
+			
+			heapifyAsc(arr,length,largest);
+		}
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	public void heapSortDesc(int arr[])
+	{
+		
+		for(int i =(arr.length/2)-1;i>=0;i--)
+		{
+			heapifyDesc(arr,arr.length,i);
+		}
+		
+		int n=arr.length;
+		
+		
+		for(int i= n-1;i>=0;i--)
+		{
+				int temp = arr[0];
+				arr[0]=arr[i];
+				arr[i]=temp;
+				
+			heapifyDesc(arr,i,0);
+		}
+		
+	}
+
+	private void heapifyDesc(int[] arr, int length, int i) {
+		
+		int largest=i;
+		int leftChild= 2*i+1;
+		int rightChild= 2*i+2;
+		
+		
+		if(leftChild<length && arr[leftChild]<arr[largest])
+		{
+			largest=leftChild;
+		}
+		
+		if(rightChild<length && arr[rightChild]<arr[largest])
+		{
+			largest=rightChild;
+		}
+		
+		if(largest!=i)
+		{
+			int temp = arr[i];
+			arr[i]=arr[largest];
+			arr[largest]=temp;
+			
+			
+			heapifyDesc(arr,length,largest);
+		}
+		
+		
+	}
+}

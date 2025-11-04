@@ -1,0 +1,13 @@
+package com.list.test;
+import com.list.beans.*;
+public class TestList {
+
+	public static void main(String[] args) {
+		
+		
+		SinglyLinkedList list = new SinglyLinkedList();
+		
+
+	}
+
+}

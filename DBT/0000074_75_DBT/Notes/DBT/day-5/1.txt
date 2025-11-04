@@ -1,0 +1,18 @@
+SELECT CONCAT(
+    IFNULL(empno, 'N/A'), ',', 
+    IFNULL(ename, 'N/A'), ',', 
+    IFNULL(gender, 'N/A'), ',', 
+    IFNULL(job, 'N/A'), ',', 
+    IFNULL(mgr, 'N/A'), ',', 
+    IFNULL(hiredate, 'N/A'), ',', 
+    IFNULL(sal, 'N/A'), ',', 
+    IFNULL(comm, 'N/A'), ',', 
+    IFNULL(deptno, 'N/A'), ',', 
+    IFNULL(bonusid, 'N/A'), ',', 
+    IFNULL(`user name`, 'N/A'), ',', 
+    IFNULL(pwd, 'N/A'), ',', 
+    IFNULL(phone, 'N/A'), ',', 
+    IFNULL(isactive, 'N/A')
+) AS 'Employee Details'
+, sal*3-sal as `NewSalary - OldSalary`
+FROM emp;

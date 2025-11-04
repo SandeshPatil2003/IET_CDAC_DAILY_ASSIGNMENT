@@ -1,0 +1,32 @@
+package com.sort.test;
+import java.util.Arrays;
+
+import com.sort.service.*;
+
+public class SortTest {
+
+	public static void main(String[] args) {
+		
+		
+		int arr[]= {2,425,523,65,3,262,4};
+		
+		
+		SortService s = new SortService();
+		
+//		s.quickSort(arr, 0, arr.length-1);
+//		
+//		System.out.println( Arrays.toString(arr));
+		
+		
+		
+		s.quickSort(arr, 0, arr.length-1);
+		
+		System.out.println( Arrays.toString(arr));
+		
+		
+		
+		
+
+	}
+
+}

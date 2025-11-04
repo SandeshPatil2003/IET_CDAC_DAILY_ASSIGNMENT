@@ -1,0 +1,14 @@
+package com.sort.service;
+
+public class SortService {
+	
+	
+	
+	public void heapSort(int arr[])
+	{
+		
+		for(int i =arr.length/2)
+		
+	}
+
+}

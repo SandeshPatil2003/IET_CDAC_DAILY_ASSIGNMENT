@@ -1,0 +1,64 @@
+package com.list.beans;
+
+public class SinglyLinkedList {
+	
+	
+	
+	Node head;
+	
+	
+	
+	public SinglyLinkedList() {
+	super();
+	this.head = null;
+}
+
+
+
+public class Node{
+		
+		int data;
+		Node next;
+		
+		
+		public Node() {
+			super();
+		}
+
+
+//		public Node() {
+//			super();
+//			this.data = data;
+//			this.next = null;
+//		}
+		
+		
+		public Node(int data) {
+			super();
+			this.data = data;
+			this.next = null;
+		}
+		
+		
+		
+		
+		
+	}
+
+
+	public void addNode(int data)
+{
+	if(head==null)
+	
+	
+	
+	
+	
+}
+
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,28 @@
+package com.list.beans;
+
+public class SinglyLinkedList {
+
+	
+	
+	
+	class Node{
+		
+		int data;
+		Node next;
+		
+		
+		public Node() {
+			super();
+			this.data = data;
+			this.next = null;
+		}
+		
+		
+		public Node(int data) {
+			super();
+			this.data = data;
+			this.next = null;
+		}
+		
+	}
+}

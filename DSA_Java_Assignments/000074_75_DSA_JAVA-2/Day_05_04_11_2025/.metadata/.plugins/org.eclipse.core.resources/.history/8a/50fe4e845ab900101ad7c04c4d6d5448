@@ -1,0 +1,27 @@
+package com.sort.test;
+
+import com.sort.service.*;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		int [] arr= {3423,2342,6346,342,64,324,4,442};
+		
+		SortService s = new SortService();
+		
+		
+		heapify.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

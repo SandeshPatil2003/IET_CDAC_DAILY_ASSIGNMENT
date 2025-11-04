@@ -1,0 +1,35 @@
+package com.sort.test;
+
+import java.util.Arrays;
+
+import com.sort.service.*;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		int [] arr= {3423,2342,6346,342,64,324,4,442};
+		
+		SortService s = new SortService();
+		
+		
+//		s.heapSortAsc(arr);
+//		
+//		System.out.println(Arrays.toString(arr));
+		
+		s.heapSortDesc(arr);
+//		
+//		System.out.println(Arrays.toString(arr));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

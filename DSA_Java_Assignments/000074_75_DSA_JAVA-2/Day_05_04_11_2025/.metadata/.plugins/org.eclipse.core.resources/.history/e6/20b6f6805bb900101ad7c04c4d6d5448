@@ -1,0 +1,13 @@
+package com.list.beans;
+
+public class SinglyLinkedList {
+
+	
+	
+	
+	class Node{
+		
+		
+		
+	}
+}
