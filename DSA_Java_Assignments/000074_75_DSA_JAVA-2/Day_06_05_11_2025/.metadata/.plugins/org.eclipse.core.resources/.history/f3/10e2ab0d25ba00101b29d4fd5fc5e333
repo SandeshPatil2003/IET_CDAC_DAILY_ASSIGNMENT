@@ -1,0 +1,31 @@
+package com.list.beans;
+
+public class DoublyLinkedList {
+	
+	Node head;
+	
+	
+	class Node{
+		
+		int data;
+		Node next;
+		Node prev;
+		
+		
+		public Node()
+		{
+			head=
+		}
+		public Node(int data) {
+			super();
+			this.data = data;
+			this.next = null;
+			this.prev = null;
+		}
+		
+		
+		
+		
+	}
+
+}

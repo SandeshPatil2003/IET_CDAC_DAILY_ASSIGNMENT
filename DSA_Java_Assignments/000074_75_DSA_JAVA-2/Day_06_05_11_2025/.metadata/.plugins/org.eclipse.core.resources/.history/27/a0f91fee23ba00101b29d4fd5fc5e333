@@ -1,0 +1,269 @@
+package com.list.beans;
+
+public class SinglyLinkedList {
+	
+	
+	
+	Node head;
+	
+	
+	
+	public SinglyLinkedList() {
+	super();
+	this.head = null;
+	}
+
+
+
+public class Node{
+		
+		int data;
+		Node next;
+		
+		
+		public Node() {
+			super();
+		}
+
+
+//		public Node() {
+//			super();
+//			this.data = data;
+//			this.next = null;
+//		}
+		
+		
+		public Node(int data) {
+			super();
+			this.data = data;
+			this.next = null;
+		}
+		
+		
+		
+		
+		
+	}
+
+
+	public void addNode(int data)
+{
+		Node newNode =  new Node(data);
+		
+	if(head==null)
+	{
+		
+		head = newNode;
+	}
+	
+	else {
+		
+		Node temp = head;
+		
+		while(temp.next!=null)
+		{
+			temp=temp.next;
+		}
+		
+		temp.next=newNode;
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+}
+
+	
+	public void display()
+	{
+		if(head==null)
+		{
+			System.out.println("List is Empty!");
+		}
+		
+		else {
+			
+			for(Node temp=head;temp!=null;temp=temp.next) {
+				
+				if(temp.next!=null)
+				System.out.print(temp.data+"--->");
+				
+				else
+					System.out.print(temp.data);
+			}
+			
+			System.out.println();
+			
+		}
+	}
+	
+	
+	public void addbyPos(int pos,int data)
+	{
+		Node newNode =  new Node(data);
+		
+		if(pos ==1)
+		{
+			newNode.next=head;
+			head = newNode;
+		}
+		else {
+			Node temp=head;
+			for(int i=0;temp!=null && i<pos-2;i++) {
+				
+				temp=temp.next;
+			}
+			
+			newNode.next=temp.next;
+			temp.next=newNode;
+			
+			
+		}
+		
+	}
+	
+	
+	public void addByVal(int val,int data)
+	{
+		Node newNode = new Node(data);
+		
+		if(head ==null)
+		{
+			
+			head = newNode;
+		}
+		else
+		{
+			Node temp = head;
+			
+			
+//			for(temp=head;temp.data!=val;temp=temp.next)
+//			{	
+//				
+//			}
+			
+			while(temp.data!=val && temp.next!=null) {
+	
+
+				temp=temp.next;
+			}
+			
+
+			
+			
+			if(temp.data == val) {
+				newNode.next=temp.next;
+				temp.next=newNode;
+			}
+			else {
+				System.out.println("Value no found");
+			}
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	public void deleteByVal(int val)
+	{
+		Node temp=head;
+		
+		if(head.data==val)
+		{
+			
+			head=temp.next;
+			temp.next=null;
+			
+			
+		}
+		
+		else {
+			
+			Node prev = null;
+			
+			while(temp!=null && temp.data!=val)
+			{
+				prev=temp;
+				temp=temp.next;
+				
+				
+			}
+			
+			if(temp!=null)
+			{
+				
+				prev.next=temp.next;
+				temp.next=null;
+				
+				
+				
+				
+			}
+			else {
+				System.out.println("Value not found!");
+			}
+			
+		}
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+	}
+	
+	public void deleteByPos(int pos)
+	{
+		Node temp=head;
+		
+		if(pos==1)
+		{
+			head=temp.next;
+			
+			temp.next=null;
+			
+			
+		}
+		else {
+			
+			
+			for(int i=0;temp!=null&&i<pos-1;i++)
+			
+			
+			
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,78 @@
+package com.list.beans;
+
+public class DoublyLinkedList {
+	
+	Node head;
+	
+	
+	
+	
+	
+	public DoublyLinkedList() {
+		super();
+		this.head = null;
+	}
+
+
+
+
+
+	class Node{
+		
+		int data;
+		Node next;
+		Node prev;
+		
+		
+		public Node()
+		{
+			
+		}
+		public Node(int data) {
+			super();
+			this.data = data;
+			this.next = null;
+			this.prev = null;
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	public void addNode(int data)
+	{
+		Node newNode = new Node(data);
+		
+		Node temp = head;
+		
+		if(head==null)
+		{
+			head=newNode;
+				
+			
+		}
+		else {
+			
+		while(temp!=null)
+		{
+			
+			
+			
+			
+			
+		}
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+
+}

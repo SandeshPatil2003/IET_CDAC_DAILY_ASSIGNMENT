@@ -1,0 +1,15 @@
+package com.list.beans;
+
+public class DoublyLinkedList {
+	
+	Node head;
+	
+	
+	class Node{
+		
+		
+		
+		
+	}
+
+}

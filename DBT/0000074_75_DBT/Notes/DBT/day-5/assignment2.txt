@@ -1,0 +1,62 @@
+assignment -2 dbt
+
+
+1.
+
+select ename,job,hiredate from emp where hiredate between '1981-02-01' and '1981-05-01' ;
+
+
+2.
+
+select ename as Employee , hiredate as HireDate from emp where year(hiredate)=1982;
+
+3.
+
+select curdate() as 'Current Date';
+
+
+4.
+
+select ename as 'Employee's Name', hiredate as 'Hiredate',sal as 'Salary', adddate(adddate(hiredate, interval 6 month),interval 6 day) as 'Review Date' from emp;
+
+select ename as `Employee's Name`, hiredate as 'Hiredate',sal as 'Salary', adddate(adddate(hiredate, interval 6 month),interval 6 day) as 'Review Date' from emp;
+
+4-5 skipped as told
+
+6.
+
+
+select ename as Name, lpad(sal,15,'$') as Salary  from emp;
+
+7.
+
+
+select ename as Name, hiredate as Hiredate , dayname(hiredate) from emp order by weekday(hiredate);
+
+
+
+8.
+
+
+
+select * from ord where year(orderdate)=1986;
+
+
+
+9.
+
+select dayname(now());
+
+
+10.
+
+skip
+
+
+
+11.
+
+select orderdate , shipdate from ord;
+
+
+

@@ -1,0 +1,54 @@
+package com.list.test;
+import java.util.Arrays;
+
+import com.list.beans.*;
+public class TestList {
+
+	public static void main(String[] args) {
+		
+		
+		SinglyLinkedList list = new SinglyLinkedList();
+		
+//		
+//		list.addNode(10);
+//		list.addNode(56);
+//		list.addNode(133);
+		
+//		list.addNode(2);
+//		
+		list.display();
+		
+		list.addByVal(0, 24);
+		
+		list.display();
+		list.addNode(45);
+		list.addByVal(24, 100);
+		
+		list.display();
+		
+//		String s= "hello";
+//		
+//		String s1="ehllo";
+//		
+//		s.charAt(0);
+//		char []c=s.toCharArray();
+//		char [] c1=s1.toCharArray();
+//		
+//		Arrays.sort(c);
+//		Arrays.sort(c);
+//		
+//		
+//		
+//		if(Arrays.equals(c, c1))
+//			System.out.println("is anagram");
+		
+		
+//		list.deleteByPos(24);
+//		list.display();
+//		
+		
+		
+
+	}
+
+}
