@@ -1,0 +1,100 @@
+package com.list.test;
+import java.util.Arrays;
+
+import com.list.beans.*;
+public class TestList {
+
+	public static void main(String[] args) {
+		
+		
+		SinglyLinkedList list = new SinglyLinkedList();
+		
+		DoublyLinkedList list1= new DoublyLinkedList();
+		
+		CircularLinkedList clist = new CircularLinkedList();
+		
+//		
+//		list.addNode(10);
+//		list.addNode(56);
+//		list.addNode(133);
+		
+//		list.addNode(2);
+//		
+//		list.display();
+//		
+//		list.addByVal(0, 24);
+//		
+//		list.display();
+//		list.addNode(45);
+//		list.addByVal(24, 100);
+//		
+//		list.display();
+		
+//		String s= "hello";
+//		
+//		String s1="ehllo";
+//		
+//		s.charAt(0);
+//		char []c=s.toCharArray();
+//		char [] c1=s1.toCharArray();
+//		
+//		Arrays.sort(c);
+//		Arrays.sort(c);
+//		
+//		
+//		
+//		if(Arrays.equals(c, c1))
+//			System.out.println("is anagram");
+		
+		
+//	list.deleteByPos(0);
+//	list.display();
+//	
+//		
+//		list1.display();
+//	list1.addNode(34);
+//	list1.addNode(5);
+//	list1.addNode(35);
+//	
+//	list1.display();
+//	list1.addNode(4);
+//	list1.addNode(11);
+//	
+//	list1.addNode(44);
+//	
+//	list1.display();
+//	
+//	list1.addByPos(0, 66);
+//	
+//	list1.display();
+//	
+//	list1.deleteByPos(0);
+//	list1.display();
+		
+//	Circular Singly Linked List
+		
+		
+		clist.display();
+		clist.addNode(4);
+		clist.addNode(53);
+		clist.addNode(111);
+		clist.display();
+		clist.addNode(45);
+		clist.addNode(7);
+		clist.display();
+		
+		clist.addByPos(7, 99);
+		clist.addByVal(8, 99);
+		clist.display();
+		
+		clist.deleteByValue(4);
+		clist.display();
+		
+	
+	
+		
+		
+
+	}
+
+}

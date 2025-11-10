@@ -1,0 +1,23 @@
+package com.bstree.test;
+import com.bstree.service.*;
+public class TestMain {
+	
+	
+	public static void main(String args[])
+	{
+		BSTree tree = new BSTree();
+		
+		
+		tree.insertNode(5);
+		tree.insertNode(43);
+		tree.insertNode(63);
+		
+		tree.insertNode(6);
+		tree.insertNode(85);
+		tree.insertNode(51);
+		inttree.callinorder();
+		
+		
+	}
+
+}

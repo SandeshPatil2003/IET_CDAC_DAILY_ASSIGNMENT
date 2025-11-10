@@ -1,0 +1,296 @@
+package com.list.beans;
+
+public class CircularLinkedList {
+	
+	
+	Node head;
+	
+	
+	public CircularLinkedList()
+	{
+		
+		head=null;
+	}
+
+	class Node
+	{
+		int data;
+		Node next;
+		
+		
+	 public Node(int data)
+		{
+			this.data=data;
+			this.next=null;
+		}
+		
+	
+	 
+	}
+	
+	
+	
+	
+	
+	public void addNode(int data)
+	{
+			Node newNode = new Node(data);
+			Node temp=head;
+			
+		if(head==null)
+		{
+			head=newNode;
+			newNode.next=head;
+			
+		}
+		else {
+			
+		while(temp.next!=head)
+		{
+			temp=temp.next;
+		}
+		
+		temp.next=newNode;
+		newNode.next=head;
+		
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	public void display()
+	{
+		
+		Node temp=head;
+		
+		if(head==null)
+		{
+			System.out.println("Empty List");
+			
+			return;
+		}
+		
+		do {
+			
+			System.out.print(temp.data+"--->");
+			temp=temp.next;
+			
+		}
+		
+		while(temp!=head);
+		System.out.print("head");
+		
+		System.out.println();
+		
+		
+		
+	}
+
+	
+	
+	public void addByPos(int pos, int data)
+	{
+		Node newNode = new Node(data);
+		
+		Node temp=head;
+		
+		if(head==null)
+		{
+			System.out.println("Empty List");
+			return;
+		}
+		
+		if(pos==1)
+		{
+			
+			do {
+				temp=temp.next;
+			}
+			while(temp.next!=head);
+			
+//			temp.next=newNode;
+//			temp=head;
+//			head=newNode;
+//			newNode.next=temp.next;
+			
+			
+			newNode.next=temp.next;
+			temp.next=newNode;
+			head=newNode;
+			
+		}
+		else {
+			
+			
+			int i=0;
+			for(;temp.next!=head && i<pos-2;i++)
+			{
+				temp=temp.next;
+			}
+			
+			if(i==pos-2)
+			{
+				newNode.next=temp.next;
+				temp.next=newNode;
+				
+			}
+			
+			else {
+				System.out.println("position not found");
+			}
+		}
+		
+		
+		
+	}
+
+	
+	
+	public void addByVal(int val, int data)
+	{
+		
+		Node newNode = new Node(data);
+		
+		Node temp = head;
+		
+		
+		if(head==null)
+		{
+			System.out.println("Empty List");
+			return;
+		}
+		
+		if(head.data==val)
+		{
+			newNode.next= temp.next;
+			temp.next=newNode;
+			
+			
+		}
+		else {
+			
+			while(temp.next!=head && temp.data!=val)
+			{
+				temp=temp.next;
+			}
+			
+			if(temp.data==val)
+			{
+				newNode.next=temp.next;
+				temp.next=newNode;
+				
+			}
+			else {
+				System.out.println("Val not found");
+			}
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	public void deletebyPos(int pos)
+	{
+		Node temp=head;
+		
+		if(pos==1)
+		{
+			if(head==head.next)
+			{	head=null;
+			
+			return;
+			}
+			
+			while(temp.next!=head)
+			{
+				temp=temp.next;
+			}
+			temp.next=head.next;
+			
+			head=head.next;
+			
+			
+			
+		}
+		else {
+			
+			int i=0;
+			for(;temp.next!=head && i<pos-2;i++)
+			{
+				temp=temp.next;
+			}
+			
+			if(temp.next!=head && i==pos-2)
+			{
+				Node temp2=null;
+				temp2=temp.next;
+				if(temp.next!=head)
+				temp.next=temp.next.next;
+				temp2=null;
+			}
+			else {
+				System.out.println("position not found");
+			}
+			
+			
+			
+		}
+	}
+	
+	public void deleteByValue(int val)
+	{
+		Node temp=head;
+		
+		if(head==null)
+		{
+			System.out.println("List is empty!");
+			return;
+		}
+		
+		if(head.data == val) {
+		
+	
+			while(temp.next!=head) {
+				temp=temp.next;
+				
+			}
+			
+			head=head.next;
+			t
+			temp.next=head;
+		}
+		else {
+		Node prev = null;
+		do {
+			prev=temp;
+			temp=temp.next;
+		}while(temp!=head && temp.data!=val);
+		
+		if(temp.data == val) {
+			prev.next=temp.next;
+			temp.next=null;
+		}
+		else {
+			System.out.println("Value not found.");	
+		}
+		
+		}
+	}
+	
+	
+
+}

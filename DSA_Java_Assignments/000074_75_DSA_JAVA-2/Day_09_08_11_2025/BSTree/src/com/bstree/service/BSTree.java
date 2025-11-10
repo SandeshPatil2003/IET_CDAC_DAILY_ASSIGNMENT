@@ -1,0 +1,106 @@
+package com.bstree.service;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+public class BSTree {
+	
+	Node root;
+	
+	int arr[];
+	
+	static int i=0;
+	
+	
+	public BSTree()
+	{
+		root=null;
+		arr=new int[30];
+	}
+	
+	public class Node
+	{
+		int data;
+		Node left;
+		Node right;
+		
+		Node(int data)
+		{
+			this.data=data;
+			left=null;
+			right=null;
+			
+		}
+		
+			
+			
+			
+		
+	}
+	
+	
+	public Node insert(Node root , int data)
+	{
+		Node newNode = new Node(data);
+		if(root==null)
+		{
+			root=newNode;
+			
+			return root;
+		}
+		
+		else if(data<root.data)
+		{
+			
+			root.left=insert(root.left,data);
+			
+		}
+		else {
+			
+			
+			root.right=insert(root.right,data);
+		}
+		
+		return root;
+		
+		
+	}
+	
+	
+	public void insertNode(int data)
+	{
+		root = insert(root,data);
+		
+	}
+	
+	
+	public void inOrder(Node root)
+	{ 
+		if(root==null)
+		{
+			return;
+		}
+			
+			inOrder(root.left);
+			arr[i]=root.data;
+			i++;
+			inOrder(root.right);
+
+	}
+	
+	public int[] callinorder()
+	{
+		inOrder(root);
+		 String output = Arrays.stream(arr)
+                 .filter(value -> value != 0)
+                 .mapToObj(String::valueOf) // Convert ints back to Strings
+                 .collect(Collectors.joining(", ", "[", "]")); // Format the output
+
+// This will print only the non-zero numbers:
+// [5, 6, 43, 51, 63, 85]
+System.out.println(output);
+return arr;
+	}
+	
+
+}

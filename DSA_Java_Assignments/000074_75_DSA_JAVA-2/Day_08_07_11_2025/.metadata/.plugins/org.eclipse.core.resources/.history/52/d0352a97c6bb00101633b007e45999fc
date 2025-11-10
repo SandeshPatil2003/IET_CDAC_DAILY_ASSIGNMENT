@@ -1,0 +1,20 @@
+package com.stackz.test;
+import com.stackz.beans.*;
+public class TestStackz {
+	
+	public static void main(String [] args)
+	{
+		Stackz arr = new Stackz();
+		
+		
+		System.out.println(arr.pop());
+		arr.push(4)
+		System.out.println(arr.pop());
+		arr.push(5));
+		System.out.println(arr.push(6));
+		System.out.println(arr.push(7));
+		System.out.println(arr.pop());
+		
+	}
+
+}

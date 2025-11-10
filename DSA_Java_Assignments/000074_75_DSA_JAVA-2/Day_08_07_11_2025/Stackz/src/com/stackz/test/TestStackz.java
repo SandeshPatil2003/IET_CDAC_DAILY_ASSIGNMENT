@@ -1,0 +1,53 @@
+package com.stackz.test;
+import com.stackz.beans.*;
+public class TestStackz {
+	
+	public static void main(String [] args)
+	{
+//		Stackz arr = new Stackz();
+//		
+//		
+//		System.out.println(arr.pop());
+//		arr.push(4);
+//		System.out.println(arr.pop());
+//		arr.push(5);
+//		arr.push(6);
+//		arr.push(7);
+//		System.out.println(arr.pop());
+		
+		
+		StackzList arr = new StackzList();
+		
+		System.out.println(arr.pop());
+		arr.push(4);
+		System.out.println(arr.pop());
+		arr.push(5);
+		arr.push(6);
+		arr.push(7);
+		System.out.println(arr.pop());
+		
+		arr.display();
+		
+		
+		arr.push(534);
+		arr.push(45);
+		arr.push(8);
+		arr.display();
+		
+		arr.pop();
+		arr.pop();
+		arr.display();
+		arr.pop();
+		arr.pop();
+		arr.pop();
+		arr.pop();
+		arr.pop();
+		arr.pop();
+		arr.display();
+		
+		
+		
+		
+	}
+
+}

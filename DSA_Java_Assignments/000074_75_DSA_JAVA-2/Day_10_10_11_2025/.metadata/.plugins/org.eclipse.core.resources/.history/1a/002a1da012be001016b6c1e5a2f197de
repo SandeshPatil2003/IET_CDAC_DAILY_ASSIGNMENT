@@ -1,0 +1,49 @@
+package com.hash.beans;
+
+public class Hash {
+	
+	Node [] heads;
+	
+	
+	public Hash()
+	{
+		heads=new Node[10];
+		for(int i=0;i<10;i++)
+		{
+			heads[i]=null;
+			
+		}
+	}
+	
+	
+	
+	class Node
+	{
+		int data;
+		Node next;
+		
+		
+		public Node(int data)
+		{
+			this.data=data;
+		}
+		
+		
+	}
+	
+	
+	
+	
+	public void insert(int data)
+	{
+		Node newNode = new Node (data);
+		
+		Node temp = heads[data%10];
+		
+		
+		if()
+		
+		heads[data%10]
+	}
+
+}

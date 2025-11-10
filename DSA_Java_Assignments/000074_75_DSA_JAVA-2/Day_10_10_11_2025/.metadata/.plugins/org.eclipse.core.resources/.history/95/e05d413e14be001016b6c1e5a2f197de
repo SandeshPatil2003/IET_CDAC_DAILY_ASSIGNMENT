@@ -1,0 +1,14 @@
+package com.hash.test;
+
+import com.hash.beans.*;
+public class TestHash {
+
+	public static void main(String[] args) {
+		
+		
+		Hash h = new Hash();
+		
+		h.insert(35);
+	}
+
+}

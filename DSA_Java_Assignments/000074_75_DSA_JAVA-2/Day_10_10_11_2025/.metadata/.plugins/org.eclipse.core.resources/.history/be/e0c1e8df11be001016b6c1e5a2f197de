@@ -1,0 +1,27 @@
+package com.hash.beans;
+
+public class Hash {
+	
+	Node [] heads;
+	
+	
+	public Hash()
+	{
+		
+	}
+	
+	class Node
+	{
+		int data;
+		Node next;
+		
+		
+		public Node(int data)
+		{
+			this.data=data;
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package com.dclist.test;
+
+import com.dclist.beans.*;
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		DoublyCircularLinkedList dclist = new DoublyCircularLinkedList();
+		
+		
+		dclist.display();
+//		dclist.addNode(4);
+//		dclist.addByPos(1,4);
+		
+		dclist.display();
+		
+//		dclist.addNode(364);
+//		dclist.addNode(53);
+//		dclist.addNode(78);
+//		dclist.addNode(9);
+//		dclist.addNode(48);
+		
+		
+		dclist.addByPos(1,364);
+//		dclist.addByPos(3,53);
+//		dclist.addByPos(4,78);
+//		dclist.addByPos(5,9);
+//		dclist.addByPos(6,48);
+//		dclist.addByPos(8,88);
+		
+		dclist.addByVal(364, 77);
+		dclist.addByVal(77, 33);
+		dclist.addByVal(44, 1);
+		
+		dclist.deleteByPos(0);
+		
+		
+		dclist.display();
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.hash.beans;
+
+public class Hash {
+	
+	Node [] heads;
+	
+	class Node
+	{
+		int data;
+		Node next;
+	}
+
+}

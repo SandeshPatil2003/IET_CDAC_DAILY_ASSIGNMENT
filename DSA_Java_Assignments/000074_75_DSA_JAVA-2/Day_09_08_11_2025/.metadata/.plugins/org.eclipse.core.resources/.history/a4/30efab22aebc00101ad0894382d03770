@@ -1,0 +1,11 @@
+package com.bstree.test;
+import 
+public class TestMain {
+	
+	
+	public static void main(String args[])
+	{
+		BSTree tree = new BSTree();
+	}
+
+}

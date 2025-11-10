@@ -1,0 +1,31 @@
+package com.hash.test;
+
+import com.hash.beans.*;
+public class TestHash {
+
+	public static void main(String[] args) {
+		
+		
+		Hash h = new Hash();
+		
+		h.insert(351);
+		h.insert(892);
+		h.insert(3453);
+		h.insert(8694);
+		h.insert(385);
+		h.insert(8296);
+		h.insert(3157);
+		h.insert(8198);
+		h.insert(1359);
+		h.insert(81);
+		
+		h.insert(735);
+		h.insert(879);
+		h.insert(325);
+		h.insert(9);
+		
+		
+		h.display();
+	}
+
+}

@@ -1,0 +1,254 @@
+package com.dclist.beans;
+
+public class DoublyCircularLinkedList {
+	
+	Node head;
+	
+	
+	public DoublyCircularLinkedList()
+	{
+		head=null;
+		
+	}
+	
+	
+	public class Node{
+		
+		
+		int data;
+		Node next;
+		Node prev;
+		
+		
+		public Node(int data)
+		{
+			this.data=data;
+			next=null;
+			prev=null;
+			
+		}
+		
+		
+		
+	}
+	
+	
+	public void addNode(int data)
+	{
+		Node temp=head;
+		Node newNode = new Node(data);
+		
+		if(head==null)
+		{
+			
+			head=newNode;
+			newNode.next=head;
+			newNode.prev=head;
+		}
+		else
+		{
+		
+			
+			head.prev.next=newNode;
+			newNode.prev=head.prev;
+			newNode.next=head;
+			head.prev=newNode;
+			
+			
+		}
+		
+	}
+
+	
+	
+	public void display() {
+		
+		
+		
+		
+		if(head==null)
+		{
+			System.out.println("Empty List");
+			return;
+		}
+		
+		Node temp = head;
+		
+		
+		do {
+			System.out.print(temp.data+"--->");
+			temp=temp.next;
+		}
+		while(temp!=head);
+		System.out.print("head");
+		System.out.println();
+		
+	}
+
+	
+	
+	public void addByPos(int pos,int data)
+	{
+		Node newNode = new Node(data);
+		Node temp=head;
+		
+		
+		
+		if(pos==1)
+		{
+			
+			if(head==null)
+			{
+				head=newNode;
+				newNode.next=head;
+				newNode.prev=head;
+				
+				
+			}
+			else {
+			newNode.next=head.next;
+			newNode.prev=head.prev;
+			head.prev.next=newNode;
+			head=newNode;}
+		
+		}
+		else if(temp!=null) {
+			
+			int i=0;
+			for(;temp.next!=head && i<pos-2;i++)
+			{
+				temp=temp.next;
+			}
+			
+			if(i==pos-2)
+			{
+				newNode.next=temp.next;
+				newNode.prev=temp;
+				temp.next.prev=newNode;
+				temp.next=newNode;
+				
+			}
+			else {
+				System.out.println("Position not found!");
+			}
+		}
+	}
+
+
+
+
+	public void addByVal(int val,int data)
+	{
+		Node temp = head;
+		Node newNode = new Node(data);
+		
+		
+		if(head.data==val)
+		{
+			newNode.next=head.next;
+			newNode.prev=head.prev;
+			head.prev.next=newNode;
+			
+			
+		}
+		else {
+			
+			while(temp.next!=head && temp.data!=val)
+			{
+				temp=temp.next;
+			}
+			
+			if(temp.data==val)
+			{
+				newNode.next=temp.next;
+				newNode.prev=temp;
+				temp.next.prev=newNode;
+				temp.next=newNode;
+				
+			}
+			else {
+				System.out.println("Val not found");
+			}
+		}
+		
+		
+		
+	}
+
+	
+	public void deleteByPos(int pos) {
+		
+		Node temp=head;
+		if(head == null) {
+			System.out.println("List is empty invalid pos");
+			return;
+		}
+		
+		else {
+			if(pos == 1) {
+				head.prev.next=head.next;
+				head.next.prev=head.prev;
+				head=head.next;
+				temp.next=null;
+				temp.prev=null;
+						
+			}
+			else {
+				
+				int i=0;
+				for(;temp.next!=head && i<pos-1;i++) {
+					temp=temp.next;
+				}
+				
+				if(i == pos-1) {
+					temp.prev.next=temp.next;
+					temp.next.prev=temp.prev;
+					temp.next=null;
+					temp.prev=null;
+				}
+				else {
+					System.out.println("Pos invalid");
+				}
+			}
+		}
+	}
+
+	public void deleteByVal(int val) {
+		Node temp=head;
+		
+		if(head==null)
+		{
+			System.out.println("Empty list");
+			return;
+		}
+		
+		if(head.data==val)
+		{
+			temp.prev.next=temp.next;
+			
+			temp.next.prev=temp.prev;
+			head=head.next;
+			
+			temp.next=null;
+			temp.prev=null;
+			
+		}
+		else {
+			
+			while(temp.next!=head && temp.data!=val)
+			{
+				temp=temp.next;
+			}
+			
+			if(temp.data==val)
+			{
+				temp.prev.next=temp.next;
+				temp.next.prev=t
+			}
+		}
+		
+		
+	}
+	
+	
+}
