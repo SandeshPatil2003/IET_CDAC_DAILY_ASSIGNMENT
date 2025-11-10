@@ -77,7 +77,7 @@ public class Hash {
 				continue;
 			}
 			
-			System.out.print("Hash ["+(i)+"] ->");
+			System.out.print("Hash"(i)+" ->");
 		while(temp!=null)
 		{
 			if(temp.next!=null) {
