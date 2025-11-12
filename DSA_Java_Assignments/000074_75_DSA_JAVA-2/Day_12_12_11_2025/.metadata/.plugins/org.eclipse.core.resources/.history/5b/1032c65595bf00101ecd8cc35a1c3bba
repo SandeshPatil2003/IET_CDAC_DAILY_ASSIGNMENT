@@ -1,0 +1,161 @@
+package com.arraysq.service;
+
+public class ArrayService {
+
+	public void sumOfArray(int[] arr) {
+		
+		int sum=0;
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			sum+=arr[i];
+		}
+		
+		System.out.println("Sum of Array is : "+sum);
+	}
+
+	public void factOfPrimes(int[] arr) {
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			if(isPrime(arr[i]))
+			{
+				 int fact=1;
+				for(int j=1;j<=arr[i];j++)
+				{
+					fact*=j;
+					
+					
+				}
+				
+				System.out.println("Factorial of Prime "+arr[i]+" is "+fact);
+				
+			}
+		}
+		
+	}
+
+	private boolean isPrime(int num) {
+		
+		boolean flag = true;
+		
+		if(num==1)
+			return false;
+		
+		for(int i=2;i<num;i++)
+		{
+			if(num%i==0)
+			{
+				flag=false;
+			}
+			
+			if(flag==false)
+				return false;
+		}
+		
+		return true;
+	}
+
+	public void maxPrime(int[] arr) {
+		
+		int max=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			
+		if(isPrime(arr[i])&& arr[i]>max)
+			max=arr[i];
+			
+		}
+		
+		System.out.println("Max Prime is :"+ max);
+
+	}
+
+	public void reverseRow2D(int[][] arr2d) {
+		
+		
+		
+		for(int i=0 ;i<arr2d.length;i++ )
+		{
+			int len = arr2d[i].length;
+			
+			int [] temp = new int[len];
+			
+			for(int j=0,k=len-1; j<len;j++,k--)
+			{
+				temp[k]=arr2d[i][j];
+			}
+			
+			for(int j=0;j<len;j++)
+			{
+				arr2d[i][j]=temp[j];
+			}
+		}
+		
+		
+		
+		for(int i=0;i<arr2d.length;i++)
+		{
+			for(int j=0;j<arr2d[i].length;j++)
+			{
+				System.out.print(arr2d[i][j]+"\t");
+			}
+			
+			System.out.println();
+		}
+		
+	}
+
+	public void maxOddEachRow(int[][] arr2d) {
+		
+		for(int i=0;i<arr2d.length;i++)
+		{
+			 int max = 0;
+			for(int j=0;j<arr2d[i].length;j++)
+			{
+				if(max<arr2d[i][j] && arr2d[i][j]%2!=0)
+					max=arr2d[i][j];
+			}
+			
+			System.out.println("Max Odd of Row "+(i+1)+" is "+max);
+		}
+
+
+		
+	}
+
+	public void avgOfRCAndSum(int[][] arr2d) {
+		
+		
+		double savgR;
+		double savgC;
+		int i=0;
+		for(;i<arr2d.length;i++)
+		{
+			double avgR=0;
+			double avgC=0;
+			
+			for(int j=0;j<arr2d[i].length;j++)
+			{
+				avgR=avgR+arr2d[i][j];
+				avgC=avgC+arr2d[j][i];
+				
+			}
+			System.out.println("Avg of Rows "+(i+1)+" is "+(avgR)/(arr2d.length));
+			System.out.println("Avg of Col "+(i+1)+" is "+(avgC)/(arr2d.length));
+			
+			
+			
+		}
+		
+		
+		
+		System.out.println("Sum of avg of rows is "+savgR);
+		System.out.println("Sum of avg of rows is "+savgC);
+		
+		
+		
+		
+	}
+	
+}

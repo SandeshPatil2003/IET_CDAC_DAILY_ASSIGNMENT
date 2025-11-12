@@ -1,0 +1,43 @@
+package com.graph.test;
+
+import java.util.Scanner;
+
+import com.graph.beans.Graphz;
+
+public class TestGraph {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		System.out.println("How many vertices in your graph?");
+		int v =sc.nextInt();
+		Graphz g = new Graphz(v);
+		
+		for(int i=0;i<v;i++)
+		{
+		System.out.println("Enter Edge Source");
+		int source = sc.nextInt();
+		
+		
+		System.out.println("how many edges is it connected to?");
+		
+		int ecount= sc.nextInt();
+		
+		for(int i=0;i<ecount;i++)
+		{
+			
+		}
+		
+		
+		
+		
+		int destination = sc.nextInt();
+		
+		
+	}
+
+}

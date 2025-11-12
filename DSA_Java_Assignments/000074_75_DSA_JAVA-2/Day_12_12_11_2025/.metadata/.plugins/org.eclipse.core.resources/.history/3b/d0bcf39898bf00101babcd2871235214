@@ -1,0 +1,9 @@
+package com.sortingq.beans;
+
+public class Employee {
+	
+	int empid;
+	String ename;
+	double salary;
+
+}

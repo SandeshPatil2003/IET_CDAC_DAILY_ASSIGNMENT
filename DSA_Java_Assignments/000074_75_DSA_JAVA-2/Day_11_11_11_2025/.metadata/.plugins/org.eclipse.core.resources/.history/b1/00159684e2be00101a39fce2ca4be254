@@ -1,0 +1,54 @@
+package com.graph.beans;
+
+import com.graph.beans.LinkedListz.Node;
+
+public class Queuez {
+	
+	Node front;
+	Node rear;
+	
+	
+	Queuez()
+	{
+		front=null;
+		rear=null;
+	}
+	
+	
+	public void enqueue(int data)
+	{
+		Node newNode = new Node(data);
+		
+		if(rear==null)
+		{
+			rear = newNode;
+			front= newNode;
+		}
+		else {
+			
+			rear.next=newNode;
+			rear = newNode;
+		}
+		
+	}
+	
+	public int dequeue()
+	{
+		
+		if(!isEmpty())
+		{
+			front
+		}
+	}
+	
+	
+	public boolean isEmpty()
+	{
+		
+		if(front==rear && rear==null)
+		{
+			return true;
+		}
+		return false;
+	}
+}

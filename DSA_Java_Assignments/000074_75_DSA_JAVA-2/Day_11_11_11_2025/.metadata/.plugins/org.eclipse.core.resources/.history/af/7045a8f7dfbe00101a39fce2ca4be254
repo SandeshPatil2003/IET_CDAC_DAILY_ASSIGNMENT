@@ -1,0 +1,21 @@
+package com.graph.beans;
+
+import com.graph.beans.LinkedListz.Node;
+
+public class Stackz {
+	
+	Node top;
+	
+	
+	Stackz()
+	{
+		top=null;
+	}
+	
+	
+	public void push(int data)
+	{
+		if 
+	}
+
+}

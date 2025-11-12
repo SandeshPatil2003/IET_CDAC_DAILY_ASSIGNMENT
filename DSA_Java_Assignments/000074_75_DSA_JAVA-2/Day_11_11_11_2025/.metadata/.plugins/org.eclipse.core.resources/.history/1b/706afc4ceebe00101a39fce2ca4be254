@@ -1,0 +1,45 @@
+package com.graph.beans;
+
+import com.graph.beans.LinkedListz.Node;
+
+public class Stackz {
+	
+	Node top;
+	
+	
+	Stackz()
+	{
+		top=null;
+	}
+	
+	
+	public void push(int data)
+	{
+		Node newNode = new Node(data);
+		
+		newNode.next=top;
+		top=newNode;	
+	}
+	
+	public int pop()
+	{
+		if(top!=null)
+		{
+		 Node temp=top;
+		 
+		 top=top.next;
+		 temp.next=null;
+		 
+		
+		 return temp.data;}
+		
+		else retuen
+	}
+
+	public boolean isEmpty()
+	{
+			
+		return top==null;	
+		
+	}
+}

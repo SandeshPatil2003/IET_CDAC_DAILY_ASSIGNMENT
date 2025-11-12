@@ -1,0 +1,18 @@
+package com.sortingq.test;
+import com.sortingq.beans.*;
+public class TestSorting {
+
+	public static void main(String[] args) {
+		
+		Employee [] earr = new Employee[20];
+		
+		
+		earr[0]= new Employee(1,"a",2000);
+		earr[1]= new Employee(1,"a",2000);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,102 @@
+package com.graph.beans;
+
+
+
+import com.graph.beans.LinkedListz.Node;
+public class Graphz {
+	
+	LinkedListz graphlistarr [];
+	
+	
+	 public Graphz(int vertices)
+	{
+		 graphlistarr =new LinkedListz[vertices];
+		 
+		for(int i=0;i<this.graphlistarr.length;i++)
+		{
+			graphlistarr[i]=null;
+		}
+		
+	}
+	
+
+
+
+	public void addEdge( int source , int destination)
+	{
+		graphlistarr[source]
+		 
+		graphlistarr[source].add(destination);
+	}
+	
+	public void displayGraph()
+	{
+		for(int i=0;i<graphlistarr.length;i++)
+		{
+			System.out.println("["+i+"] ==>");
+			graphlistarr[i].display();
+		}
+	}
+	
+	public void dfsTraversal( int start)
+	{
+		boolean [] visited = new boolean [graphlistarr.length];
+		
+		for(int i=0;i<graphlistarr.length;i++)
+		{
+			visited[i]=false;
+		}
+		
+		Stackz stack1 = new Stackz();
+		
+		String dfs="";
+		stack1.push(start);
+		
+		while(!stack1.isEmpty())
+		{
+			
+			int source=stack1.pop();
+			
+			if(!visited[source])
+			{
+				dfs+=source+",";
+				
+				visited[source]=true;
+				
+				Node temp= graphlistarr[source].head.next;
+				
+				while(temp!=null)
+				{
+					if(!visited[temp.data])
+					{
+						stack1.push(temp.data);
+					}
+					temp=temp.next;
+					
+					
+					
+				};
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		System.out.println("DFS TRAVERSAL IS :"+dfs);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

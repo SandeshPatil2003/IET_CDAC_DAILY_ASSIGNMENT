@@ -1,0 +1,65 @@
+package com.graph.beans;
+
+public class LinkedListz {
+
+	Node head;
+	
+	
+	LinkedListz()
+	{
+		head=null;
+	}
+	
+	public static class Node{
+		
+		int data;
+		
+		Node next;
+		
+		
+		
+		public Node(int data)
+		{
+			this.data=data;
+			next=null;
+		}
+			
+	}
+	
+	
+	public void add(int data)
+	{Node newNode= new Node(data);
+		if(head==null)
+		{
+			head=newNode;
+		}
+		else {
+		
+		newNode.next=head;
+		head=newNode;
+		
+	}
+	
+	public void display()
+	{
+		Node temp= head;
+		
+		if(head==null)
+		{
+			System.out.println("Empty List");
+			
+			return;
+		}
+		
+		while(temp!=null)
+		{
+			if(temp.next!=null)
+			System.out.print(temp.data+"-->");
+			else
+			System.out.print(temp.data);
+			temp=temp.next;
+		}
+		
+		System.out.println();
+	}
+}

@@ -1,0 +1,23 @@
+package com.sortingq.test;
+import com.sortingq.beans.*;
+public class TestSorting {
+
+	public static void main(String[] args) {
+		
+		Employee [] earr = new Employee[20];
+		
+		
+		earr[0]= new Employee(1,"a",2000);
+		earr[1]= new Employee(2,"b",2100);
+		earr[2]= new Employee(3,"c",2200);
+		earr[3]= new Employee(4,"d",2300);
+		earr[4]= new Employee(5,"e",2400);
+		earr[5]= new Employee(6,"f",2500);
+		
+		
+		
+		
+
+	}
+
+}
