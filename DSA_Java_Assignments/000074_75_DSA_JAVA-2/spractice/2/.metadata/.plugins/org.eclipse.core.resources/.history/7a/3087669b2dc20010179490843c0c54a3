@@ -1,0 +1,56 @@
+package com.sortingq.beans;
+
+public class CircularQueue {
+	
+	
+	int [] arr;
+	int front;
+	int rear;
+	
+	CircularQueue(int size)
+	{
+		arr= new int[size];
+		
+		front=-1;
+		rear=-1;
+	}
+	
+	boolean isEmpty()
+	{
+		if(front==-1 && rear==-1)
+		{
+			return true;
+		}
+		
+	
+		
+		return false;
+		
+	}
+	
+	boolean isFull()
+	{
+		 if(front==rear+1)
+		 {
+			 return true;
+		 }
+		
+		 if(front==0 && rear==arr.length-1)
+		 {
+			 return true;
+		 }
+		 
+		 return false;
+	}
+	
+	void enqueue(int data)
+	{
+		
+		
+		
+		
+		
+		
+	}
+	
+}

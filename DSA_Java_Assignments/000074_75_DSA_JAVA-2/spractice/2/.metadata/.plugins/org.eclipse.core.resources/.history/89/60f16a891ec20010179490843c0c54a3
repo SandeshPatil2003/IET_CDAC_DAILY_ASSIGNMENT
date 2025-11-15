@@ -1,0 +1,12 @@
+package com.sortingq.beans;
+
+public class MyStack {
+	
+	int [] arr;
+	
+	
+	
+	
+	
+
+}

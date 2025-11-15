@@ -1,0 +1,38 @@
+package com.arraysq.test;
+import java.util.*;
+import com.arraysq.service.*;
+public class TestArray {
+
+	public static void main(String[] args) {
+		
+		ArrayService s = new ArrayService();
+		
+		
+		int [] arr = {1,2,4,5,6,7,3,4,7};
+		int [][] arr2d = {{1,2,3},{4,5,6},{7,8,9}};
+		
+		
+		
+		
+		String [] str = new String [20];
+		
+		
+ 		
+		
+		
+		
+		s.sumOfArray(arr);
+		s.factOfPrimes(arr);
+		s.maxPrime(arr);
+		s.reverseRow2D(arr2d);
+		s.maxOddEachRow(arr2d);
+		s.avg
+		
+		
+		
+		
+		
+
+	}
+
+}

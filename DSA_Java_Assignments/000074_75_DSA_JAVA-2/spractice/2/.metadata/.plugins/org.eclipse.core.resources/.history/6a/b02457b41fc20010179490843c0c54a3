@@ -1,0 +1,42 @@
+package com.sortingq.beans;
+
+public class MyStack {
+	
+	int [] arr;
+	int top;
+	
+	
+	MyStack(int size)
+	{
+		arr= new int[size];
+		top=-1;
+		
+	}
+	
+	MyStack()
+	{
+		arr= new int[10];
+		top=-1;
+	}
+	
+	
+	void push(int data)
+	{
+		if(isFull)
+		{
+			System.out.println(" Stack is Full");
+		}
+		top++;
+		arr[top]=data;
+	}
+	
+	
+	 int pop()
+	{
+		  int temp= arr[top];
+		 top --;
+		 
+		return temp;
+	}
+
+}

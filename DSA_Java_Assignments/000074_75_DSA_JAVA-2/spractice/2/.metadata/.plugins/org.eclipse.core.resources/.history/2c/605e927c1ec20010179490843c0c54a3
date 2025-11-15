@@ -1,0 +1,5 @@
+package com.sortingq.beans;
+
+public class MyStack {
+
+}

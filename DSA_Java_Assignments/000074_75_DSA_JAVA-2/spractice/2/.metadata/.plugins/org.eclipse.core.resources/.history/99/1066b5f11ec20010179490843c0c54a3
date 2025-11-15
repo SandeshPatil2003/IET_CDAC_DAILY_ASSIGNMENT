@@ -1,0 +1,18 @@
+package com.sortingq.beans;
+
+public class MyStack {
+	
+	int [] arr;
+	int top;
+	
+	
+	MyStack(int size)
+	{
+		arr= new int[size];
+		top=-1;
+		
+	}
+	
+	
+
+}

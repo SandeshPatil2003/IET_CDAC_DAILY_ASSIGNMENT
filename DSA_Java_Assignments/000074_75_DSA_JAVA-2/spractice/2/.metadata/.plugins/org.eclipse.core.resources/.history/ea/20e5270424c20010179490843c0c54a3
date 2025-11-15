@@ -1,0 +1,125 @@
+package com.sortingq.beans;
+
+import java.util.Scanner;
+
+public class MyStack {
+	
+	char [] arr;
+	int top;
+	
+	
+	MyStack(int size)
+	{
+		arr= new char[size];
+		top=-1;
+		
+	}
+	
+	public MyStack()
+	{
+		arr= new char[10];
+		top=-1;
+	}
+	
+	
+	public void push(char data)
+	{
+		if(isFull())
+		{
+			System.out.println(" Stack is Full");
+		}
+		else {
+		top++;
+		arr[top]=data;
+		}
+	}
+	
+	
+	 private boolean isFull() {
+		
+		 return top== arr.length-1;
+	}
+
+	public int pop()
+	{
+		 if(isEmpty())
+		 {
+			 
+			 System.out.println("Stack is Empty");
+			 return -1;
+		 }
+		 else {
+		  int temp= arr[top];
+		 top --;
+		 
+		return temp;}
+	}
+
+	private boolean isEmpty() {
+		
+		
+		return top==-1;
+	}
+	
+	
+	public void displayStack()
+	{
+		if(top==-1)
+		{
+			System.out.println("Empty Stack");
+		}
+		 System.out.println("Stack");
+		for(int i= top ; i>=0;i--)
+		{
+			System.out.println(i+" "+arr[i]);
+		}
+	}
+
+	public void checkPalindrome() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter word");
+		
+		String word= sc.next();
+		
+		word=word.toLowerCase();
+		
+		char [] strarr = word.toCharArray();
+		
+		MyStack pal = new MyStack(strarr.length);
+		
+		for(int i=0;i<strarr.length/2;i++)
+		{
+			pal.push(strarr[i]);
+			
+		}
+		
+		
+		int n=strarr.length;
+		
+		int startIndex = (n%2==0)? n/2:(n/2)+1;
+		
+		
+		boolean isPalindrome = true;
+		
+		
+		for(int i= startIndex;i<n;i++)
+		{
+			if(pal.pop()!=strarr[i])
+			{
+				isPalindrome=false;
+				
+				break;
+			}
+		}
+		
+		if(isPalindrome)
+		{
+			System.out.println(word+ "");
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.sortingq.beans;
+
+public class CircularQueue {
+
+	
+}
