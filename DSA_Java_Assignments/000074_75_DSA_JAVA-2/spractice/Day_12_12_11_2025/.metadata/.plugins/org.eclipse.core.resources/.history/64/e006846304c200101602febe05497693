@@ -1,0 +1,12 @@
+package com.sortingq.beans;
+
+public class LinkedListz {
+
+	Node head;
+	
+	class Node{
+		
+		int data;
+		Node 
+	}
+}

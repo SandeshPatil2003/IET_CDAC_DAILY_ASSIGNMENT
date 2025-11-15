@@ -1,0 +1,41 @@
+package com.sortingq.beans;
+
+public class LinkedListz {
+
+	Node head;
+	
+	
+	LinkedListz()
+	{
+		head=null;
+		
+	}
+	
+	class Node{
+		
+		int data;
+		Node next;
+		
+		
+		Node(int data)
+		{
+			this.data=data;
+			next=null;
+		}
+	}
+	
+	
+	
+	public void addAtEnd(int data)
+	{
+		Node temp=head;
+		
+		
+		
+		if(head==null)
+		{
+			head=
+		}
+		
+	}
+}

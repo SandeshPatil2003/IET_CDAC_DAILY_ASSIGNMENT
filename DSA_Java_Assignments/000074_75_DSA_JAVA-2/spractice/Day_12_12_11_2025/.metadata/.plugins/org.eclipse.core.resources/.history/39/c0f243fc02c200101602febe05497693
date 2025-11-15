@@ -1,0 +1,392 @@
+package com.sortingq.service;
+
+import java.util.Arrays;
+
+import com.sortingq.beans.Employee;
+
+public class SortingService {
+
+	public void bubbleSort(Employee[] earr) {
+		
+		for(int i=0;i<earr.length;i++)
+		{
+			
+			for(int j=i;j<earr.length;j++)
+			{
+				if(earr[j]!=null && earr[j+1]!=null)
+				{
+				if(earr[j].getSalary()>earr[j+1].getSalary())
+				{
+					Employee temp = earr[j+1];
+					earr[j+1]=earr[j];
+					earr[j]=temp;
+					
+				}
+				}
+				
+				
+			}
+		}
+		
+	}
+
+	public void display(Employee[] earr) {
+		
+		System.out.println("Array start");
+		for(int i=0;i<earr.length;i++)
+		{
+			
+			System.out.println(earr[i]);
+			
+		}
+		
+		System.out.println("Array end");
+	}
+
+	public void insertionSort(Employee[] earr) {
+		
+//		int j=15;
+//		while(j<earr.length)
+//		{for(int i=15;i>0;i--)
+//		{
+//			if(earr[j].getSalary()>earr[i].)
+//			
+//		}
+//		}
+		
+		int j=15;
+		while(j<earr.length)
+		{
+			Employee temp=earr[j];
+		for(int i=j-1;i>=0;i--)
+		{
+			
+			if(temp.getSalary()>earr[i].getSalary())
+			{
+				
+				earr[i+1]=temp;
+				break;
+			}
+			else{
+//				if(i==0)
+//				{
+//					earr[i]=temp;
+//					break;
+//					
+//				}
+				
+				earr[i+1]=earr[i];
+			 
+			}
+			
+		}
+		j++;
+		
+		}
+		
+		
+	}
+
+	public void mergeSortStr(String[] str , int start , int end) {
+		
+		if(start>=end)
+			return;
+		
+		int mid=(start+end)/2;
+		
+		mergeSortStr(str,start,mid);
+		mergeSortStr(str,mid+1,end);
+		
+		mergeStr(str,start,mid,end);
+		
+		
+		
+		
+	}
+
+	
+	
+	
+private void mergeStr(String[] str, int start, int mid, int end) {
+		
+	
+	int n1=mid-(start)+1;
+	int n2=end-(mid+1)+1;
+	
+	String [] L= new String[n1];
+	String [] R= new String [n2];
+	
+	for(int i=0;i<n1;i++)
+	{
+		L[i]=str[start+i];
+	}
+	
+	for(int i=0;i<n2;i++)
+	{
+		R[i]=str[mid+1+i];
+	}
+	
+	
+	int i=0;
+	int j=0;
+	int k =start;
+	
+	while(i<n1 && j<n2) {
+	if(L[i].compareTo(R[j])<0)
+	{
+		str[k]=L[i];
+		i++;
+		k++;
+		
+	}
+	else {
+		
+		str[k]=R[j];
+		j++;
+		k++;
+		
+	}
+	
+	
+	}
+	
+	while(i<n1)
+	{
+		str[k]=L[i];
+		i++;
+		k++;
+	}
+	
+	while(j<n2)
+	{
+		str[k]=R[j];
+		j++;
+		k++;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	}
+
+public void displayStr(String[] str) {
+		
+//		System.out.println("String Array start");
+//		for(int i=0;i<str.length;i++)
+//		{
+//			
+//			System.out.println(str[i]);
+//			
+//		}
+//		
+//		System.out.println("String Array end");
+	
+	
+	System.out.println(Arrays.toString(str));
+	}
+
+public void quickSortStr1(String[] str, int start, int end) {
+	
+	if(start<end)
+	{
+		int pivotIndex = partitionStr1(str,start,end);
+		
+		quickSortStr1(str,start,pivotIndex-1);
+		quickSortStr1(str,pivotIndex+1,end);
+		
+		
+	}
+		
+	
+}
+
+private int partitionStr1(String[] str, int start, int end) {
+	
+	
+	String pivot = str[start];
+	
+	int i=start;
+	int j= end;
+	
+	
+	while(i<j)
+	{
+	while(i<= end && str[i].compareTo(pivot)<=0)
+	{
+		i++;
+	}
+	
+	while(j>=start && str[j].compareTo(pivot)>0)
+	{
+		j--;
+	}
+	
+	
+	if(i<j)
+	{
+		String temp = str[j];
+		str[j]=str[i];
+		str[i]=temp;
+	}
+	}
+	
+	String temp = str[j];
+	str[j]=str[start];
+	str[start]=temp;
+	
+	return j;
+}
+
+public void heapSort(Employee[] earr2) {
+	
+	int n = earr2.length;
+	
+	for(int i=n/2-1;i>=0;i--)
+	{
+		heapify(earr2,n,i);
+	}
+	
+	
+	for(int i=n-1;i>0;i--)
+	{
+		Employee temp = earr2[i];
+		earr2[i]=earr2[0];
+		earr2[0]=temp;
+		
+		heapify(earr2,i,0);
+		
+	}
+}
+
+private void heapify(Employee[] earr2, int n, int i) {
+	
+	int largest = i;
+	
+	int leftChild = 2*i+1;
+	int rightChild = 2*i+2;
+	
+	if(leftChild<n && earr2[leftChild].getSalary()>earr2[largest].getSalary())
+	{
+		largest=leftChild;
+	}
+	
+	if(rightChild<n && earr2[rightChild].getSalary()>earr2[largest].getSalary())
+	{
+		largest=rightChild;
+	}
+	
+	if(largest!=i)
+	{
+		Employee temp = earr2[i];
+		earr2[i]= earr2[largest];
+		earr2[largest]=temp;
+		
+		heapify(earr2,n,largest);
+	}
+}
+
+
+
+
+
+
+
+
+public void quickSortEmp(Employee[] earr2, int low, int high) {
+	
+	
+	if(low<high)
+	{
+		
+		int pivotIndex = partitionEmp(earr2,low,high);
+		
+		quickSortEmp(earr2,low,pivotIndex);
+		quickSortEmp(earr2,pivotIndex+1,high);
+		
+		
+	}
+	
+	
+}
+
+private int partitionEmp(Employee[] earr2, int low, int high) {
+	
+	Employee pivot = earr2[low];
+	
+	int i=low-1;
+	int j=high+1;
+	
+	while(true)
+	{
+		
+		do {
+			
+			i++;
+		}while(earr2[i].getSalary()<pivot.getSalary());
+		
+		
+		do {
+			
+			j--;
+		}while(earr2[j].getSalary()>pivot.getSalary());
+		
+		
+		if(!(i<j))
+		{
+			return j;
+		}
+		
+		
+		Employee temp = earr2[i];
+		earr2[i]=earr2[j];
+		earr2[j]=temp;
+		
+		
+		
+		
+	}
+	
+	
+}
+
+public void displayint(int[] iarr1) {
+	
+	System.out.println(Arrays.toString(iarr1));
+	
+}
+
+public void insertionSortInt(int[] iarr1) {
+	
+	int n = iarr1.length;
+	
+	
+	for(int i=8;i<n;i++)
+	{
+		int key = iarr1[i];
+		int j=i-1;
+		
+		while(j>=0 && iarr1[j]>key)
+		{
+			i
+		}
+	}
+	
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

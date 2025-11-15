@@ -1,0 +1,22 @@
+package com.sortingq.beans;
+
+public class Employee {
+	
+
+
+	int empid;
+	String ename;
+	double salary;
+	
+	
+	
+	
+	
+	public Employee(int empid, String ename, double salary) {
+		super();
+		this.empid = empid;
+		this.ename = ename;
+		this.salary = salary;
+	}
+
+}

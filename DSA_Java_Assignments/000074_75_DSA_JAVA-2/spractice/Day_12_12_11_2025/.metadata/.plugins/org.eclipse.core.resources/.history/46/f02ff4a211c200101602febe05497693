@@ -1,0 +1,38 @@
+package com.sortingq.beans;
+
+public class DoublyLinkedListz {
+	
+	Node head;
+	
+	
+	public DoublyLinkedListz()
+	{
+		head=null;
+	}
+	
+	
+	class Node{
+		
+		int data;
+		Node next;
+		Node prev;
+		
+		
+		Node(int data)
+		{
+			this.data=data;
+			next=null;
+			prev=null;
+		}
+	}
+
+
+	public void addAtEndD(int data) {
+		
+		Node newNode = new Node(data)
+		
+		if(head)
+		
+	}
+
+}

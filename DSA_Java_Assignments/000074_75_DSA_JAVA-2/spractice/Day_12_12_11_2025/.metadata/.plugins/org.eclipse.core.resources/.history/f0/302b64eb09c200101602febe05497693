@@ -1,0 +1,181 @@
+package com.sortingq.beans;
+
+public class LinkedListz {
+
+	Node head;
+	
+	
+	public LinkedListz()
+	{
+		head=null;
+		
+	}
+	
+	class Node{
+		
+		int data;
+		Node next;
+		
+		
+		Node(int data)
+		{
+			this.data=data;
+			next=null;
+		}
+	}
+	
+	
+	
+	public void addAtEnd(int data)
+	{
+		Node temp=head;
+		
+		Node newNode = new Node(data);
+		
+		
+		if(head==null)
+		{
+			head=newNode;
+		}
+		else {
+			
+			
+			while(temp.next!=null)
+			{
+				temp=temp.next;
+			}
+			
+			temp.next=newNode;
+			
+			
+			
+		}
+	}
+	
+	
+	
+	public void display()
+	{
+		Node temp =head;
+		if(head==null)
+		{
+			System.out.println("Empty List");
+			return;
+		}
+		
+		while(temp!=null)
+		{
+			if(temp.next!=null)
+			System.out.print(temp.data+"-->");
+			else
+			System.out.print(temp.data);
+			
+			temp=temp.next;
+			
+			
+			
+			
+		}
+		System.out.println();
+	}
+	
+	public void displayrev()
+	{
+		
+		Node temp =head;
+		
+		drevlist(temp);
+				
+		
+		
+	}
+
+
+
+	private void drevlist(Node node) {
+		
+		if(node == null)
+			return;
+		
+		drevlist(node.next);
+		
+//		System.out.print(node.data+"-->");
+//		
+		if(node!=head)
+			System.out.print(node.data+"-->");
+			else
+			System.out.print(node.data);
+		
+		
+	}
+
+
+
+	public void deletePrimes() {
+		
+		Node temp=head;
+		
+		if(head==null)
+		{
+			System.out.println("list is Empty");
+		}
+		else {
+			
+			
+			while(temp!=null) {
+			
+			if(isPrime(head.data) && head.next==null)
+				head=null;
+			
+			
+			while(temp.next!=null && !(isPrime(temp.next.data)))
+			{
+				temp=temp.next;
+			}
+			
+			Node temp2=temp.next;
+			
+			if(temp.next!=null)
+				temp.next=temp.next.next;
+			
+			temp2.next=null;
+			
+			
+			}
+			
+			
+		}
+		
+	}
+
+
+
+	private boolean isPrime(int data) {
+		
+		if(data<2)
+		{
+			return false;
+		}
+		
+		
+		
+		for(int i=2;i<data;i++)
+		{
+			if(data%i==0)
+			{
+				 return false;
+			}
+			
+		}
+		
+		
+		return true;
+	}
+	
+	
+	
+	
+	
+}
+
+

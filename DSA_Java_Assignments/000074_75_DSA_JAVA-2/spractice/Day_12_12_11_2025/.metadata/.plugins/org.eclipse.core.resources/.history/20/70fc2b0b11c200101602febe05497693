@@ -1,0 +1,17 @@
+package com.sortingq.beans;
+
+public class DoublyLinkedListz {
+	
+	Node head;
+	
+	
+	class Node{
+		
+		Node next;
+		Node prev;
+		
+		
+		Node(int data)
+	}
+
+}

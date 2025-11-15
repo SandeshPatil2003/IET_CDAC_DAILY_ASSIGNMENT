@@ -1,0 +1,115 @@
+package com.sortingq.test;
+import com.sortingq.beans.*;
+import com.sortingq.service.*;
+public class TestSorting {
+
+	public static void main(String[] args) {
+		
+		SortingService s = new SortingService();
+		
+		Employee [] earr = new Employee[20];
+		
+		Employee [] earr2 = new Employee[6];
+		
+		
+		int [] iarr1 = new int[10];
+		
+		iarr1[0]=11;
+		iarr1[1]=12;
+		iarr1[2]=13;
+		iarr1[3]=14;
+		iarr1[4]=15;
+		iarr1[5]=16;
+		iarr1[6]=17;
+		iarr1[7]=18;
+		
+		
+		
+		
+		//String [] str = {"Hello","World","John","Cena","America","Apple"};
+		String [] str ={"apple", "banana", "apple", "apple", "banana"};
+		
+		
+		earr[0]= new Employee(1,"a",2000);
+		earr[1]= new Employee(2,"b",2100);
+		earr[2]= new Employee(3,"c",2200);
+		earr[3]= new Employee(4,"d",2300);
+		earr[4]= new Employee(5,"e",2445);
+		earr[5]= new Employee(6,"k",26500);
+		earr[6]= new Employee(7,"g",26060);
+		earr[7]= new Employee(8,"p",20300);
+		earr[8]= new Employee(9,"s",21060);
+		earr[9]= new Employee(10,"t",22800);
+		earr[10]= new Employee(11,"f",20000);
+		earr[11]= new Employee(12,"o",210110);
+		earr[12]= new Employee(13,"u",22030);
+		earr[13]= new Employee(14,"r",23060);
+		earr[14]= new Employee(15,"q",240770);
+		
+		
+		s.display(earr);
+		s.bubbleSort(earr);
+		s.display(earr);
+		
+		earr[15]= new Employee(16,"f1",20070);
+		earr[16]= new Employee(17,"o1",210710);
+		earr[17]= new Employee(18,"u1",2001);
+		earr[18]= new Employee(19,"r1",23070);
+		earr[19]= new Employee(20,"q1",24770);
+		
+		
+		s.display(earr);
+		System.out.println("hello2");
+		s.insertionSort(earr);
+		System.out.println("hello");
+		s.display(earr);
+		
+		
+//		s.displayStr(str);
+//		s.mergeSortStr(str,0,str.length-1);
+//		s.displayStr(str);
+		
+		s.displayStr(str);
+		s.quickSortStr1(str,0,str.length-1);
+		s.displayStr(str);
+		
+		
+		
+		earr2[0]= new Employee(16,"f1",20070);
+		earr2[1]= new Employee(17,"o1",210710);
+		earr2[2]= new Employee(18,"u1",2001);
+		earr2[3]= new Employee(19,"r1",23070);
+		earr2[4]= new Employee(20,"q1",24770);
+		
+		earr2[5]= new Employee(20,"q1",24170);
+		
+//		s.display(earr2);
+//		
+//		s.heapSort(earr2);
+//		
+//		s.display(earr2);
+		
+//		System.out.println("start quicksort");
+//		s.display(earr2);
+//		
+//		s.quickSortEmp(earr2,0,earr2.length-1);
+//		
+//		s.display(earr2);
+//		
+		
+		System.out.println("start--");
+		s.displayint(iarr1);
+		iarr1[8]=10;
+		iarr1[9]=13;
+		
+		s.displayint(iarr1);
+		s.insertionSortInt(iarr1);
+		
+		
+		
+		
+		
+
+	}
+
+}
