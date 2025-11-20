@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+
+ function display(){
+	 
+	 
+	 
+	 /
+	 document.getElementsByTagName("p")[0].innerHTML = "Hello from me ";
+	 document.getElementById("hw").innerHTML = "CLICKED ";
+ }

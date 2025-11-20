@@ -1,0 +1,13 @@
+package com.jdbcdemo.service;
+
+import java.util.Scanner;
+
+public interface EmployeeService {
+
+	boolean addEmployee(Scanner sc);
+
+	boolean updateSalary(int id, double newSal);
+
+	boolean deleteById(int id);
+
+}

@@ -1,0 +1,9 @@
+package com.jdbcdemo.dao;
+
+import com.jdbcdemo.beans.Employee;
+
+public interface EmployeeDao {
+
+	void save(Employee e);
+
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	h1{
+	background-color: yellow;
+	color: green;
+	border : 2px solid red;
+	padding :auto;
+	
+	font-family:sans-serif;
+		}
+
+</style>
+
+</head>
+
+
+<body>
+<h1>HELLO after so4e cgfasfhanges efr inside vscode</h1>
+
+<p>This is para</p>
+
+<button onclick="display()"> show para </button>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+package com.demo.add;
+
+import java.util.Arrays;
+
+public class TestArrAdd {
+
+	public static void main(String[] args) {
+		
+		
+		int []arr = {1,2,3,4,6};
+		
+		int preSum=0,sum=0;
+		for(int i =0;i<arr.length;i++) {			
+			sum = getSum(arr,i,preSum);
+			preSum += arr[i];
+			arr[i]=sum;
+			
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+
+	private static int getSum(int[] arr, int i, int preSum) {
+		int sum = 0;
+		sum+=preSum;
+		System.out.println(sum);
+		for(int j = i;j<arr.length-i;j++)
+		{
+			if(i!=j) 
+			{
+			sum+=arr[j];
+			System.out.println(sum);
+			}
+			
+		}
+		System.out.println(sum);
+		return sum;
+	}
+
+}

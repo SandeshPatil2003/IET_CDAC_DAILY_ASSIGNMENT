@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="com.jdbcdemo.dao.EmployeeDao"/>
+    <fullyQualifiedTypeName name="com.jdbcdemo.dao.EmployeeDaoImpl"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jdbcdemo.beans.Employee"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.jdbc.result.ResultSetMetaData"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.jdbc.CallableStatement"/>
+    <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	h1{
+	background-color: yellow;
+	color: blue;
+	border : 2px solid red;
+	padding :auto;
+	
+		}
+</style>
+
+</head>
+
+
+<body>
+<h1>HELLO after so4e cgfasfhanges efr  inside vscode</h1>
+</body>
+</html>

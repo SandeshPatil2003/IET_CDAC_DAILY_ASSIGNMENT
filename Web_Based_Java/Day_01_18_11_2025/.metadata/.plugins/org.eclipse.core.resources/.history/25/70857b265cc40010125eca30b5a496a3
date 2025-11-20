@@ -1,0 +1,35 @@
+package com.jdbcdemo.service;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import j
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	@Override
+	public boolean addEmployee(Scanner sc) {
+		
+		System.out.println("Enter employee id :");
+		int eid = sc.nextInt();
+		
+		System.out.println("Enter employee name :");
+		String name = sc.next();
+		
+		System.out.println("Enter employee salary :");
+		double sal = sc.nextDouble();
+		
+		System.out.println("Enter employee hiredate as(dd/mm/yyyy):");
+		String date = sc.next();
+		
+		LocalDate sqlDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		
+		Employee e = new Employee(eid,name,sal,sqldate);
+		
+		
+		
+		return false;
+	}
+
+}

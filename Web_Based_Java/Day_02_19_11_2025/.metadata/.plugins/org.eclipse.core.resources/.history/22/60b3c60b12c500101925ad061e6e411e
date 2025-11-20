@@ -1,0 +1,7 @@
+/**
+ * 
+ */
+
+ function display(){
+	 document.getElementsByTagName("p").innerHTML = "Hello from me ";
+ }

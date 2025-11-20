@@ -1,0 +1,120 @@
+package com.jdbcdemo.test;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.*;
+
+import com.jdbcdemo.beans.Employee;
+import com.jdbcdemo.service.*;
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		EmployeeService eservice =new EmployeeServiceImpl();
+		Scanner sc =  new Scanner(System.in);
+		
+		int choice  = 0;
+		
+		do {
+			System.out.println("Welcome to Employee menu");
+			System.out.println("1.Insert Emp Data\n 2.Update Emp Data\n 3.Delete Emp Data\n 4.Display employee by id\n 5.Exit");
+			System.out.print("Enter your choice :");
+			choice = sc.nextInt();
+			
+			switch(choice) {
+			case 1->{
+				boolean status = eservice.addEmployee(sc);
+				
+				if(status) {
+					System.out.println("Employee added successfully.");
+				}
+				else {
+					System.out.println("Not added.");
+				}
+			}
+			case 2 ->{
+				System.out.println("Enter empid to update emp salary :");
+				int id = sc.nextInt();
+				
+				System.out.println("Enter new salary :");
+				double newSal = sc.nextDouble();
+				
+				boolean status = eservice.updateSalary(id,newSal);
+				
+				if(status) {
+					System.out.println("Sal updated successfully.");
+				}
+				else {
+					System.out.println("Not found.");
+				}
+			}
+			case 3->{
+				System.out.println("Enter empid to delete employee :");
+				int id = sc.nextInt();
+				
+				boolean status = eservice.deleteById(id);
+				
+				if(status) {
+					System.out.println("Employee deleted successfully.");
+				}
+				else {
+					System.out.println("Not added.");
+				}
+				
+			}
+			case 4 ->{
+				System.out.println("Enter empid to display employee :");
+				int id = sc.nextInt();
+				
+				ResultSet rs = eservice.displayEmp(id);
+				if(rs!=null) {
+					try {
+//						if (rs.next()) {
+//						System.out.println("EmpId :"+rs.getInt("empid"));
+//						System.out.println("EName :"+rs.getString(2));
+//						System.out.println("EmpSal :"+rs.getDouble(3));
+//						System.out.println("Emp Hiredate :"+rs.getDate(4));
+						
+						
+						ResultSetMetaData rsmd = rs.getMetaData();
+				        int columnCount = rsmd.getColumnCount();
+
+				        // 2. Iterate through each row of the result set
+				        while (rs.next()) {
+				            System.out.println("--- New Record ---");
+				            
+				            // 3. Iterate through each column in the current row
+				            for (int i = 1; i <= columnCount; i++) {
+				                // Get the column name
+				                String columnName = rsmd.getColumnName(i);
+				                // Get the value as a generic Object
+				                Object value = rs.getObject(i); 
+				                
+				                // Dynamically print the name and value for every column
+				                System.out.println(columnName + " : " + value);
+				            }
+				            System.out.println("------------------");
+				        }
+					}
+					 else {
+				            System.out.println("No employee found with ID: " + id);
+				        }
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				else {
+					System.out.println("Not found");
+				}
+			}
+			case 5->{
+				System.out.println("Exiting");
+				
+			}
+			}
+		}while(choice!=5);
+
+	}
+
+}

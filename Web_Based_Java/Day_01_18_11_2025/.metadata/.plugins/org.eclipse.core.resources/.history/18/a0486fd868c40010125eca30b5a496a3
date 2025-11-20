@@ -1,0 +1,132 @@
+package com.jdbcdemo.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.jdbcdemo.beans.Employee;
+
+import com.jdbcdemo.util.*;
+import com.mysql.cj.jdbc.CallableStatement;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	
+	
+	
+	static Connection conn ;
+	static PreparedStatement insEmp;
+	static CallableStatement cst;
+	
+	static {
+		
+		conn=JdbcConn.getMyConnection();
+		try {
+			insEmp=conn.prepareStatement("insert into empdemo values(?,?,?,?)");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public boolean save(Employee e) {
+		
+		try {
+			insEmp.setInt(1, e.getEmpid());
+			insEmp.setString(2, e.getEname());
+			insEmp.setDouble(3, e.getSal());
+			insEmp.setDate(4, java.sql.Date.valueOf(e.getHiredate()));
+			
+			int cnt = insEmp.executeUpdate();
+			if(cnt>0) {
+				return true;
+			}
+			else {
+				return false;
+			}
+			
+			
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+
+		
+		return false;
+	}
+
+	@Override
+	public boolean updateSal(int id, double newSal) {
+		
+		try {
+			insEmp = conn.prepareStatement("update empdemo set sal=? where empid=?");
+		
+			insEmp.setInt(2,id);
+			insEmp.setDouble(1, newSal);
+			
+			int cnt =  insEmp.executeUpdate();
+			if(cnt>0) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+
+	@Override
+	public boolean deleteById(int id) {
+		
+		try {
+			insEmp = conn.prepareStatement("Delete from empdemo where empid=?");
+			
+			insEmp.setInt(1,id);
+			
+			int cnt =  insEmp.executeUpdate();
+			if(cnt>0) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+
+	@Override
+	public ResultSet getEmpById(int id) {
+		try {
+			insEmp = conn.prepareStatement("select empid,ename,sal,hiredate from empdemo where empid=?");
+			
+			insEmp.setInt(1, id);
+			
+			
+//			insEmp = conn.prepareStatement("select empid,ename,sal,hiredate from empdemo");
+		return insEmp.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
+	public ResultSet callProcedure() {
+		cst = conn.prepareCall("call get")
+		return null;
+	}
+
+}

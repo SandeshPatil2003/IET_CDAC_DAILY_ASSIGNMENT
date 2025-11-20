@@ -1,0 +1,5 @@
+package com.jdbcdemo.dao;
+
+public interface EmployeeDao {
+
+}

@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+
+ function display(){
+	 document.getElementsByTagName("p")[0].innerHTML = "Hello from me ";
+	 document.getElementsById("hw")[0].innerHTML = "CLICKED ";
+ }

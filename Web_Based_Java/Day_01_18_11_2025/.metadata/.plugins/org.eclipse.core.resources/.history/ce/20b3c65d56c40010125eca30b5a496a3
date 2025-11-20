@@ -1,0 +1,9 @@
+package com.jdbcdemo.beans;
+
+public class Employee {
+private int empid;
+private String ename;
+private double sal;
+
+
+}

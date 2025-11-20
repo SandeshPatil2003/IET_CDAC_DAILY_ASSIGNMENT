@@ -1,0 +1,5 @@
+package com.jdbcdemo.service;
+
+public interface EmployeeService {
+
+}
