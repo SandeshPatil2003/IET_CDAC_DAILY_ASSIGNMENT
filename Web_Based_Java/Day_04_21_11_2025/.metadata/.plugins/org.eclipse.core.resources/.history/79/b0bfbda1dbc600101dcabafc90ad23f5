@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<body>
+
+<form type=submit action="post">
+Username :<input type="text" ></input>
+Password :<input type="password" ></input>
+
+<button>Login</button>
+</form>
+
+</body>
+</html>

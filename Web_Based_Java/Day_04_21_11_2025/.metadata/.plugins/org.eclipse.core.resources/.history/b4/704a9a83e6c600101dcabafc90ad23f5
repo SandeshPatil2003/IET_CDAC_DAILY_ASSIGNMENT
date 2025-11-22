@@ -1,0 +1,16 @@
+package com.crud.service;
+
+import com.crud.beans.MyUser;
+import com.crud.dao.LoginDao;
+
+public class LoginServiceImpl implements LoginService {
+	 LoginDao ldao;
+	 
+	 
+	@Override
+	public MyUser validateUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

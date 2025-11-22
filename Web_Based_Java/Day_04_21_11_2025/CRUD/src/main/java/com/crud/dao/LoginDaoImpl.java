@@ -1,0 +1,51 @@
+package com.crud.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.crud.beans.MyUser;
+
+public class LoginDaoImpl implements LoginDao {
+	
+	static Connection conn = null;
+	static PreparedStatement valuser;
+	
+	static {
+		conn=DBUtil.getMyConnection();
+		try {
+			valuser=conn.prepareStatement("select true from admin where username=? and password=?");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				}
+	
+
+	@Override
+	public boolean validateUser(String uname, String pass) {
+		ResultSet rs = null;
+		try {
+			valuser.setString(1, uname);
+		
+		valuser.setString(2,pass);
+		
+		 rs= valuser.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		
+		
+		try {
+			return rs.next();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+}
