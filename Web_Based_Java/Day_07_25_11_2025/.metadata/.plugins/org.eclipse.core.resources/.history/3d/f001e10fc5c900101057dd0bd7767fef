@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.Employee.dao.* "%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Added</title>
+</head>
+<body>
+
+<jsp:useBean id="emp" class="com.Employee.beans.Employee" scope="request"></jsp:useBean>
+
+<jsp:setProperty property="*" name="emp"/>
+<% EmployeeDao edao = new EmployeeDaoImpl(); 
+
+	boolean status = edao.addEmp(emp);
+	
+	if(status){
+
+%>
+
+<h4>Object Made: <%=emp%></h4>
+<a href="Employee.jsp"> Add more</a>
+
+<%} else{ %>
+<h4>Object Not Made </h4><%} %>
+
+<% 
+List<Employee> AddedThisSession= (List<Employee>) session.getAttribute("AddedThisSession");
+			if(AddedThisSession==null)
+			{
+				AddedThisSession=new ArrayList<>();
+				
+			}
+			
+				cart.add(nm);
+				
+			}
+			System.out.println(cart);
+			session.setAttribute("cart",cart);
+%>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Employee</title>
+</head>
+<body>
+
+
+<h2>Add Employee</h2>
+<form  action="add" method="post">
+Employee Id :<input type="text" name="empid" id="emp1"></input><br>
+Employee Name :<input type="text" name="ename" id="en1"></input><br>
+Salary :<input type="text" name="sal" id="sal1"></input><br>
+Hire Date :<input type="text" name="hdate" id="hd1"></input><br>
+
+
+<button type="submit">Add new Employee</button>
+
+<button type="button">Show ALL</button>
+</form>
+
+
+</body>
+</html>

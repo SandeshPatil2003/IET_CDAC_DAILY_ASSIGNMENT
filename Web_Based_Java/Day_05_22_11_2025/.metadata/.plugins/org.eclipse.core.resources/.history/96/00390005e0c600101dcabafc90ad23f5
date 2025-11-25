@@ -1,0 +1,7 @@
+package com.crud.beans;
+
+public class MyUser {
+	private String username;
+	
+
+}

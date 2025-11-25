@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<body>
+
+<h2>Login Page</h2>
+<form  action="addemployee" method="post">
+Username :<input type="text" name="username" id="u1"></input><br>
+Password :<input type="password" name="password" id="p1"></input><br>
+<br>
+
+<a href="ChangePassword.html">Change Password</a>
+
+
+<br><br>
+
+<a href="Signup.html">Sign Up</a>
+
+<br><br>
+
+<button type="submit">Login</button>
+</form>
+
+</body>
+</html>

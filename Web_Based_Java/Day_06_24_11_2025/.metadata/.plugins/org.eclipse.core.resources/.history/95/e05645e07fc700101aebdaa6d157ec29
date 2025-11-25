@@ -1,0 +1,43 @@
+package com.crud.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import com.crud.beans.MyUser;
+import com.crud.service.LoginService;
+import com.crud.service.LoginServiceImpl;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class LoginServlet extends HttpServlet {
+	
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
+		response.setContentType("text/html");
+		
+		PrintWriter out = response.getWriter();
+		
+		String uname= request.getParameter("username");
+		String pass= request.getParameter("password");
+		
+		LoginService lservice = new LoginServiceImpl();
+		
+		boolean status  = lservice.validateUser(uname,pass);
+		
+		if(status)
+		{
+			out.println("<h2> Valid User </h2>");
+			
+			RequestDispatcher rd = request.getRequestDispatcher("table");
+			
+			request.include()
+		}
+		
+		
+		
+	}
+
+}

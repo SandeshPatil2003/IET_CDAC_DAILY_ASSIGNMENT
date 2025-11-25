@@ -1,0 +1,33 @@
+package com.Employee.beans;
+
+import java.time.LocalDate;
+
+public class Employee {
+	
+	private int empId;
+	private String empName;
+	private double salary;
+	private LocalDate hiredate;
+	
+	
+	
+	public Employee() {
+		super();
+	}
+
+
+
+	public Employee(int empId, String empName, double salary, LocalDate hiredate) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.salary = salary;
+		this.hiredate = hiredate;
+	}
+	
+	
+	
+	
+	
+
+}

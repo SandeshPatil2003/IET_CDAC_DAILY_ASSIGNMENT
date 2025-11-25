@@ -1,0 +1,13 @@
+package com.Employee.dao;
+
+import com.Employee.beans.Employee;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	@Override
+	public boolean addEmp(Employee e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

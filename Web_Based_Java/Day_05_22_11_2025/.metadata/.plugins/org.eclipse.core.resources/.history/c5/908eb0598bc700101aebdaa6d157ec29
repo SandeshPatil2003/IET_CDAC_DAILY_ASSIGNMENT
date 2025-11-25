@@ -1,0 +1,42 @@
+package com.crud.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import com.crud.beans.Employee;
+import com.crud.service.*;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/allemployee")
+public class ShowAllEmployee extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+  
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		EmployeeService eservice=new EmployeeServiceImpl();
+		List<Employee> elist=eservice.getAllEmployees();
+		out.println("<table border='2'><tr><th>Employee Id</th><th>Employee Name</th><th>Employee Salary</th><th>Employee Hire Date</th></tr>");
+		for(Employee e:elist) {
+			out.println("<tr><td>"+e.getEmpid()+"</td><td>"+e.getEname()+"</td><td>"+e.getSal()+"</td><td>"+e.getHiredate()+"</td><td>");
+			}
+		out.println("</table>");
+		out.println("<a href='addproduct.html'>Add new product</a>");
+	}
+	public void doGet(HttpServletRequest req,HttpServletResponse resp) throws IOException {
+		doPost(req,resp);
+	}
+	}
+
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Change Password</title>
+</head>
+<body>
+
+Enter Username : <input type="text" name="uname" id="u1"></input><br>
+Enter Old Password : <input type="password" name="oldpass" id="op1"></input><br>
+Enter New Password : <input type="password" name="newpass" id="np1"></input><br>
+</body>
+</html>

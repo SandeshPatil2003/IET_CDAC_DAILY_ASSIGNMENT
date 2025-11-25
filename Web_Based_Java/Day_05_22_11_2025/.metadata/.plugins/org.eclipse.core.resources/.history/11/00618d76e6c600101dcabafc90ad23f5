@@ -1,0 +1,13 @@
+package com.crud.service;
+
+import com.crud.beans.MyUser;
+
+public class LoginServiceImpl implements LoginService {
+	 
+	@Override
+	public MyUser validateUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

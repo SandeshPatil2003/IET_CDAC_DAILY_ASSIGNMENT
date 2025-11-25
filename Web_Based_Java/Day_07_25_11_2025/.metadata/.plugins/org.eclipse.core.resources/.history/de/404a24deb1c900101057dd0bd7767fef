@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Result</title>
+</head>
+<body>
+
+<% 
+
+if
+
+double num1= Double.parseDouble(request.getParameter("num1"));
+double num2= Double.parseDouble(request.getParameter("num2"));
+
+double result =num1+num2;
+
+%>
+
+<h2>Result is : <%= result %></h2>
+
+<form action="Calculator.jsp" method="post">
+<button type="submit">Back</button>
+</form>
+
+
+</body>
+</html>

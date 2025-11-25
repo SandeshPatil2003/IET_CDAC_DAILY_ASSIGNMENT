@@ -1,0 +1,9 @@
+package com.crud.dao;
+
+import com.crud.beans.Employee;
+
+public interface EmployeeDao {
+
+	boolean saveEmp(Employee e);
+
+}

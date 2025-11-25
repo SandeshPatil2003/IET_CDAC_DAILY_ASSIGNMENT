@@ -1,0 +1,8 @@
+package com.crud.beans;
+
+public class Employee {
+private int empno;
+private String ename;
+private dou
+
+}

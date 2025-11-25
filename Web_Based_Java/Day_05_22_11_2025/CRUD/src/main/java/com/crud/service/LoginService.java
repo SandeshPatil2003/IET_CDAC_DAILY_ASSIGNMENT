@@ -1,0 +1,18 @@
+package com.crud.service;
+
+import com.crud.beans.Employee;
+import com.crud.beans.MyUser;
+
+public interface LoginService {
+
+	boolean validateUser(String uname, String pass);
+
+	boolean changePass(String uname, String oldp, String newp);
+
+	boolean addUser(String uname, String pass);
+
+	boolean registerUser(String name, String email, String gender, String hobbies, String city);
+
+	
+
+}

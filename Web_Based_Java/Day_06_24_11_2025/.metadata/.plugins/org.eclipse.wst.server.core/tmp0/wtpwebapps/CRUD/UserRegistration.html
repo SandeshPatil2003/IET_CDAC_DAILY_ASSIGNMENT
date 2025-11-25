@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h2>User Registration Form</h2>
+
+
+  
+    <form action="register" method="POST">
+
+      Full Name:
+            <input type="text" id="name" name="name" required>
+            
+            <br><br>
+      
+
+       Email Address:
+            <input type="email" id="email" name="email" required>
+       
+<br>
+     
+        
+            Gender:<br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" >Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" >Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other" >Other</label>
+        
+
+<br>
+         		Hobbies :<br>
+                <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobbies" value="gaming">
+                <label for="hobby2">Gaming</label><br>
+                <input type="checkbox" id="hobby3" name="hobbies" value="coding">
+                <label for="hobby3">Coding</label><br>
+                <input type="checkbox" id="hobby4" name="hobbies" value="traveling">
+                <label for="hobby4">Traveling</label><br>
+                <input type="checkbox" id="hobby5" name="hobbies" value="cooking">
+                <label for="hobby5">Cooking</label><br>
+                <input type="checkbox" id="hobby6" name="hobbies" value="sports">
+                <label for="hobby6">Sports</label>
+    <br>     
+
+       City:
+       <br>
+            <select id="city" name="city" required>
+                <option value="">-- Select a City --</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="chennai">Chennai</option>
+                <option value="pune">Pune</option>
+            </select>
+            
+            <br>
+        
+<br>
+      
+            <button type="submit">Register</button>
+      
+
+    </form>
+
+</body>
+</html>

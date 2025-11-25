@@ -1,0 +1,49 @@
+package com.crud.service;
+
+import com.crud.beans.MyUser;
+import com.crud.dao.LoginDao;
+import com.crud.dao.LoginDaoImpl;
+
+public class LoginServiceImpl implements LoginService {
+	
+	 LoginDao ldao;
+	 
+	 
+	public LoginServiceImpl() {
+		super();
+		
+		ldao = new LoginDaoImpl();
+	}
+
+
+	@Override
+	public boolean validateUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return ldao.validateUser(uname,pass);
+	}
+
+
+	@Override
+	public boolean changePass(String uname, String oldp, String newp) {
+		
+		return ldao.replacep(uname,oldp,newp);
+	}
+
+
+	@Override
+	public boolean addUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return ldao.addUser(uname,pass);
+	}
+
+
+	@Override
+	public boolean registerUser(String name, String email, String gender, String hobbies, String city) {
+		// TODO Auto-generated method stub
+		return ldao.registerUser(name,email,gender,hobbies,city);
+	}
+
+
+	
+
+}

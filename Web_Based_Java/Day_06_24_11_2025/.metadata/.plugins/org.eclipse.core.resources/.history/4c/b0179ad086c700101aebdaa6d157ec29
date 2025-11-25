@@ -1,0 +1,19 @@
+package com.crud.service;
+
+import com.crud.dao.EmployeeDao;
+import com.crud.dao.EmployeeDaoImpl;
+
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	private EmployeeDao edao;
+
+	public EmployeeServiceImpl(EmployeeDao edao) {
+		super();
+		this.edao = new EmployeeDaoImpl();
+	}
+
+	
+	
+	
+
+}

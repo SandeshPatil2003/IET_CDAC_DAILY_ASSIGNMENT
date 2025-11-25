@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee</title>
+</head>
+<body>
+
+<h2>Enter Employee Information</h2>
+<form action="EmployeeAdded.jsp">
+Employee Id : <input type="text" name="empId" id="e1" required><br><br>
+Employee Name : <input type="text" name="empName" id="e2" required><br><br>
+Employee Salary : <input type="text" name="salary" id="e3" required><br><br>
+Employee Hire Date : <input type="date" name="hiredate" id="e4" required><br><br>
+
+
+
+<button type="submit" >Enter</button>
+</form>
+</body>
+</html>

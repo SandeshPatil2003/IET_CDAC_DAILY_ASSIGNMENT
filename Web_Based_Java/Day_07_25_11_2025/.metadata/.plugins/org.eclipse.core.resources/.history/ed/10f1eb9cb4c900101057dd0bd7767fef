@@ -1,0 +1,7 @@
+package com.Employee.beans;
+
+public class Employee {
+	
+	private int empno
+
+}

@@ -1,0 +1,47 @@
+package com.Employee.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.Employee.beans.Employee;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	
+	
+	static Connection conn=null;
+	
+	
+	@Override
+	public boolean addEmp(Employee e) {
+		
+		conn=DBUtil.getMyConnection();
+		
+		PreparedStatement insertEmp;
+		try {
+			insertEmp = conn.prepareStatement("insert into empjava values(?,?,?,?)");
+		
+			insertEmp.setInt(1, e.getEmpId());
+			insertEmp.setString(2, e.getEmpName());
+			insertEmp.setDouble(3, e.getSalary());
+			insertEmp.setDate(4, Date.valueOf(e.getHiredate()));
+			
+			inser
+			
+			
+			
+			
+			
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		
+		
+		return false;
+	}
+
+}

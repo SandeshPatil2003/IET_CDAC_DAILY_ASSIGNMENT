@@ -1,0 +1,25 @@
+package com.crud.beans;
+
+import java.time.LocalDate;
+
+public class Employee {
+private int empid;
+private String ename;
+private double sal;
+private LocalDate hiredate;
+public Employee() {
+	super();
+}
+public Employee(int empid, String ename, double sal, LocalDate hiredate) {
+	super();
+	this.empid = empid;
+	this.ename = ename;
+	this.sal = sal;
+	this.hiredate = hiredate;
+}
+
+
+
+
+
+}

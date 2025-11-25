@@ -1,0 +1,6 @@
+INDEX VERSION 1.132+C:\Users\IET\Desktop\00000074_75_JAVA_3\Day_07_25_11_2025\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3764550214.index
+1893724058.index
+2317756821.index
+2644047794.index

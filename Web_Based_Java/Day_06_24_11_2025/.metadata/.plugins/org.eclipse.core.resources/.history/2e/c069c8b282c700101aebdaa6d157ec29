@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Employee</title>
+</head>
+<body>
+
+
+<h2>Add Employee</h2>
+<form  action="added" method="post">
+Employee Name :<input type="text" name="username" id="u1"></input><br>
+Employee Name :<input type="text" name="username" id="u1"></input><br>
+
+
+<button type="submit">Login</button>
+</form>
+
+
+</body>
+</html>

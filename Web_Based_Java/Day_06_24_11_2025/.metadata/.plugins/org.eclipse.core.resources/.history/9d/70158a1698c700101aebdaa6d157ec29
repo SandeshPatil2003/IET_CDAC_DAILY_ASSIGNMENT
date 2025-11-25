@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h2>User Registration Form</h2>
+
+  
+    <form action="/register" method="POST">
+
+      Full Name:
+            <input type="text" id="name" name="name" required>
+      
+
+        <!-- Email Input -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Gender Radio Buttons -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" class="checkbox-group">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="checkbox-group">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other" class="checkbox-group">Other</label>
+        </div>
+
+        <!-- Hobbies Checkboxes (6 options) -->
+        <div class="form-group">
+            <label>Hobbies (Select all that apply):</label><br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobbies" value="gaming">
+                <label for="hobby2">Gaming</label><br>
+                <input type="checkbox" id="hobby3" name="hobbies" value="coding">
+                <label for="hobby3">Coding</label><br>
+                <input type="checkbox" id="hobby4" name="hobbies" value="traveling">
+                <label for="hobby4">Traveling</label><br>
+                <input type="checkbox" id="hobby5" name="hobbies" value="cooking">
+                <label for="hobby5">Cooking</label><br>
+                <input type="checkbox" id="hobby6" name="hobbies" value="sports">
+                <label for="hobby6">Sports</label>
+            </div>
+        </div>
+
+        <!-- City Dropdown Menu (6 Indian cities) -->
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="">-- Select a City --</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="chennai">Chennai</option>
+                <option value="pune">Pune</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

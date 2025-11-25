@@ -1,0 +1,9 @@
+package com.crud.service;
+
+import com.crud.beans.Employee;
+
+public interface EmployeeService {
+
+	boolean addEmp(Employee e);
+
+}

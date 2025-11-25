@@ -1,0 +1,27 @@
+package com.crud.beans;
+
+public class MyUser {
+	private String username;
+	private String password;
+	
+	
+	
+	public MyUser() {
+		super();
+	}
+
+
+
+	public MyUser(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+	
+	
+	
+	
+	
+	
+
+}

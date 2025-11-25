@@ -1,0 +1,6 @@
+package com.crud.beans;
+
+public class Employee {
+private int eid;
+
+}

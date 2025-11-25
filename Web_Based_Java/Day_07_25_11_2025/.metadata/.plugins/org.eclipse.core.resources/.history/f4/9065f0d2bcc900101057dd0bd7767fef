@@ -1,0 +1,20 @@
+package com.Employee.dao;
+
+import java.sql.Connection;
+
+import com.Employee.beans.Employee;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	
+	
+	static Connection conn=null;
+	static PreparedStatement
+	
+	@Override
+	public boolean addEmp(Employee e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

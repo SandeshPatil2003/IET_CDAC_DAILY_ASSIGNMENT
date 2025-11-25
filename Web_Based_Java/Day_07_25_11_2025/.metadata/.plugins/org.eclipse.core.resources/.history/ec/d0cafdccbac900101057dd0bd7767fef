@@ -1,0 +1,11 @@
+package com.Employee.dao;
+
+import com.Employee.beans.Employee;
+
+public interface EmployeeDao {
+	
+	
+	
+	boolean addEmp(Employee e);
+
+}
