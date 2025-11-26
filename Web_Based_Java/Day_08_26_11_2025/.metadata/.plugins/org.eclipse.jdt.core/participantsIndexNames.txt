@@ -1,0 +1,7 @@
+INDEX VERSION 1.132
+C:\Users\IET\Desktop\00000074_75_JAVA_3\Day_08_26_11_2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3399954994.index
+\JSPActions\src\main\java
+C:\Users\IET\Desktop\00000074_75_JAVA_3\Day_08_26_11_2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3688137335.index
+\JSPCustomTags\src\main\java
+C:\Users\IET\Desktop\00000074_75_JAVA_3\Day_08_26_11_2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1615112748.index
+\JSPCoreTags\src\main\java

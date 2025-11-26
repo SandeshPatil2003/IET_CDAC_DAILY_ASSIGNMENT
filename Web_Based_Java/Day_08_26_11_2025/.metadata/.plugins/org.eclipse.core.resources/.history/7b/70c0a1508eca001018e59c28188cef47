@@ -1,0 +1,25 @@
+package com.product.dao;
+
+import java.sql.Connection;
+
+public class DBUtil {
+	
+	static Connection conn=null;
+	
+	public Connection getMyConnection()
+	{
+		if(conn==null)
+		{
+			conn=DriverManager.registerDriver
+		}
+		
+		return conn;
+	}
+	
+	
+	
+	
+	
+	
+
+}

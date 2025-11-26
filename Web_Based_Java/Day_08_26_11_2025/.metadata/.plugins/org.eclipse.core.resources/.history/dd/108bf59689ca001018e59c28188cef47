@@ -1,0 +1,11 @@
+package com.custom.tags;
+
+public class CalculateTagHandler {
+	
+	private int num1;
+	private int num2;
+	
+	
+	
+
+}

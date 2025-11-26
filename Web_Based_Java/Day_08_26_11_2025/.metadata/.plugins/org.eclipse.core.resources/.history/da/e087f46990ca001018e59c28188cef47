@@ -1,0 +1,18 @@
+package com.product.servlet;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class Example
+ */
+@WebServlet("/greetingServlet") 
+public class Example extends HttpServlet {
+	
+	private static final long serialVersionUID = 1L;
+	
+	respo
+	
+	
+
+}

@@ -1,0 +1,148 @@
+
+plsql
+
+
+1.
+
+
+delimiter $
+
+create procedure transfer_funds(p_from_acc int, p_to_acc int, p_amount int)
+begin
+declare v_balance int;
+
+start transaction;
+
+select balance into v_balance from accounts where acc_no = p_from_acc for update;
+
+if v_balance < p_amount then
+rollback;
+signal sqlstate '45000' set message_text = 'insufficient balance';
+else
+update accounts set balance = balance - p_amount where acc_no = p_from_acc;
+update accounts set balance = balance + p_amount where acc_no = p_to_acc;
+
+insert into transaction_history(from_acc, to_acc, amount) values (p_from_acc, p_to_acc, p_amount);
+
+commit;
+end if;
+
+end $
+
+delimiter ;
+
+
+2.
+
+delimiter $
+
+create procedure place_order(p_customer_id int, p_product_id int, p_qty int)
+begin
+declare v_stock int;
+declare v_price int;
+declare v_discount decimal(5,2);
+declare v_cashback int;
+declare v_total decimal(10,2);
+
+select stock, price into v_stock, v_price from products where product_id = p_product_id for update;
+
+if v_stock < p_qty then
+signal sqlstate '45000' set message_text = 'stock insufficient';
+else
+set v_discount = round((5 + floor(rand()*26)), 2); -- random discount between 5% and 30%
+set v_cashback = floor(rand()*101); -- random cashback between 0 and 100
+
+update products set stock = stock - p_qty where product_id = p_product_id;
+
+set v_total = p_qty * v_price * (1 - v_discount/100) * 1.18; -- price after discount plus 18% gst
+
+insert into orders(customer_id, product_id, qty, total_price) values(p_customer_id, p_product_id, p_qty, v_total);
+
+
+end $
+
+delimiter ;
+
+3.
+
+
+delimiter $
+
+create function total_treatment_cost(p_patient_id int) returns int
+begin
+declare v_total int;
+select sum(doctor_fee + medicine_fee) into v_total from treatment where patient_id = p_patient_id;
+return ifnull(v_total, 0);
+end$
+
+create function insurance_coverage(p_patient_id int) returns int
+begin
+declare v_coverage int;
+declare v_insurance varchar(3);
+declare v_total int;
+select insurance into v_insurance from patients where patient_id = p_patient_id;
+set v_total = total_treatment_cost(p_patient_id);
+if v_insurance = 'YES' then
+set v_coverage = floor(0.2 * v_total);
+else
+set v_coverage = 0;
+end if;
+return v_coverage;
+end$
+
+create function patient_status(p_patient_id int) returns varchar(10)
+begin
+declare v_insurance varchar(3);
+select insurance into v_insurance from patients where patient_id = p_patient_id;
+if v_insurance = 'YES' then
+return 'insured';
+else
+return 'not insured';
+end if;
+end$
+
+create function highest_bill_patient() returns int
+begin
+declare v_patient_id int;
+select patient_id from treatment group by patient_id order by sum(doctor_fee + medicine_fee) desc limit 1 into v_patient_id;
+return v_patient_id;
+end$
+
+create function medicine_expense(p_patient_id int) returns int
+begin
+declare v_medicine_fee int;
+select sum(medicine_fee) into v_medicine_fee from treatment where patient_id = p_patient_id;
+return ifnull(v_medicine_fee, 0);
+end$
+
+create function doctor_expense(p_patient_id int) returns int
+begin
+declare v_doctor_fee int;
+select sum(doctor_fee) into v_doctor_fee from treatment where patient_id = p_patient_id;
+return ifnull(v_doctor_fee, 0);
+end$
+
+create function net_payable_with_tax(p_patient_id int, tax_rate decimal(5,2)) returns decimal(10,2)
+begin
+declare v_total int;
+declare v_coverage int;
+declare v_payable decimal(10,2);
+set v_total = total_treatment_cost(p_patient_id);
+set v_coverage = insurance_coverage(p_patient_id);
+set v_payable = (v_total - v_coverage) * (1 + tax_rate/100);
+return v_payable;
+end$
+
+delimiter ;
+
+
+
+
+4.
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+assignment -2 dbt
+
+
+1.
+
+select ename,job,hiredate from emp where hiredate between '1981-02-01' and '1981-05-01' ;
+
+
+2.
+
+select ename as Employee , hiredate as HireDate from emp where year(hiredate)=1982;
+
+3.
+
+select curdate() as 'Current Date';
+
+
+4.
+
+select ename as 'Employee's Name', hiredate as 'Hiredate',sal as 'Salary', adddate(adddate(hiredate, interval 6 month),interval 6 day) as 'Review Date' from emp;
+
+select ename as `Employee's Name`, hiredate as 'Hiredate',sal as 'Salary', adddate(adddate(hiredate, interval 6 month),interval 6 day) as 'Review Date' from emp;
+
+4-5 skipped as told
+
+6.
+
+
+select ename as Name, lpad(sal,15,'$') as Salary  from emp;
+
+7.
+
+
+select ename as Name, hiredate as Hiredate , dayname(hiredate) from emp order by weekday(hiredate);
+
+
+
+8.
+
+
+
+select * from ord where year(orderdate)=1986;
+
+
+
+9.
+
+select dayname(now());
+
+
+10.
+
+skip
+
+
+
+11.
+
+select orderdate , shipdate from ord;
+
+
+12.
+
+
+select * from emp where month(hiredate) = 12;
+
+
+13.
+
+select dayname(hiredate) from emp where ename = 'king';
+
+
+
+14.
+
+
+select monthname(hiredate) from emp where ename = 'martin
+
+
+15.
+
+select datediff(curdate(), hiredate) as days_elapsed from emp where ename = 'adams';
+
+
+16.
+
+select date_add(curdate(), interval 15 day) as future_date;
+
+17.
+
+select * from emp where month(hiredate) = 12;
+
+18.
+
+select * from emp where year(hiredate) > 1980;
+
+19.
+
+select concat(ename, '-', job) as name_job from emp;
+
+20.
+
+select distinct length(ename) as name_length from emp;
+
+
+21.
+
+select ename, date_format(hiredate, '%d/%m/%y') as formatted_hiredate from emp where deptno = 20;
+
+
+22.
+
+select dayname(hiredate) as weekday_joined from emp where ename = 'smith';
+
+23.
+
+select ename, date_format(hiredate, 'the %dth of %b. %y') as formatted_hiredate from emp where job = 'analyst';
+
+24.
+
+select deptno, sum((sal + ifnull(comm, 1000)) * 12) as total_annual_compensation from emp group by deptno;
+
+25.
+
+select ename, case empno when 7788 then 'clark' when 7698 then 'blake' when 7566 then 'jones' else 'king' end as manager_name from emp;
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+assignment 6.1
+
+1.
+
+ select ename,job from emp where isnull(mgr);
+
+
+3.
+
+select * from emp where hiredate=(select hiredate r1 from emp where ename="king");
+
+
+4.
+
+select ename,job,deptno,sal,(select max(sal) from emp)-sal from emp where deptno=10;
+
+
+5.
+
+select abs((select avg(sal) from emp where deptno=30) - (select avg(sal) from emp where deptno=20)) Diff20_30;
+
+
+6.
+
+
+select ename,sal,comm from emp where comm>0.05*sal;
+
+
+7.
+
+ select ename,sal from emp where sal<(select avg(sal) from emp where deptno=20);
+
+
+
+8.
+
+select empno from emp t1 where not exists (select * from emp t2 where t1.empno=t2.mgr);
+
+
+9.
+
+
+select empno,ename,job from emp where empno=(select mgr from (select mgr,count(mgr) r1 from emp group by mgr order by 2 desc) t1 where r1=(select max(a1) from (select mgr,count(mgr) a1 from emp group by mgr order by 2 desc) b1));
+
+
+
+10.
+
+select concat(empno, ' ', ename, ' ', mgr) as emp_mgr_details from emp;
+
+11.
+
+select ename from emp where hiredate = (select min(hiredate) from emp) or hiredate = (select max(hiredate) from emp)
+
+
+12.
+
+select max(length(ename)) as max_length, max(length(ename)) - (select max(length(ename)) from emp where length(ename) < (select max(length(ename)) from emp)) as length_diff from emp;
+
+13.
+
+
+select ename from emp where sal < 0.3 * (select sal from emp where job = 'president');
+
+14.
+
+select deptno, sum(sal) as total_sal from emp group by deptno order by total_sal desc limit 1;
+
+15.
+
+
+select deptno, count(*) as staff_count from emp group by deptno order by staff_count asc limit 1;
+
+16.
+
+select deptno, avg(sal) as avg_sal from emp group by deptno having avg_sal not in ((select max(avg_sal) from (select avg(sal) as avg_sal from emp group by deptno) t), (select min(avg_sal) from (select avg(sal) as avg_sal from emp group by deptno) t));
+
+17.
+
+
+select concat('mr. ', ename, ' works under ', (select ename from emp m where m.empno = emp.mgr)) as details from emp;
+
+18.
+
+select * from emp where hiredate < (select hiredate from emp where ename = 'blake');
+
+19.
+
+select * from emp e where hiredate < (select min(hiredate) from emp s where s.mgr = e.empno);
+
+20.
+
+select ename from emp where sal = (select max(sal) from emp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JSPCustomTags/src/main/webapp/WEB-INF/&apos;mytaglib.tld&apos;&apos; to &apos;mytaglib.tld&apos;" description="Rename resource &apos;&apos;mytaglib.tld&apos;&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/&apos;mytaglib.tld&apos;" name="mytaglib.tld" stamp="1764134711446" updateReferences="true"/>
+</session>

@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<%@taglib prefix="hello" uri="/mytaglib" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello Custom Tag
+</title>
+</head>
+<body>
+
+<%
+  String fnm="JOHN";
+  String lnm="CENA";
+%>
+  <h1>Hello, we are designing custom tags</h1>
+  <hello:myhellotag fname="<%=fnm%>" lname="<%=lnm%>"></hello:myhellotag>
+  <hello:calculatedata num1="${param.num1 }" num2="${param.num2 }"></hello:calculatedata>
+
+
+ <hello:myhellotag fname="heel" lname="<%=lnm%>"></hello:myhellotag>
+</body>
+</html>

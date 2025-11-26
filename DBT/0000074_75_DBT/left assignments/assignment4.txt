@@ -1,0 +1,284 @@
+
+1.
+
+select count(*) from emp;
+
+2.
+
+select max(sal) as max_salary, min(sal) as min_salary from emp;
+
+3.
+
+select count(*) from emp where sal > 3000;
+
+4.
+
+select deptno, count(*) from emp group by deptno;
+
+5.
+
+select * from emp where sal = (select max(sal) from emp) or sal = (select min(sal) from emp);
+
+6.
+
+select job, sum(sal) as total_salary from emp group by job;
+
+7.
+select deptno, max(sal) as max_salary from emp group by deptno;
+
+8.
+
+select job, avg(sal) as average_salary from emp group by job;
+
+9.
+
+select count(*) from emp where deptno = 20;
+
+10.
+
+select count(*) from emp where deptno = 10 and job = 'manager';
+
+
+11.
+
+select count(*) from emp where deptno = 20 and comm is null;
+
+12.
+
+select e.ename from emp e join dept d on e.deptno = d.deptno where d.dname = 'accounts' and e.sal = (select max(sal) from emp e2 join dept d2 on e2.deptno = d2.deptno where d2.dname = 'accounts');
+
+13.
+
+select * from emp where sal < (select avg(sal) from emp where job = 'manager');
+
+14.
+
+select deptno, job, avg(sal * 12 + ifnull(comm, 0)) as average_annual_salary from emp group by deptno, job;
+
+15.
+
+select sum(case when sal is not null then 1 else 0 end) as people_with_salary, sum(case when comm is not null then 1 else 0 end) as people_with_comm from emp where deptno = 30;
+
+16.
+
+select avg(sal) as average_salary, min(sal) as minimum_salary, max(sal) as maximum_salary from emp where job in ('clerk', 'manager');
+
+17.
+
+select deptno from emp where job = 'clerk' group by deptno having count(*) > 1;
+
+18.
+
+select ename, hiredate from emp where month(hiredate) = 12;
+
+19.
+
+select ename, hiredate from emp where year(hiredate) = 1980;
+
+20.
+
+select concat(concat(upper(substring(ename, 1, 1)), lower(substring(ename, 2))), '-', concat(upper(substring(job, 1, 1)), lower(substring(job, 2)))) as name_job from emp;
+
+21.
+
+select empno, ename, date_format(hiredate, '%d/%m/%y') as formatted_hiredate from emp where deptno = 20;
+
+22.
+
+select ename, timestampdiff(month, hiredate, curdate()) as months_worked from emp where job = 'president';
+
+23.
+select ename, dayname(hiredate) as weekday_joined from emp where ename = 'smith';
+
+24.
+
+select ename, 'time data not available' as time_of_day from emp where ename = 'adams';
+
+
+25.
+
+select ename, dayofmonth(hiredate) as day_of_month from emp where ename = 'king';
+
+
+26.
+
+select ename, monthname(hiredate) as month_joined from emp where ename = 'martin';
+
+27.
+
+select empno, ename, quarter(hiredate) as quarter_joined from emp;
+
+28.
+
+select * from emp where job = 'analyst' and date_format(hiredate, 'the %dth of %m %y') = 'the 03rd of 12 84';
+
+29.
+
+select ename, job, case job when 'clerk' then 'a' when 'manager' then 'b' when 'president' then 'c' else 'd' end as job_classification from emp;
+
+
+30.
+
+select max(length(ename)) as max_name_length from emp;
+
+
+31.
+
+select ename, concat(timestampdiff(year, hiredate, curdate()), ' years and ', floor(timestampdiff(month, hiredate, curdate()) % 12), ' months') as length_of_service from emp;
+
+32.
+select count(*) from emp where year(hiredate) = 1985;
+
+33.
+
+select monthname(hiredate) as join_month, count(*) as employee_count from emp where year(hiredate) = 1985 group by join_month, month(hiredate) order by month(hiredate);
+
+34.
+
+select count(*) from emp where year(hiredate) = 1985 and month(hiredate) = 3;
+
+35.
+select sum(sale_amount) as total_sales_amount from sales;
+
+36.
+
+select customer_name, min(sale_amount) as lowest_sale, max(sale_amount) as highest_sale from sales group by customer_name;
+
+37.
+
+select product_name, min(sale_amount) as lowest_sale, max(sale_amount) as highest_sale, sum(sale_amount) as total_sales from sales group by product_name;
+
+38.
+
+select deptno, avg(sal) as average_salary from emp group by deptno having count(*) > 3;
+
+39.
+
+select customer_name, sum(sale_amount) as total_sales from sales where customer_name != 'tkb sport shop' group by customer_name having count(distinct order_id) <= 4;
+
+40.
+
+select max(sal) as highest, min(sal) as lowest, sum(sal) as sum_of_sal, avg(sal) as average_salary from emp;
+
+41.
+
+select job, max(sal) as highest, min(sal) as lowest, sum(sal) as sum_of_sal, avg(sal) as average_salary from emp group by job;
+
+42.
+
+select ename, sal from emp where sal < (select avg(sal) from emp where deptno = 20);
+
+43.
+
+select deptno, job, avg(sal * 12 + ifnull(comm, 0)) as average_annual_salary from emp group by deptno, job;
+
+44.
+
+select sum(case when sal is not null then 1 else 0 end) as people_with_salary, sum(case when comm is not null then 1 else 0 end) as people_with_commission from emp where deptno = 30;
+
+45.
+
+select job, avg(sal) as average_salary, min(sal) as minimum_salary, max(sal) as maximum_salary from emp where job in ('clerk', 'manager') group by job;
+
+46.
+
+select distinct sal from emp order by sal desc limit 1, 1;
+
+47.
+
+select e.ename, e.sal, e.deptno from emp e join (select deptno, max(sal) as max_dept_sal from emp group by deptno) d on e.deptno = d.deptno and e.sal = d.max_dept_sal;
+
+
+48.
+
+select repid, sum(sale_amount) as total_sales from sales group by repid order by total_sales desc limit 1;
+
+49.
+
+select job, max(sal) as highest_salary from emp group by job;
+
+50.
+
+select e.ename, e.hiredate, e.deptno from emp e join (select deptno, max(hiredate) as max_hiredate from emp group by deptno) d on e.deptno = d.deptno and e.hiredate = d.max_hiredate;
+
+51.
+
+select year(hiredate) as year, count(*) as num_employees from emp group by year(hiredate) order by num_employees desc limit 1;
+
+52.
+
+select ename from emp group by ename having count(*) = 1;
+
+53.
+
+select d., (select count() from emp where emp.deptno = d.deptno) as num_emp from dept d;
+
+54.
+
+
+select d.* from dept d left join emp e on d.deptno = e.deptno where e.deptno is null;
+
+55.
+
+select month(hiredate) as month, count(*) as num_employees from emp group by month(hiredate) order by num_employees asc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

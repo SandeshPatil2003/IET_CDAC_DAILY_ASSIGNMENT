@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculation</title>
+</head>
+<body>
+
+<%
+
+double num1 = Double.parseDouble(request.getParameter("num1"));
+double num2 = Double.parseDouble(request.getParameter("num2"));
+
+double addition = num1+num2;
+
+String result= "Addition is  : "+addition;
+
+%>
+
+<jsp:forward page="DisplayData.jsp">
+</jsp:forward>
+
+</body>
+</html>

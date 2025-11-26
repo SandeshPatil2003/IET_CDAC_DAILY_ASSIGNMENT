@@ -1,0 +1,8 @@
+package com.product.dao;
+
+public class DBUtil {
+	
+	static Connection conn=null;
+	
+
+}

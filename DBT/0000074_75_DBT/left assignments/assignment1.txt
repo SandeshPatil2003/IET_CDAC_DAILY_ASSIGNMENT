@@ -1,0 +1,119 @@
+Assignment Ans 
+
+Select command
+
+1.
+
+select * from emp;
+
+2.
+
+select ename Employee_Name from emp;
+
+3.
+
+select ename Employee_Name , job Jobs from emp;
+
+4.
+
+select dname as Department_Name from dept;
+
+5.
+
+select * from emp;
+
+6.
+
+desc dept;
+
+7.
+
+select empno,ename Employee_Name , sal Salary from emp;
+
+
+8.
+
+select job JOB,comm Commission,ename Employee_Name  from emp;
+
+9.
+
+select location Location ,dname as DepartmentNames from dept;
+
+10.
+
+select distinct mgr ManagerCodes from emp;
+
+11.
+
+SELECT CONCAT(empno, ' ', ename, ' ', mgr) AS 'Employee Details'FROM emp;
+
+
+
+12.
+
+SELECT CONCAT(empno, ',', ename, ',', gender, ',', job, ',', mgr ,',', hiredate, ',', sal,',', comm,',', deptno,',', bonusid,',', `user name`,',', pwd,',', phone,',', isactive) AS 'Employee Details'FROM emp;
+
+
+
+SELECT CONCAT(
+    IFNULL(empno, 'N/A'), ',', 
+    IFNULL(ename, 'N/A'), ',', 
+    IFNULL(gender, 'N/A'), ',', 
+    IFNULL(job, 'N/A'), ',', 
+    IFNULL(mgr, 'N/A'), ',', 
+    IFNULL(hiredate, 'N/A'), ',', 
+    IFNULL(sal, 'N/A'), ',', 
+    IFNULL(comm, 'N/A'), ',', 
+    IFNULL(deptno, 'N/A'), ',', 
+    IFNULL(bonusid, 'N/A'), ',', 
+    IFNULL(`user name`, 'N/A'), ',', 
+    IFNULL(pwd, 'N/A'), ',', 
+    IFNULL(phone, 'N/A'), ',', 
+    IFNULL(isactive, 'N/A')
+) AS 'Employee Details'
+FROM emp;
+
+13.
+
+SELECT CONCAT(
+    IFNULL(empno, 'N/A'), ',', 
+    IFNULL(ename, 'N/A'), ',', 
+    IFNULL(gender, 'N/A'), ',', 
+    IFNULL(job, 'N/A'), ',', 
+    IFNULL(mgr, 'N/A'), ',', 
+    IFNULL(hiredate, 'N/A'), ',', 
+    IFNULL(sal, 'N/A'), ',', 
+    IFNULL(comm, 'N/A'), ',', 
+    IFNULL(deptno, 'N/A'), ',', 
+    IFNULL(bonusid, 'N/A'), ',', 
+    IFNULL(`user name`, 'N/A'), ',', 
+    IFNULL(pwd, 'N/A'), ',', 
+    IFNULL(phone, 'N/A'), ',', 
+    IFNULL(isactive, 'N/A')
+) AS 'Employee Details'
+, sal `OldSalary-NewSalary`
+FROM emp;
+
+
+14.
+
+
+select concat( ename,' earns ',sal,' monthly, but wants salary ',3*sal) `Dream Salaries` from emp;
+
+15. done.
+
+
+16.
+
+select repid  'Representative ID',custid  'Customer ID',custname  'Customer Name',prodid  'Product ID',prodname  'Product Name',amount  'Sales Amount' from  sales;
+
+
+
+
+
+
+
+
+
+
+
