@@ -1,0 +1,47 @@
+package com.product.servlet;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+import java.io.IOException;
+import java.util.*;
+
+import com.product.beans.Product;
+import com.product.service.ProductService;
+import com.product.service.ProductServiceImpl;
+
+
+public class PlaceOrderServlet extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		HttpSession session = request.getSession();
+		
+		Set<Product> cart =(Set<Product>) session.getAttribute("cart");
+		
+		ProductService pservice = new ProductServiceImpl();
+		
+		for(Product p:cart)
+		{
+			
+			pservice.updateStock(p.getPid(),p.getQty());
+			
+			
+		}
+		
+		RequestDispatcher rd = request.getRequestDispatcher("PlaceOrder.jsp");
+		
+		rd.forward(request, response);
+		
+	
+		
+		
+	}
+
+}

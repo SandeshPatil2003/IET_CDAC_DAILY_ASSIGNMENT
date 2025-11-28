@@ -1,0 +1,15 @@
+package com.product.service;
+
+import java.util.List;
+
+import com.product.beans.Product;
+
+
+
+public interface ProductService {
+
+	List<String> getAllCategory();
+
+	List<Product> fetchProductsByCat(String selectedcat);
+
+}

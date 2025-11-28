@@ -1,0 +1,79 @@
+package com.product.servlet;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import com.product.beans.Product;
+import com.product.beans.User;
+
+public class AddToCartServlet extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		response.setContentType("text/html");
+		
+		PrintWriter out = response.getWriter();
+		
+		HttpSession session = request.getSession();
+		
+		User user = (User) session.getAttribute("customer");
+		
+		if(user!=null) {
+			
+			int pid = Integer.parseInt(request.getParameter("pid"));
+			String pname= request.getParameter("pname");
+			int selectedqty = Integer.parseInt(request.getParameter("selectedqty"));
+			double price = Double.parseDouble(request.getParameter("price"));
+			String category = request.getParameter("category");
+			
+			
+			Product p = new Product(pid,pname,selectedqty,price,category);
+			
+			Set<Product> cart  = (Set<Product>) session.getAttribute("cart");
+			
+			if(cart == null) {
+				cart = new HashSet<>();
+				cart.add(p);
+				session.setAttribute("cart", cart);
+				System.out.println("Cart created");
+				System.out.println(cart);
+			}
+			else {
+			
+					if(cart.contains(p)) {
+						
+						cart.remove(p);
+						cart.add(p)
+					}
+				cart.add(p);
+				System.out.println("added in existing Cart ");
+				System.out.println(cart);
+			}
+			 
+			//request.setAttribute("clist", clist);
+			
+			RequestDispatcher rd = request.getRequestDispatcher("Category.jsp");
+			rd.forward(request, response);	
+			
+			
+		}
+		else {
+			out.println("Invalid credentials, Try again");
+			RequestDispatcher rd = request.getRequestDispatcher("Login.html");
+			rd.include(request, response);	
+		}
+	}
+
+}

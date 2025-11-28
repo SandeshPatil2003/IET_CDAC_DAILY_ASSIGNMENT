@@ -1,0 +1,33 @@
+package com.product.service;
+
+import java.util.List;
+
+import com.product.beans.Product;
+import com.product.dao.*;
+
+public class ProductServiceImpl implements ProductService {
+	
+	ProductDao pdao = new ProductDaoImpl();
+
+	@Override
+	public List<String> getAllCategory() {
+		
+		return pdao.getAllCategory();
+	}
+
+	@Override
+	public List<Product> fetchProductsByCat(String selectedcat) {
+		// TODO Auto-generated method stub
+		return pdao.fetchProductBycat(selectedcat);
+	}
+
+
+
+	@Override
+	public void updateStock() {
+		
+		pdao.updateStock();
+		
+	}
+
+}

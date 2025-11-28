@@ -1,0 +1,96 @@
+package com.product.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.product.beans.Product;
+
+public class ProductDaoImpl implements ProductDao {
+	
+static Connection conn = null;
+	
+	static {
+		conn = DBUtil.getMyConnection();
+	}
+
+	@Override
+	public List<String> getAllCategory() {
+		
+		try {
+			
+			PreparedStatement getcategory = conn.prepareStatement("select category from productinfo");
+		
+			ResultSet rs = getcategory.executeQuery();
+			List<String> clist = new ArrayList<>();
+			
+			while(rs.next()) {
+				
+				clist.add(rs.getString(1));
+				
+			}
+			return clist;
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+
+	@Override
+	public List<Product> fetchProductBycat(String selectedcat) {
+	
+		
+		
+		try {
+			PreparedStatement getproducts = conn.prepareStatement("select * from productinfo where category=?");
+			
+			getproducts.setString(1, selectedcat);
+			
+			ResultSet rs = getproducts.executeQuery();
+			
+			List<Product> plist = new ArrayList<>();
+			
+			while(rs.next()) {
+				
+				plist.add(new Product(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getDouble(4),rs.getString(5)));
+			}
+			
+			return plist;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
+	public void updateStock(int pid, int qty) {
+		
+		try {
+			PreparedStatement updatestock = conn.prepareStatement("update productinfo set qty=qty-? where pid=?");
+			updatestock.setInt(1, qty);
+			updatestock.setInt(2, pid);
+			
+			int n = updatestock.executeUpdate();
+			if(n>0) {
+				System.out.println("stock for pid "+pid+" reduced by :"+qty);
+			}
+			else {
+				System.out.println("Unable to change stock.");
+			}
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+
+}

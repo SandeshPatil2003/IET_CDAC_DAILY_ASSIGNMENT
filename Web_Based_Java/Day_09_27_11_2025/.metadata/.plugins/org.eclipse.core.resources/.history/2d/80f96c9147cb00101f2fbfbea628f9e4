@@ -1,0 +1,17 @@
+package com.product.service;
+
+import java.util.List;
+
+import com.product.dao.*;
+
+public class ProductServiceImpl implements ProductService {
+	
+	ProductDao pdao = new ProductDaoImpl();
+
+	@Override
+	public List<String> getAllCategory() {
+		
+		return pdao.getAllCategory();
+	}
+
+}
