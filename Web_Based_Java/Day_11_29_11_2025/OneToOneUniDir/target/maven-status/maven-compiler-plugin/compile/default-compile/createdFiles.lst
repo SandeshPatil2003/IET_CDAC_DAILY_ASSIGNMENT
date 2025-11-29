@@ -1,0 +1,4 @@
+com\onetoone\beans\Course.class
+com\onetoone\beans\Faculty.class
+com\onetoone\test\TestGetCourse.class
+com\onetoone\test\TestMain.class
