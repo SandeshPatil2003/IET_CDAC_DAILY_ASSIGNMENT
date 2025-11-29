@@ -16,7 +16,7 @@ public class Faculty {
 	private String fname;
 	private String subject;
 	
-	@OneToOne( fetch=FetchType.LAZY)
+	@OneToOne(mappedBy="faculty", fetch=FetchType.LAZY)
 	private Course course;
 	
 	
