@@ -1,0 +1,81 @@
+package com.manytomany.test;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.manytomany.beans.*;
+
+public class TestMain {
+	
+	public static void main(String[] args) {
+		
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Set<Movie> mset1 = new HashSet<>();
+		
+		Movie m1 = new Movie("Fast & Furious", LocalDate.of(2000, 10, 10));
+		
+		Movie m2 = new Movie("Fast & Furious 2", LocalDate.of(2003, 10, 10));
+		
+		Movie m3 = new Movie("Fast & Furious 3", LocalDate.of(2004, 07, 20));
+		
+		Movie m4 = new Movie("Fast & Furious 4", LocalDate.of(2005, 05, 25));
+		
+		
+		
+		Movie m5 = new Movie("Harry Potter", LocalDate.of(1999, 10, 10));
+		
+		Movie m6 = new Movie("Harry Potter 2", LocalDate.of(2001, 10, 10));
+		
+		Movie m7 = new Movie("Harry Potter 3", LocalDate.of(2007, 07, 20));
+		
+		Movie m8 = new Movie("Harry Potter 4", LocalDate.of(2009, 05, 25));
+		
+		mset1.add(m1);
+		mset1.add(m2);
+		mset1.add(m3);
+		mset1.add(m4);
+		
+		Set<Movie> mset2 = new HashSet<>();
+		
+		Set<Actor> aset1 = new HashSet<>();
+		
+		mset2.add(m5);
+		mset2.add(m6);
+		mset2.add(m7);
+		mset2.add(m8);
+		
+		Set<Movie> mset3 = new HashSet<>();
+		
+		mset1.add(m1);
+		mset1.add(m2);
+		mset2.add(m7);
+		mset2.add(m8);
+		
+		
+		
+		Actor a1 = new Actor("John","Cena",mset1);
+		
+		Actor a2 = new Actor("The","Rock",mset2);
+		
+		Actor a3 = new Actor("Salman","Khan",mset3);
+		
+		
+		
+		tr.commit();
+		session.close();
+		
+		sf.close();
+	}
+
+}

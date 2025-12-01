@@ -1,0 +1,24 @@
+package com.onetomany.beans;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import javax.persistence.OneToMany;
+
+
+@Entity()
+public class Course {
+		@Id
+		@GeneratedValue
+		private int sid;
+		private String sname;
+		
+		@OneToMany(MappedBy="")
+		private Set<Student> sset;
+
+	}
+
+

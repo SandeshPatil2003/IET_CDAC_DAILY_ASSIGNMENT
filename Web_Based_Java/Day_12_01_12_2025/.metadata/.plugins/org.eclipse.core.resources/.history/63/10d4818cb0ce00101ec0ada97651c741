@@ -1,0 +1,27 @@
+package com.manytomany.beans;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+@Entity(name="Actor101")
+
+public class Actor {
+	@Id
+	@GeneratedValue
+	private int aid;
+	private String fname;
+	private String lname;
+	
+	@ManyToMany
+	private Set<Movies> mset;
+
+	public Actor() {
+		super();
+	}
+	
+	
+
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC 
+  "-//Hibernate/Hibernate Configuration DTD//EN" 
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration 
+    xmlns="www.hibernate.org"
+    xmlns:xsi="www.w3.org"
+    xsi:schemaLocation="www.hibernate.org hibernate-configuration-6.0.xsd"> 
+    
+    <session-factory>
+        <!-- Standard JDBC properties -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.10.117:3306/dac74?useSSL=false</property>
+        <property name="connection.username">dac74</property>
+        <property name="connection.password">welcome</property>
+        
+        <!-- Database specific settings -->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.pool_size">5</property>
+
+        <!-- Hibernate runtime behavior properties -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        
+        <!-- !!! Add your mapping classes here !!! -->
+        <!-- Example: <mapping class="com.demo.beans.Address"/> -->
+        <!-- Example: <mapping class="com.demo.beans.User"/> -->
+        
+        <mapping class="com.onetomany.beans.Course"/>
+        <mapping class="com.onetomany.beans.Student"/>
+
+    </session-factory>
+</hibernate-configuration>

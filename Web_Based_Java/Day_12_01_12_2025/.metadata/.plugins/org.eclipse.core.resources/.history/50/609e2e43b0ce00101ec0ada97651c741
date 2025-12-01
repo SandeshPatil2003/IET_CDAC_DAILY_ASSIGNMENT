@@ -1,0 +1,8 @@
+package com.manytomany.beans;
+
+public class Actor {
+	private int aid;
+	private String aname;
+	
+
+}

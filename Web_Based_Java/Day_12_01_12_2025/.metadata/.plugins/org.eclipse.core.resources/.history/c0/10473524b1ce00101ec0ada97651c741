@@ -1,0 +1,12 @@
+package com.manytomany.test;
+
+import org.hibernate.SessionFactory;
+
+public class TestMain {
+	
+	public static void main(String[] args) {
+		
+		SessionFactory sf = new Configuration()
+	}
+
+}

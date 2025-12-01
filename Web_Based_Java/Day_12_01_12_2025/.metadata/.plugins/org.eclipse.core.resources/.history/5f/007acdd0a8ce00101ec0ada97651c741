@@ -1,0 +1,23 @@
+package com.onetomany.beans;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+public class Course {
+
+	@Entity
+	
+		
+		@Id
+		@GeneratedValue
+		private int sid;
+		private String sname;
+		
+		@ManyToOne
+		private Course course;
+
+	}
+
+}

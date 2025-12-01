@@ -1,0 +1,12 @@
+package com.manytomany.beans;
+
+import java.util.Set;
+@Entity(name=)
+public class Actor {
+	private int aid;
+	private String aname;
+	
+	@ManyToMany
+	private Set<Movies> mset;
+
+}

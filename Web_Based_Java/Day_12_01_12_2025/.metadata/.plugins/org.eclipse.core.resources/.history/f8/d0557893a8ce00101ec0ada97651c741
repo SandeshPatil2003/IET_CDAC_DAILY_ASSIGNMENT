@@ -1,0 +1,16 @@
+package com.onetomany.beans;
+
+import org.hibernate.annotations.Entity;
+
+@Entity
+
+public class Student {
+	
+	@Id
+	private int sid;
+	private String sname;
+	
+	@ManyToOne
+	private Course course;
+
+}

@@ -1,0 +1,45 @@
+package com.onetomany.test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+
+import com.onetomany.beans.*;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		
+		Session session = sf.openSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Set<Student> sset = new HashSet<>();
+		
+		
+		Student s1 = new Student("John");
+		Student s2 = new Student("John");
+		Student s1 = new Student("John");
+		
+		Course c1 = new Course("Wrestling",sset);
+		
+		
+		tr.commit();
+		session.close();
+		sf.close();
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.manytomany.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.manytomany.beans.Movies;
+
+public class TestMain {
+	
+	public static void main(String[] args) {
+		
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Set<Movies> mset = 
+		
+		
+		tr.commit();
+		session.close();
+		
+		sf.close();
+	}
+
+}

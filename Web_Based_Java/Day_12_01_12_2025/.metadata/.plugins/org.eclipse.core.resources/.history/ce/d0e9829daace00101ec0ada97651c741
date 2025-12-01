@@ -1,0 +1,74 @@
+package com.onetomany.beans;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import javax.persistence.OneToMany;
+
+
+@Entity(name="Course101")
+public class Course {
+		@Id
+		@GeneratedValue
+		private int sid;
+		private String sname;
+		
+		@OneToMany(mappedBy="course")
+		private Set<Student> sset;
+
+		public int getSid() {
+			return sid;
+		}
+
+		public void setSid(int sid) {
+			this.sid = sid;
+		}
+
+		public String getSname() {
+			return sname;
+		}
+
+		public void setSname(String sname) {
+			this.sname = sname;
+		}
+
+		public Set<Student> getSset() {
+			return sset;
+		}
+
+		public void setSset(Set<Student> sset) {
+			this.sset = sset;
+		}
+
+		@Override
+		public String toString() {
+			return "Course [sid=" + sid + ", sname=" + sname + "]";
+		}
+
+		public Course(int sid, String sname, Set<Student> sset) {
+			super();
+			this.sid = sid;
+			this.sname = sname;
+			this.sset = sset;
+		}
+		
+		public Course(String sname, Set<Student> sset) {
+			super();
+		
+			this.sname = sname;
+			this.sset = sset;
+		}
+
+		public Course() {
+			super();
+		}
+		
+		
+		
+
+	}
+
+

@@ -1,0 +1,10 @@
+package com.onetomany.test;
+
+public class TestGetMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,78 @@
+package com.manytomany.beans;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+@Entity(name="Actor101")
+
+public class Actor {
+	@Id
+	@GeneratedValue
+	private int aid;
+	private String fname;
+	private String lname;
+	
+	@ManyToMany(mappedBy="aset")
+	private Set<Movies> mset;
+
+	public Actor() {
+		super();
+	}
+	
+	
+
+	public Actor(String fname, String lname, Set<Movies> mset) {
+		super();
+		this.fname = fname;
+		this.lname = lname;
+		this.mset = mset;
+	}
+	
+	
+
+	public int getAid() {
+		return aid;
+	}
+
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	public Set<Movies> getMset() {
+		return mset;
+	}
+
+	public void setMset(Set<Movies> mset) {
+		this.mset = mset;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "Actor [aid=" + aid + ", fname=" + fname + ", lname=" + lname + "]";
+	}
+	
+	
+	
+	
+
+}

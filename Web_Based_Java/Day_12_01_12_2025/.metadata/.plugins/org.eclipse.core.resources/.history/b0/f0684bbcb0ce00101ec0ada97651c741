@@ -1,0 +1,22 @@
+package com.manytomany.beans;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+@Entity(name="Movies101")
+public class Movies {
+	
+		@Id
+		@GeneratedValue
+		private int mid;
+		private String mname;
+		private int year;
+	
+		
+		@ManyToMany
+		private Set<Movies> mset;
+}
