@@ -1,0 +1,11 @@
+package com.menucrud.service;
+
+import java.util.Scanner;
+
+public interface BookService {
+
+	boolean addBook(Scanner sc);
+
+	boolean updateBookPrice(int bid, double newprice);
+
+}

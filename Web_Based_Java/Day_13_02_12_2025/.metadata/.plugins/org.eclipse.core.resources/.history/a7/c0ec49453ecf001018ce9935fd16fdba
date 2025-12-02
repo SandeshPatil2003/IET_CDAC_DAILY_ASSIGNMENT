@@ -1,0 +1,19 @@
+package com.menucrud.dao;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	
+	static SessionFactory sf =null;
+	
+	
+	public static SessionFactory getMySessionFactory(){
+		
+		
+		if(sf==null)
+		{
+			sf
+		}
+	}
+
+}

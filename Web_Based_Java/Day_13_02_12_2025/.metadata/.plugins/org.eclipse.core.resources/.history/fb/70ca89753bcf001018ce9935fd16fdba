@@ -1,0 +1,5 @@
+package com.menucrud.test;
+
+public class AuthorServiceImpl implements AuthorService {
+
+}

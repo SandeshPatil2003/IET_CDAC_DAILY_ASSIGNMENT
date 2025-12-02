@@ -1,0 +1,33 @@
+package com.menucrud.service;
+
+import java.util.Scanner;
+
+import com.menucrud.beans.Author;
+import com.menucrud.dao.AuthorDao;
+import com.menucrud.dao.AuthorDaoImpl;
+
+public class AuthorServiceImpl implements AuthorService {
+	
+	
+	AuthorDao adao = new AuthorDaoImpl();
+
+	@Override
+	public Author getAuthorById(int id) {
+		
+		return adao.getAuthorById(id);
+	}
+
+	@Override
+	public boolean addAuthor() {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter author first name :");
+		String fname = sc.next();
+		
+		System.out.println("Enter author last name :");
+		String lname = sc.next();
+		
+		Author a = new Author(fname,lname);
+		return adao.saveAutuhor(a);;
+	}
+
+}

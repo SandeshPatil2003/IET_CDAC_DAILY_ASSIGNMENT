@@ -1,0 +1,39 @@
+package com.menucrud.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.menucrud.beans.Author;
+
+public class AuthorDaoImpl implements AuthorDao {
+	
+	private static SessionFactory sf=HibernateUtil.getMySessionFactory();
+
+	@Override
+	public Author getAuthorById(int id) {
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Author a = session.get(Author.class, id);
+	
+		tr.commit();
+		session.close();
+		
+		HibernateUtil.closeMySessionFactory();
+		return null;
+	}
+	
+
+	
+	
+
+
+	
+	
+	
+	
+
+
+}

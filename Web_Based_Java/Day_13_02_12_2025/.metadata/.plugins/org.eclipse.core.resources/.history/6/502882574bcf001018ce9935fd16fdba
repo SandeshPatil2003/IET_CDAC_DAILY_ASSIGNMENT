@@ -1,0 +1,27 @@
+package com.menucrud.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.menucrud.beans.Book;
+
+public class BookDaoImpl implements BookDao {
+
+	private static SessionFactory sf=HibernateUtil.getMySessionFactory();
+
+	@Override
+	public boolean saveBook(Book b) {
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		
+		session.save(b);
+		tr.commit();
+		
+		return false;
+	}
+	
+	
+}

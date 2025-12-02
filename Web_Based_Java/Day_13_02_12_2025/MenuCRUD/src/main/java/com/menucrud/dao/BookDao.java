@@ -1,0 +1,15 @@
+package com.menucrud.dao;
+
+import java.util.List;
+
+import com.menucrud.beans.Book;
+
+public interface BookDao {
+
+	boolean saveBook(Book b);
+
+	boolean updateBookPrice(int bid, double newprice);
+
+	List<Book> getAllBooks();
+
+}

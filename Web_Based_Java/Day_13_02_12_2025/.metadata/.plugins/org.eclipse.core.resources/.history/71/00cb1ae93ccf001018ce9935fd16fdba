@@ -1,0 +1,51 @@
+package com.menucrud.beans;
+
+import java.time.LocalDateTime;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+@Entity(name="Author101")
+public class Author {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int aid;
+	private String fname;
+	private String lname;
+	
+	@ManyToMany(mappedBy="aset")
+	private Set<Book> bset;
+
+	public Author() {
+		super();
+	}
+
+	public Author(int aid, String fname, String lname, Set<Book> bset) {
+		super();
+		this.aid = aid;
+		this.fname = fname;
+		this.lname = lname;
+		this.bset = bset;
+	}
+	
+	public Author(String fname, String lname) {
+		super();
+		
+		this.fname = fname;
+		this.lname = lname;
+		this.bset = null;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

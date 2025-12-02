@@ -1,0 +1,8 @@
+package com.menucrud.service;
+
+public class AuthorServiceImpl implements AuthorService {
+	
+	
+	AuthorDao 
+
+}

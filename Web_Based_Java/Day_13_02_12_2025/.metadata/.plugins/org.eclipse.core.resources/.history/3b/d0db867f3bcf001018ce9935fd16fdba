@@ -1,0 +1,6 @@
+package com.menucrud.service;
+
+public interface BookService {
+	
+
+}

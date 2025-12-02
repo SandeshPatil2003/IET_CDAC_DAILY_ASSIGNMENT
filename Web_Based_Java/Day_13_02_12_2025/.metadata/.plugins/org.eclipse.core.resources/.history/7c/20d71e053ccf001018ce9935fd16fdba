@@ -1,0 +1,19 @@
+package com.menucrud.beans;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+@Entity
+public class Author {
+	
+	@Id
+	@GeneratedValue
+	private int bid;
+	private String bname;
+	private double price;
+	private LocalDateTime pdate;
+	
+
+}

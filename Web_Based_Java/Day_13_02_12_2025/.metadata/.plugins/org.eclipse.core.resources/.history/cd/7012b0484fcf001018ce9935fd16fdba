@@ -1,0 +1,100 @@
+package com.menucrud.beans;
+
+import java.time.LocalDate;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
+@Entity(name="Book101")
+public class Book {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int bid;
+	private String bname;
+	private double price;
+	private LocalDate pdate;
+	
+	@ManyToMany@JoinTable(
+	        name = "BOOK_AUTHOR_JUNCTION")
+	
+	private Set<Author> aset;
+
+	public Book() {
+		super();
+	}
+
+	public Book(String bname, double price, LocalDate pdate, Set<Author> aset) {
+		super();
+		this.bname = bname;
+		this.price = price;
+		this.pdate = pdate;
+		this.aset = aset;
+	}
+	
+	public Book(String bname, double price, LocalDate pdate) {
+		super();
+		this.bname = bname;
+		this.price = price;
+		this.pdate = pdate;
+		this.aset = null;
+	}
+
+	public int getBid() {
+		return bid;
+	}
+
+	public void setBid(int bid) {
+		this.bid = bid;
+	}
+
+	public String getBname() {
+		return bname;
+	}
+
+	public void setBname(String bname) {
+		this.bname = bname;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public LocalDate getPdate() {
+		return pdate;
+	}
+
+	public void setPdate(LocalDate pdate) {
+		this.pdate = pdate;
+	}
+
+	public Set<Author> getAset() {
+		return aset;
+	}
+
+	public void setAset(Set<Author> aset) {
+		this.aset = aset;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [bid=" + bid + ", bname=" + bname + ", price=" + price + ", pdate=" + pdate + ", aset=" + aset
+				+ "]";
+	}
+	
+	
+	
+	
+	
+	
+
+}

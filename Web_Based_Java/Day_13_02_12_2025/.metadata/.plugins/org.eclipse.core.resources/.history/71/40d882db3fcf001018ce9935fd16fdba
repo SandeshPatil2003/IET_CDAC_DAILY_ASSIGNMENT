@@ -1,0 +1,29 @@
+package com.menucrud.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class AuthorDaoImpl implements AuthorDao {
+	
+	public static SessionFactory sf=HibernateUtil.getMySessionFactory();
+	
+	
+	static {
+		sf
+		
+		
+	}
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+
+
+}

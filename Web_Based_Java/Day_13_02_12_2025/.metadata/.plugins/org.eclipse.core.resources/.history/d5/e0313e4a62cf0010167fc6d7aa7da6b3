@@ -1,0 +1,50 @@
+package com.menucrud.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.menucrud.beans.Book;
+
+public class BookDaoImpl implements BookDao {
+
+	private static SessionFactory sf=HibernateUtil.getMySessionFactory();
+
+	@Override
+	public boolean saveBook(Book b) {
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		
+		session.save(b);
+		tr.commit();
+		
+		return true;
+	}
+
+	@Override
+	public boolean updateBookPrice(int bid, double newprice) {
+		Session session = sf.getCurrentSession();
+		Transaction tr = session.beginTransaction();
+		
+		Book b = session.get(Book.class,bid);
+		b.setPrice(newprice);
+	
+		session.save(b);
+		tr.commit();
+		
+		return true;
+	}
+
+	@Override
+	public List<Book> getAllBooks() {
+		
+		String hql = "FROM book101";
+		return null;
+	}
+	
+	
+}

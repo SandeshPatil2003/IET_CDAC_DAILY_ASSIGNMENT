@@ -1,0 +1,77 @@
+package com.menucrud.test;
+
+import java.util.Scanner;
+
+import com.menucrud.service.AuthorService;
+import com.menucrud.service.AuthorServiceImpl;
+import com.menucrud.service.BookService;
+import com.menucrud.service.BookServiceImpl;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		BookService bservice = new BookServiceImpl();
+		AuthorService aservice = new AuthorServiceImpl();
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		byte choice = 0;
+		
+		do {
+			
+			
+			System.out.println("Book Menu");
+			System.out.println("1. Add Book");
+			System.out.println("2. Add Author");
+			System.out.println("3. Show All Books");
+			System.out.println("4. Exit");
+			System.out.println("Enter Choice");
+			choice=sc.nextByte();
+			
+			switch(choice)
+			{
+				
+			case 1->{
+				
+				boolean status = bservice.addBook(sc);
+				if(status) {
+					System.out.println("Book added successfully");
+					
+				}
+				else {
+					System.out.println("Book not added");
+				}
+				
+				
+			}
+			
+			case 2->{
+				
+				
+			}
+
+			case 3->{
+	
+	
+			}
+			case 4->{
+				System.out.println("Thanks for visiting...");
+				
+	
+			}
+			default ->{
+				
+			}
+			
+			
+			
+			}
+		}while(choice!=4);
+		
+
+	}
+
+}

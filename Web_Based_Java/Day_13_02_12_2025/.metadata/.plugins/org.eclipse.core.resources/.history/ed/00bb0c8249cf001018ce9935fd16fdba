@@ -1,0 +1,24 @@
+package com.menucrud.service;
+
+import com.menucrud.beans.Author;
+import com.menucrud.dao.AuthorDao;
+import com.menucrud.dao.AuthorDaoImpl;
+
+public class AuthorServiceImpl implements AuthorService {
+	
+	
+	AuthorDao adao = new AuthorDaoImpl();
+
+	@Override
+	public Author getAuthorById(int id) {
+		
+		return ado.;
+	}
+
+	@Override
+	public boolean addAuthor() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.menucrud.dao;
+
+public class HibernateUtil {
+	
+	static SessionFactory
+
+}

@@ -1,0 +1,14 @@
+package com.menucrud.beans;
+
+import java.time.LocalDateTime;
+
+
+public class Author {
+	
+	private int bid;
+	private String bname;
+	private double price;
+	private LocalDateTime pdate;
+	
+
+}

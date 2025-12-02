@@ -1,0 +1,10 @@
+package com.menucrud.service;
+
+import com.menucrud.dao.AuthorDao;
+
+public class AuthorServiceImpl implements AuthorService {
+	
+	
+	AuthorDao adao = new AuthorDaoImpl();
+
+}

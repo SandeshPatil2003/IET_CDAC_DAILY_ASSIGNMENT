@@ -1,0 +1,5 @@
+package com.menucrud.dao;
+
+public interface BookDao {
+
+}

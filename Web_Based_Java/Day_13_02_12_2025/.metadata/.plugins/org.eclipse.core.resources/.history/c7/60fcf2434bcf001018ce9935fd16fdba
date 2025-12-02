@@ -1,0 +1,18 @@
+package com.menucrud.dao;
+
+import org.hibernate.SessionFactory;
+
+import com.menucrud.beans.Book;
+
+public class BookDaoImpl implements BookDao {
+
+	private static SessionFactory sf=HibernateUtil.getMySessionFactory();
+
+	@Override
+	public boolean saveBook(Book b) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+}
