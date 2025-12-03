@@ -1,0 +1,17 @@
+package com.inheritance.beans;
+
+import java.time.LocalDate;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+
+@Entity
+@DiscriminatorValue("")
+public class Perishable extends Product {
+	
+	
+	
+	private LocalDate expdate;
+
+}

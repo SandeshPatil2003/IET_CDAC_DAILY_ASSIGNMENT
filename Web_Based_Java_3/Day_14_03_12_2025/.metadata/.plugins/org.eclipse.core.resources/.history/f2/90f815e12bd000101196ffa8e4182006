@@ -1,0 +1,13 @@
+package com.inheritance.beans;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+
+
+@Entity(name="")
+public class Perishable extends Product {
+	
+	private LocalDate expdate;
+
+}

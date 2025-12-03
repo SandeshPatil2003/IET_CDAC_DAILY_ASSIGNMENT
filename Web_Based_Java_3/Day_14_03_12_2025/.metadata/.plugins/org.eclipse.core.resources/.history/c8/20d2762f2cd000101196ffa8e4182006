@@ -1,0 +1,13 @@
+package com.inheritance.beans;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("Perishable")
+public class NonPerishable extends Product {
+	
+	private int guarantee;
+	
+
+}

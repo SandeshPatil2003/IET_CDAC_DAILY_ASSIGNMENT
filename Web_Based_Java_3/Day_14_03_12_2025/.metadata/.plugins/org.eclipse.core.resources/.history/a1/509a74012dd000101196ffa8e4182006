@@ -1,0 +1,27 @@
+package com.inheritance.beans;
+
+import java.time.LocalDate;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("NonPerishable")
+public class NonPerishable extends Product {
+	
+	private int guarantee;
+
+	public NonPerishable() {
+		super();
+	}
+
+	public NonPerishable(int pid, String pname, int qty, double price, LocalDate mfgdate,int guarantee) {
+		super();
+		this.guarantee = guarantee;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.inheritance.beans;
+
+import java.time.LocalDate;
+
+
+@Entity("101Product")
+public class Product {
+	
+	private int pid;
+	private String pname;
+	private int qty;
+	private double price;
+	private LocalDate mfgdate;
+
+}

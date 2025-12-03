@@ -1,0 +1,8 @@
+package com.inheritance.beans;
+
+public class NonPerishable extends Product {
+	
+	private int guarantee;
+	
+
+}

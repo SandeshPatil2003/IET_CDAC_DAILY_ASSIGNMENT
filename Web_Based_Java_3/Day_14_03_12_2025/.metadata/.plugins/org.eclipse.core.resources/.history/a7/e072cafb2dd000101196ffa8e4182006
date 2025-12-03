@@ -1,0 +1,29 @@
+package com.inheritance.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Product p =new Perishable("orange",3,)
+		
+		
+		
+		tr.commit();
+		session.close();
+		sf.close();
+
+	}
+
+}

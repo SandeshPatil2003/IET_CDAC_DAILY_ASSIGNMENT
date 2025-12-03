@@ -1,0 +1,40 @@
+package com.inheritance.test;
+
+import java.time.LocalDate;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.inheritance.beans.*;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		
+		Session session = sf.getCurrentSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Product p1 =new Perishable("orange",3,89,LocalDate.of(2020, 1, 1),LocalDate.of(2020, 1, 7));
+		
+		Product p2 =new NonPerishable("fridge",1,89000,LocalDate.of(2020, 1, 1),3);
+		
+		Product p3 =new Product("iphone",1,150000,);
+		
+		session.save(p1);
+		session.save(p2);
+		
+		System.out.println(p1);
+		System.out.println(p2);
+		tr.commit();
+		session.close();
+		sf.close();
+
+	}
+
+}

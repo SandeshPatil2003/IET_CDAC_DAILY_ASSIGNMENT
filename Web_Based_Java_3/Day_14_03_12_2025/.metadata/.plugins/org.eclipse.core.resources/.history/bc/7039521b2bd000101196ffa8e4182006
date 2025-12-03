@@ -1,0 +1,29 @@
+package com.inheritance.beans;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+
+
+@Entity(name="101Product")
+public class Product {
+	
+	private int pid;
+	private String pname;
+	private int qty;
+	private double price;
+	private LocalDate mfgdate;
+	
+	
+	
+	public Product() {
+		super();
+	}
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package com.inheritance.test;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		
+		
+		SessionFactory sf = Connection().configure().
+
+	}
+
+}

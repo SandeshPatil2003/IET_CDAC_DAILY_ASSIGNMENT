@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;inheritance&apos; to &apos;singleinheritance&apos;" description="Rename resource &apos;inheritance&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/inheritance" name="singleinheritance" stamp="1764757952050" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;join_inheritance&apos; to &apos;joinedinheritance&apos;" description="Rename resource &apos;join_inheritance&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/join_inheritance" name="joinedinheritance" stamp="1764757969782" updateReferences="true"/>
+</session>
