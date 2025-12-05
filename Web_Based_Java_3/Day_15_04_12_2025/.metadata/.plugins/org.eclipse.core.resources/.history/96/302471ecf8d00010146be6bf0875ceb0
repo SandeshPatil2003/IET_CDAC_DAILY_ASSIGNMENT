@@ -1,0 +1,135 @@
+package com.springlifecycle.beans;
+
+import java.util.List;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Student implements BeanNameAware,BeanFactoryAware,InitializingBean,DisposableBean {
+	
+	private int sid;
+	private String sname;
+	private List<Marks> mlist;
+	
+	
+	
+	
+	public Student() {
+		super();
+	}
+
+
+
+	public Student(int sid, String sname, List<Marks> mlist) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.mlist = mlist;
+		
+	}
+
+
+
+	public int getSid() {
+		return sid;
+	}
+
+
+
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+
+
+
+	public String getSname() {
+		return sname;
+	}
+
+
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", marks=" + mlist + "]";
+	}
+
+
+
+	public List<Marks> getMlist() {
+		return mlist;
+	}
+
+
+
+	public void setMlist(List<Marks> mlist) {
+		this.mlist = mlist;
+	}
+
+
+
+	@Override
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println("in destroy()");
+		
+	}
+
+
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("in afterPropertiesSet()");
+	}
+
+
+
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		// TODO Auto-generated method stub
+		afterPropertiesSet()
+	}
+
+
+
+	@Override
+	public void setBeanName(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public void custominit()
+	{
+		
+	}
+	
+	public void customdestroy()
+	{
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

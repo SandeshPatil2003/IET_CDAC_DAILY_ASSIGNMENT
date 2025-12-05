@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation=" http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- try 1 for byName
+<bean id="s1" class="com.autowiring.beans.Student" autowire="byName">
+	
+	<property name="sid" value="1"></property>
+	<property name="sname" value="John"></property>
+	
+		
+</bean>
+
+<bean id="address" class="com.autowiring.beans.Address">
+	
+	<property name="street" value="SB Road"></property>
+	<property name="city" value="Cena"></property>
+	
+		
+</bean>
+
+<bean id="marks" class="com.autowiring.beans.Marks">
+	
+	<property name="m1" value="87"></property>
+	<property name="m2" value="78"></property>
+
+		
+</bean>
+
+-->
+
+
+
+<!-- try 2 for byType
+<bean id="s1" class="com.autowiring.beans.Student" autowire="byType">
+	
+	<property name="sid" value="1"></property>
+	<property name="sname" value="John"></property>
+	
+		
+</bean>
+
+<bean id="a1" class="com.autowiring.beans.Address">
+	
+	<property name="street" value="SB Road"></property>
+	<property name="city" value="Cena"></property>
+	
+		
+</bean>
+
+<bean id="m1" class="com.autowiring.beans.Marks">
+	
+	<property name="m1" value="87"></property>
+	<property name="m2" value="78"></property>
+
+		
+</bean> -->
+
+
+
+<!-- try 3 for constructor-->
+
+<bean id="s1" class="com.autowiring.beans.Student" autowire="constructor">
+	
+	<constructor-arg index="0" value="1"></constructor-arg>
+	<constructor-arg index="1" value="John"></constructor-arg>
+		
+</bean>
+
+<bean id="a1" class="com.autowiring.beans.Address">
+	
+	<constructor-arg index="0" value="SB Road"></constructor-arg>
+	<constructor-arg index="1" value="Cena"></constructor-arg>
+	
+		
+</bean>
+
+<bean id="m1" class="com.autowiring.beans.Marks">
+	
+	
+	<constructor-arg index="0" value="87"></constructor-arg>
+	<constructor-arg index="1" value="78"></constructor-arg>
+	
+
+		
+</bean>
+
+
+
+
+</beans>

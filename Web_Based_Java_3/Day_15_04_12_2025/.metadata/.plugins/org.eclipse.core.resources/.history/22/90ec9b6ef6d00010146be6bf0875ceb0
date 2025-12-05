@@ -1,0 +1,80 @@
+package com.usingcollection.bean;
+
+import java.util.List;
+
+public class Student {
+	
+	private int sid;
+	private String sname;
+	private List<Marks> mlist;
+	
+	
+	
+	
+	public Student() {
+		super();
+	}
+
+
+
+	public Student(int sid, String sname, List<Marks> mlist) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.mlist = marks;
+		
+	}
+
+
+
+	public int getSid() {
+		return sid;
+	}
+
+
+
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+
+
+
+	public String getSname() {
+		return sname;
+	}
+
+
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+
+
+	public Marks getMarks() {
+		return marks;
+	}
+
+
+
+	public void setMarks(Marks marks) {
+		this.marks = marks;
+	}
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", marks=" + marks + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

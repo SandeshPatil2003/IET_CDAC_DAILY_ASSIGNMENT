@@ -1,0 +1,85 @@
+package com.springlifecycle.beans;
+
+import java.util.List;
+
+import org.springframework.beans.factory.BeanNameAware;
+
+public class Student implements BeanNameAware {
+	
+	private int sid;
+	private String sname;
+	private List<Marks> mlist;
+	
+	
+	
+	
+	public Student() {
+		super();
+	}
+
+
+
+	public Student(int sid, String sname, List<Marks> mlist) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.mlist = mlist;
+		
+	}
+
+
+
+	public int getSid() {
+		return sid;
+	}
+
+
+
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+
+
+
+	public String getSname() {
+		return sname;
+	}
+
+
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", marks=" + mlist + "]";
+	}
+
+
+
+	public List<Marks> getMlist() {
+		return mlist;
+	}
+
+
+
+	public void setMlist(List<Marks> mlist) {
+		this.mlist = mlist;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

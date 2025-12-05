@@ -1,0 +1,8 @@
+package com.autowiring.beans;
+
+public class Marks {
+	
+	private int m1;
+	private int m2;
+
+}

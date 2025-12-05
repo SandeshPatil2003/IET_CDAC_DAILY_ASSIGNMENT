@@ -1,0 +1,14 @@
+package com.springlifecycle.test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestLifecycle {
+
+	public static void main(String[] args) {
+		
+		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring")
+
+	}
+
+}

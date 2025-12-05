@@ -1,0 +1,9 @@
+package com.demo.beans;
+
+public class Student {
+
+	private int sid;
+	private String sname;
+	private int rollno;
+	
+}

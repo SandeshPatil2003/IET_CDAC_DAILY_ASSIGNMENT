@@ -1,0 +1,23 @@
+package com.autowiring.beans;
+
+public class Marks {
+	
+	private int m1;
+	private int m2;
+	
+	
+	
+	public Marks() {
+		super();
+	}
+	public Marks(int m1, int m2) {
+		super();
+		this.m1 = m1;
+		this.m2 = m2;
+	}
+	
+	
+	
+	
+
+}

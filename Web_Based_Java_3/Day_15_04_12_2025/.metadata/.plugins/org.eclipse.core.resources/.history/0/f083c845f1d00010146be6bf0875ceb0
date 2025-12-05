@@ -1,0 +1,8 @@
+package com.autowiring.beans;
+
+public class Address {
+	
+	private String street;
+	private String city;
+
+}

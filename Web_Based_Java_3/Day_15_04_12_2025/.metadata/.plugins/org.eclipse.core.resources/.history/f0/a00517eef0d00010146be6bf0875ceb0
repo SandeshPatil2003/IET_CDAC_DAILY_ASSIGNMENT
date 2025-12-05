@@ -1,0 +1,22 @@
+package com.autowiring.beans;
+
+public class Student {
+	
+	private int sid;
+	private String sname;
+	private Marks marks;
+	private Address address;
+	
+	
+	
+	public Student() {
+		super();
+	}
+	
+	
+	
+	
+	
+	
+
+}

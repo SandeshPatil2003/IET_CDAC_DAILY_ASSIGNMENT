@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation=" http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id="s1" class="com.springlifecycle.bean.Student" init-method="custominit" destroy-method="customdestroy">
+	
+	<property name="sid" value="2"></property>
+	<property name="sname" value="john"></property>
+	<property name="mlist">
+		<list>
+			
+			<ref bean="m1" />
+			<ref bean="m2" />
+			<ref bean="m3" />
+			
+		</list>
+	</property>
+	
+</bean>
+
+<bean id="m1" class="com.usingcollection.bean.Marks">
+	
+	<property name="m1" value="99"></property>
+	<property name="m2" value="100"></property>
+	
+	
+</bean>
+<bean id="m2" class="com.usingcollection.bean.Marks">
+	
+	<property name="m1" value="89"></property>
+	<property name="m2" value="80"></property>
+	
+	
+</bean>
+<bean id="m3" class="com.usingcollection.bean.Marks">
+	
+	<property name="m1" value="79"></property>
+	<property name="m2" value="70"></property>
+	
+	
+</bean>
+
+
+</beans>

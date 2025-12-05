@@ -1,0 +1,30 @@
+package com.demo.beans;
+
+
+public class Student {
+	
+	
+	private int sid;
+	private String sname;
+	private int rollno;
+	private String course;
+	
+	
+	public Student(int sid, String sname, int rollno, String course) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.rollno = rollno;
+		this.course = course;
+	}
+
+
+	public Student() {
+		super();
+	}
+	
+	
+	
+	
+	
+}

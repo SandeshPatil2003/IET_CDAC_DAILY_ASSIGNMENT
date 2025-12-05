@@ -1,0 +1,12 @@
+package com.autowiring.test;
+
+public class TestAutoWiring {
+
+	public static void main(String[] args) {
+		
+		
+		ApplicationContext ctx=
+
+	}
+
+}

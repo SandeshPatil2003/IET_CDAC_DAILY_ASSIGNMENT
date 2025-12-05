@@ -1,0 +1,22 @@
+package com.usingcollection.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.usingcollection.bean.Student;
+
+public class TestCollection {
+
+	public static void main(String[] args) {
+	
+		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
+		
+		Student s1 = (Student) ctx.getBean("s1");
+		
+		
+		ctx.close();
+
+	}
+
+}

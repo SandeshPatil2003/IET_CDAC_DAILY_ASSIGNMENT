@@ -1,0 +1,32 @@
+package com.autowiring.beans;
+
+public class Student {
+	
+	private int sid;
+	private String sname;
+	private Marks marks;
+	private Address address;
+	
+	
+	
+	public Student() {
+		super();
+	}
+
+
+
+	public Student(int sid, String sname, Marks marks, Address address) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.marks = marks;
+		this.address = address;
+	}
+	
+	
+	
+	
+	
+	
+
+}
