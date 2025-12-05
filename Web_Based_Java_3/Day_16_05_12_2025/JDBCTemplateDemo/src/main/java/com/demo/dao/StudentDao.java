@@ -10,4 +10,12 @@ public interface StudentDao {
 
 	List<Student> showAll();
 
+	Student getStudentById(int sid);
+
+	boolean removeById(int sid);
+
+	boolean updateStudentById(int sid, String course, int rollno);
+
+	List<Student> displayAscRoll();
+
 }

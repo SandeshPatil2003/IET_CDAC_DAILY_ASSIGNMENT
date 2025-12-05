@@ -1,6 +1,7 @@
 package com.demo.test;
 
-import java.util.List;
+import java.io.Closeable;
+import java.util.List; 
 import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
@@ -75,8 +76,81 @@ public class TestJDBC {
 					
 				}
 			}
+			
+			case 3->{
+				
+				System.out.println("Enter student id");
+				int sid=sc.nextInt();
+				
+				Student s1 =s.getStudentbyId(sid);
+				
+				if(s1!=null)
+				{
+					System.out.println(s1);
+				}
+				else {
+					
+					System.out.println("not found");
+					
+				}
+			}
+			
+			case 4->{
+				
+				System.out.println("Enter student id");
+				int sid=sc.nextInt();
+				
+				boolean status =s.deleteStudentbyId(sid);
+				
+				if(status)
+				{
+					System.out.println("deleted");
+				}
+				else {
+					
+					System.out.println("not found");
+					
+				}
+			}
+			
+			case 5->{
+				
+				System.out.println("Enter student id");
+				int sid=sc.nextInt();
+				
+				
+				System.out.println("enter new course");
+				String course=sc.next();
+				System.out.println("enter new rollno");
+				int rollno=sc.nextInt();
+				boolean status=s.updateStudentById(sid,course,rollno);
+				if(status) {
+					System.out.println("updated successfully");
+				}else {
+					System.out.println("not found");
+				}
+			}
+			
+			case 6->{
+				
+				List<Student> slist = s.displayAscRoll();
+				
+				if(slist!=null)
+				{
+					slist.forEach(System.out::println);
+				}
+				else {
+					
+					System.out.println("not found");
+					
+				}
+			}
+			
+
+			
 			case 7->{
 				
+				((ClassPathXmlApplicationContext) ctx).close();
 				sc.close();
 				System.out.println("Thank you! Exiting");
 				
@@ -90,6 +164,7 @@ public class TestJDBC {
 		
 
 	}
+
 
 	
 }

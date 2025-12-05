@@ -41,9 +41,39 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public List<Student> displayALL() {
-		// TODO Auto-generated method stub
+		
 		return sdao.showAll();
 	}
+
+	@Override
+	public Student getStudentbyId(int sid) {
+		
+		return sdao.getStudentById(sid);
+	}
+
+	@Override
+	public boolean deleteStudentbyId(int sid) {
+		
+		
+		
+		return sdao.removeById(sid);
+	}
+
+	@Override
+	public boolean updateStudentById(int sid, String course, int rollno) {
+		
+		
+		return sdao.updateStudentById(sid,course,rollno);
+	}
+
+	@Override
+	public List<Student> displayAscRoll() {
+		
+		
+		
+		return sdao.displayAscRoll();
+	}
+
 	
 
 }

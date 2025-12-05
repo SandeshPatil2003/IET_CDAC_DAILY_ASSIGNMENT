@@ -3,6 +3,7 @@ package com.demo.dao;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -50,6 +51,48 @@ public class StudentDaoImpl implements StudentDao{
 		
 		
 		return slist;
+	}
+
+	@Override
+	public Student getStudentById(int sid) {
+		
+		Student s = jdbctemplate.queryForObject("Select * from students201 where sid=?", BeanPropertyRowMapper.newInstance(Student.class));
+		
+		
+		
+		
+		return s;
+	}
+
+	@Override
+	public boolean removeById(int sid) {
+		
+		int n=jdbctemplate.update("delete from students201 where sid=?",new Object[] {sid});
+		return n>0;
+	}
+
+	@Override
+	public boolean updateStudentById(int sid, String course, int rollno) {
+		
+		
+		int n=jdbctemplate.update("update students201 set course=?,rollno=? where sid=?",
+				new Object[] {course,rollno,sid});
+		return n>0;
+		
+	}
+
+	@Override
+	public List<Student> displayAscRoll() {
+		
+		List<Student> slist=jdbctemplate.query("select * from students201 order by rollno", (rs,numrows)->{
+			  Student s=new Student();
+			  s.setSid(rs.getInt(1));
+				s.setSname(rs.getString(2));
+				s.setRollno(rs.getInt(3));
+				s.setCourse(rs.getString(4));
+			  return s;
+			});
+			return slist;
 	}
 	
 	

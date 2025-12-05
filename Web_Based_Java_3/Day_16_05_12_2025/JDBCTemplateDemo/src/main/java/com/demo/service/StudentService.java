@@ -11,4 +11,12 @@ public interface StudentService {
 
 	List<Student> displayALL();
 
+	Student getStudentbyId(int sid);
+
+	boolean deleteStudentbyId(int sid);
+
+	boolean updateStudentById(int sid, String course, int rollno);
+
+	List<Student> displayAscRoll();
+
 }
