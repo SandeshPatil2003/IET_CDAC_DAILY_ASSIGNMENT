@@ -1,0 +1,7 @@
+package com.studentregistration.service;
+
+
+@Service
+public class LoginServiceImpl implements LoginService {
+
+}

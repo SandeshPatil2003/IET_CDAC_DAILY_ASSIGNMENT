@@ -1,0 +1,8 @@
+package com.studentregistration.service;
+
+import org.springframework.web.bind.annotation.RequestParam;
+
+@RequestParam String username
+public class LoginServiceImpl implements LoginService {
+
+}

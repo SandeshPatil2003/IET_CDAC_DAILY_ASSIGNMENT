@@ -1,0 +1,22 @@
+package com.studentregistration.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.studentregistration.beans.Student;
+import com.studentregistration.dao.LoginDao;
+
+@Service
+public class LoginServiceImpl implements LoginService {
+	
+	@Autowired
+	LoginDao ldao;
+
+	@Override
+	public Student validateUser(String username, String password) {
+		
+		
+		return ldao.validateUser(username,password);
+	}
+
+}

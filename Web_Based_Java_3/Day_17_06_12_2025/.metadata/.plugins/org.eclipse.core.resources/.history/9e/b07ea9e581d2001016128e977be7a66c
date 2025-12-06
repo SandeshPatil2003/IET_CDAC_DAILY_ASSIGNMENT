@@ -1,0 +1,11 @@
+package com.studentregistration.beans;
+
+public class Student {
+	
+	private int sid;
+	private String sname;
+	private LocalDate dob;
+	private String email;
+	private S
+
+}

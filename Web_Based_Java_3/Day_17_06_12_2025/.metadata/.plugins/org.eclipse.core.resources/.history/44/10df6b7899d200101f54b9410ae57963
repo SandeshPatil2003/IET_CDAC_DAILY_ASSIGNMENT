@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>All Student Details</title>
+</head>
+<body>
+<h2>Student Details</h2>
+<table>
+
+<tr>
+
+<th>Student Id</th>
+<th>Student Name</th>
+<th>Student DOB</th>
+<th>Student Email</th>
+
+</tr>
+<c:forEach var="s" items="${slist}">
+<tr>
+<td>${s.sid}</td>
+<td>${s.sname}</td>
+<td>${s.dob}</td>
+<td>${s.email}</td>
+<td><a href="editstudent"></a></td>
+</tr>
+</c:forEach>
+</table>
+
+<a href="addstudent">Add Student</a>
+
+
+</body>
+</html>

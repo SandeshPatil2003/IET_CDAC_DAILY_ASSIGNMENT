@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Student</title>
+</head>
+<body>
+
+<form action="insertdata" method="post">
+
+Enter Name :
+<input type="text" id="name" name="name" placeholder="Enter name">
+<br />
+Enter Date of birth :
+<input type="date" id="dob" name="dob" placeholder="Enter name">
+<br />
+Enter Email :
+<input type="text" id="name" name="name" placeholder="Enter name">
+<br />
+Enter Username :
+<input type="text" id="name" name="name" placeholder="Enter name">
+<br />
+Enter Password :
+<input type="password" id="pass" name="pass" placeholder="Enter password">
+<br />
+
+
+</form>
+
+</body>
+</html>

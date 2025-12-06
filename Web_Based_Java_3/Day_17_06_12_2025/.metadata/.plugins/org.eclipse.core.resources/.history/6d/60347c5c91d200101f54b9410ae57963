@@ -1,0 +1,9 @@
+package com.studentregistration.dao;
+
+import com.studentregistration.beans.Student;
+
+public interface StudentDao {
+
+
+
+}

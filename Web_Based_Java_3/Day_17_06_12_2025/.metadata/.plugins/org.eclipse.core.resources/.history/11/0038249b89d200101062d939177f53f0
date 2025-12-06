@@ -1,0 +1,44 @@
+package com.studentregistration.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.studentregistration.beans.Student;
+
+@Repository
+public class LoginDaoImpl implements LoginDao{
+	
+	
+	@Autowired
+	JdbcTemplate jdbctemplate;
+	
+
+	@Override
+	public Student validateUser(String username, String password) {
+		
+		
+		@SuppressWarnings("deprecation")
+		List<Student> s = jdbctemplate.query("select * from studentregister101 where username=? and password=?",
+				new Object[] {username,password},(rs,n)->{
+					Student s1 = new Student();
+					s1.setSid(rs.getInt(1));
+					s1.setSname(rs.getString(2));
+					s1.setDob((r);
+					
+					
+					return s1;
+				}
+				);
+		
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.studentregistration.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.studentregistration.beans.Student;
+
+import com.studentregistration.dao.StudentDao;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+	
+	@Autowired
+	StudentDao sdao;
+
+	@Override
+	public List<Student> getAllStudent() {
+		// TODO Auto-generated method stub
+		return sdao;
+	}
+
+
+
+}

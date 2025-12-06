@@ -1,0 +1,10 @@
+package com.studentregistration.beans;
+
+public class Student {
+	
+	private int sid;
+	private String sname;
+	private Address addr;
+	private DoB
+
+}

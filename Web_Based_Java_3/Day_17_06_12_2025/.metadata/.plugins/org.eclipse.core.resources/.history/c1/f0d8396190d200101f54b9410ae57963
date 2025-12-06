@@ -1,0 +1,18 @@
+package com.studentregistration.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.studentregistration.beans.Student;
+import com.studentregistration.dao.LoginDao;
+import com.studentregistration.dao.StudentDao;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+	
+	@Autowired
+	StudentDao sdao;
+
+
+
+}

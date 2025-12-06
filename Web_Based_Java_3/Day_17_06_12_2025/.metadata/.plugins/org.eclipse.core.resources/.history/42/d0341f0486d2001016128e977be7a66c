@@ -1,0 +1,12 @@
+package com.studentregistration.service;
+
+import org.springframework.stereotype.Service;
+
+import com.studentregistration.beans.Student;
+
+@Service
+public interface LoginService {
+
+	Student validateUser(String username, String password);
+
+}

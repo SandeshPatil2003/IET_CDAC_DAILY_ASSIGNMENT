@@ -1,0 +1,113 @@
+package com.studentregistration.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.studentregistration.beans.Student;
+
+@Repository
+public class StudentDaoImpl implements StudentDao{
+	
+	
+	@Autowired
+	JdbcTemplate jdbctemplate;
+
+	@Override
+	public List<Student> getAllStudent()
+	{
+		List<Student> slist = jdbctemplate.query("select * from studentregister101",
+		(rs,n)->{
+			Student s1 = new Student();
+			s1.setSid(rs.getInt(1));
+			s1.setSname(rs.getString(2));
+			s1.setDob(rs.getDate(3).toLocalDate());
+			s1.setEmail(rs.getString(4));
+			s1.setUsername(rs.getString(5));
+			s1.setPassword(rs.getString(6));
+			
+			
+			return s1;
+		}
+		);
+
+		return slist;
+	}
+
+	@Override
+	public boolean insertStudent(Student s1) {
+		int n=jdbctemplate.update("Insert Into studentregister101 values(default,?,?,?,?,?)",
+				new Object[] {s1.getSname(),s1.getDob(),s1.getEmail(),s1.getUsername(),s1.getPassword()});
+		
+		return n>0;
+	}
+
+	@Override
+	public Student getById(int s1) {
+		
+		@SuppressWarnings("deprecation")
+		List<Student> slist = jdbctemplate.query("select * from studentregister101 where sid=?", 
+				new Object[] {s1}, (rs,n)->{
+					
+					Student z = new Student();
+					z.setSid(rs.getInt(1));
+					z.setSname(rs.getString(2));
+					z.setDob(rs.getDate(3).toLocalDate());
+					z.setEmail(rs.getString(4));
+					z.setUsername(rs.getString(5));
+					z.setPassword(rs.getString(6));
+					
+					return z;
+				});
+		return slist.isEmpty()?null:slist.get(0);
+	}
+
+	@Override
+	public boolean updateStudent(Student s1) {
+		
+		int n = jdbctemplate.update("update studentregister101 set sname=? , email=? , username=? where sid=?",
+				
+									new Object[] {s1.getSname(),s1.getEmail(),s1.getUsername(),s1.getSid()});
+		
+		return n>0;
+									
+									
+		
+		
+		
+	}
+
+	@Override
+	public boolean deleteById(int sid) {
+		int n = jdbctemplate.update("delete from studentregister101 where sid=?",
+				
+				new Object[] {s
+				)
+		return false;
+	}
+	
+
+
+		
+	
+//		List<Student> s = jdbctemplate.query("select * from studentregister101 where username=? and password=?",
+//				new Object[] {username,password},(rs,n)->{
+//					Student s1 = new Student();
+//					s1.setSid(rs.getInt(1));
+//					s1.setSname(rs.getString(2));
+//					s1.setDob(rs.getDate(3).toLocalDate());
+//					s1.setEmail(rs.getString(4));
+//					s1.setUsername(rs.getString(5));
+//					s1.setPassword(rs.getString(6));
+//					
+//					
+//					return s1;
+//				}
+//				);
+//			
+//		return s.get(0);
+//	}
+
+}

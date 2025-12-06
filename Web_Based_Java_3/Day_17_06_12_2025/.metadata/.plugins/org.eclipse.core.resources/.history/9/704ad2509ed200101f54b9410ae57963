@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Form</title>
+</head>
+<body>
+<h3>Edit Form</h3>
+
+<form action="showall" method="post">
+
+Id:<input type="text" name="sid" id="s1" value=${s1.sid} > <br>
+Name:<input type="text" name="sname" id="s2" value=${s1.sname} > <br>
+Name:<input type="text" name="dob" id="s3" value=${s1.dob} > <br>
+
+</form>
+</body>
+</html>

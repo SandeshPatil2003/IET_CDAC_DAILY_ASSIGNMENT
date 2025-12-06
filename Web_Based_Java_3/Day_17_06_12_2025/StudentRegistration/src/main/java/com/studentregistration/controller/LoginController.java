@@ -1,0 +1,58 @@
+package com.studentregistration.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.studentregistration.beans.Student;
+import com.studentregistration.service.LoginService;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/login")
+public class LoginController {
+	
+	@Autowired
+	LoginService lservice;
+	
+//	@GetMapping("/")
+//	public String index()
+//	{
+//		return "index";
+//	}
+	
+	
+	@GetMapping("/loginuser")
+	public String showLoginForm()
+	{
+		return "login";
+	}
+	
+	@PostMapping("/validateuser")
+	public ModelAndView validateuser(HttpSession session , @RequestParam("username") String username, @RequestParam("password") String password)
+	{
+		Student s=lservice.validateUser(username,password);
+		
+		if(s!=null)
+		{
+			session.setAttribute("user", s);
+			
+			return new ModelAndView ("redirect:/student/showall");
+			
+		}
+		else {
+			
+			return new ModelAndView("login","message","invalid credentials");
+		}
+		
+	}
+	
+	
+	
+
+}

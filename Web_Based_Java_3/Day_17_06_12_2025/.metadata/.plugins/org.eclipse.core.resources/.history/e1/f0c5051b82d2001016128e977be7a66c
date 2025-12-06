@@ -1,0 +1,48 @@
+package com.studentregistration.beans;
+
+import java.time.LocalDate;
+
+public class Student {
+	
+	private int sid;
+	private String sname;
+	private LocalDate dob;
+	private String email;
+	private String username;
+	private String password;
+	
+	
+	
+	public Student() {
+		super();
+	}
+
+
+
+	public Student(int sid, String sname, LocalDate dob, String email, String username, String password) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.dob = dob;
+		this.email = email;
+		this.username = username;
+		this.password = password;
+	}
+	
+	public Student(int sid, String sname, LocalDate dob, String email, String username, String password) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.dob = dob;
+		this.email = email;
+		this.username = username;
+		this.password = password;
+	}
+	
+	
+	
+	
+	
+	
+
+}
