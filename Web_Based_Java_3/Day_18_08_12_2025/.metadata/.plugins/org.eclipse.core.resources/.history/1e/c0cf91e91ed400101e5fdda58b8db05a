@@ -1,0 +1,62 @@
+package com.demo.SpringBootStudent.dto;
+
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+public class StudentDto {
+	
+	private int sid;
+	private String sname;
+	private String dob;
+	private String course;
+	
+	
+	
+	public StudentDto() {
+		super();
+	}
+	
+	
+	public StudentDto(int sid, String sname, Sting dob, String course) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.dob = dob;
+		this.course = course;
+	}
+	
+	
+	public int getSid() {
+		return sid;
+	}
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public LocalDate getDob() {
+		return dob;
+	}
+	public void setDob(LocalDate dob) {
+		this.dob = dob;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", dob=" + dob + ", course=" + course + "]";
+	}
+	
+	
+	
+
+}

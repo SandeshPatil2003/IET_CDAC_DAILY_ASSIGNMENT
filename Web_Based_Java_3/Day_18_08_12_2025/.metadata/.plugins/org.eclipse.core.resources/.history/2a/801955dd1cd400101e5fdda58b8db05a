@@ -1,0 +1,11 @@
+package com.demo.SpringBootStudent.service;
+
+import java.util.List;
+
+import com.demo.SpringBootStudent.beans.Student;
+
+public interface StudentService {
+
+	List<Student> getAllData();
+
+}

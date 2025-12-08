@@ -1,0 +1,77 @@
+package com.demo.SpringBootStudent.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.demo.SpringBootStudent.beans.Student;
+import com.demo.SpringBootStudent.dto.StudentDto;
+import com.demo.SpringBootStudent.service.StudentService;
+
+import jakarta.annotation.PostConstruct;
+
+@RestController
+public class StudentController {
+	@Autowired
+	StudentService sservice;
+//
+//	@GetMapping("/hello")
+//	public String sayHello() {
+//		return "Hello ";
+//	}
+	
+	@GetMapping("/Student")
+	
+	public ResponseEntity<List<Student>> sayHello() {
+		List<Student> slist = sservice.getAllData();
+		if(slist != null) {
+			return ResponseEntity.ok(slist);
+		}else {
+			return (ResponseEntity<List<Student>>) ResponseEntity.notFound();
+		}
+	}
+	
+	
+	@PostMapping("/Student")
+	public ResponseEntity<String> addStudent(@RequestBody StudentDto s){
+		
+		Student stud1 = sservice.addStudent(s);
+		if(stud1!=null) {
+			return ResponseEntity.ok("Student added successfully");
+		}else {
+			return ResponseEntity.ok("Student not added.");
+		}
+	}
+	
+	@PutMapping("/student/{sid}")
+	public ResponseEntity<String> updateStudent(@RequestBody StudentDto s){
+		
+		boolean status = sservice.updateStudent(s);
+		
+		if(status) {
+			return ResponseEntity.ok("Student updated successfully");
+		}else {
+			return ResponseEntity.ok("Student not Found.");
+		}
+	}
+	
+	@DeleteMapping("/student/{sid}")
+	public ResponseEntity<String> updateStudent(@Pat StudentDto s){
+		
+	}
+	
+	
+	
+	
+	
+	
+}

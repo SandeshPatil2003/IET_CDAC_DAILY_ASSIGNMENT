@@ -1,0 +1,20 @@
+package com.demo.SpringBootStudent.service;
+
+import java.util.List;
+
+import com.demo.SpringBootStudent.beans.Student;
+import com.demo.SpringBootStudent.dto.StudentDto;
+
+public interface StudentService {
+
+	List<Student> getAllData();
+
+	Student addStudent(StudentDto s);
+
+	boolean updateStudent(StudentDto s);
+
+	boolean deleteStudent(int sid);
+
+
+
+}

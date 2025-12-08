@@ -1,0 +1,15 @@
+package com.demo.SpringBootStudent.mapper;
+
+import com.demo.SpringBootStudent.beans.Student;
+
+public class StudentDtoMapper {
+	
+	public static Student mapToStudent(Student student) {
+		
+		
+		
+		return null;
+		
+	}
+
+}

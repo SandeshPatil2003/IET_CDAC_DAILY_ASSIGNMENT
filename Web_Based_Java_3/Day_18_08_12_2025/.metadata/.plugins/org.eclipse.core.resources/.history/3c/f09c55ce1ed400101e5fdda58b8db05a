@@ -1,0 +1,7 @@
+package com.demo.SpringBootStudent.dto;
+
+public class StudentDto {
+	
+	
+
+}

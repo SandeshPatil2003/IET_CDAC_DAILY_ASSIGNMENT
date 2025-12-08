@@ -1,0 +1,14 @@
+package com.demo.SpringBootStudent.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.demo.SpringBootStudent.beans.Student;
+import com.demo.SpringBootStudent.dto.StudentDto;
+
+@Repository
+public interface StudentDao extends JpaRepository<Student, Integer>{
+
+	StudentDto save( s);
+
+}

@@ -1,0 +1,5 @@
+package com.demo.SpringBootStudent.dao;
+
+public class StudentDaoImpl implements StudentDao{
+
+}

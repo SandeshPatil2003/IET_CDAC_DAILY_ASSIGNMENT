@@ -1,0 +1,5 @@
+package com.demo.SpringBootStudent.service;
+
+public class StudentServiceImpl {
+
+}

@@ -1,0 +1,5 @@
+package com.demo.SpringBootStudent.dao;
+
+public interface StudentDao extends JP{
+
+}

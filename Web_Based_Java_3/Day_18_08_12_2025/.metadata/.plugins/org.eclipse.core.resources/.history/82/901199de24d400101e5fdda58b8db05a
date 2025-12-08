@@ -1,0 +1,53 @@
+package com.demo.SpringBootStudent.service;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.SpringBootStudent.beans.Student;
+import com.demo.SpringBootStudent.dao.StudentDao;
+import com.demo.SpringBootStudent.dto.StudentDto;
+import com.demo.SpringBootStudent.mapper.StudentDtoMapper;
+
+
+@Service
+public class StudentServiceImpl implements StudentService{
+
+	@Autowired
+	StudentDao sdao;
+	@Override
+	public List<Student> getAllData() {
+			return sdao.findAll();
+	}
+
+	@Override
+	public Student addStudent(StudentDto s) {
+		Student s1 = new Student(s.getSid(),s.getSname(),LocalDate.parse(s.getDob(), DateTimeFormatter.ofPattern("yyyy-MM-dd")),s.getCourse());
+		return sdao.save(s1);
+	}
+
+	@Override
+	public boolean updateStudent(StudentDto s) {
+		
+		Optional<Student> st = sdao.findById(s.getSid());
+		
+		if(st.isPresent()) {
+			
+			Student stud = StudentDtoMapper.mapToStudent(s);
+			stud.setCourse(s.getCourse());
+			
+			
+			return true;
+		}
+		return false;
+	}
+
+
+
+
+
+}

@@ -1,0 +1,18 @@
+package com.demo.SpringBootStudent.mapper;
+
+import java.time.LocalDate;
+
+import com.demo.SpringBootStudent.beans.Student;
+import com.demo.SpringBootStudent.dto.StudentDto;
+
+public class StudentDtoMapper {
+	
+	public static Student mapToStudent(StudentDto s) {
+		
+		Student stud = new Student(s.getSid(),s.getSname(),LocalDate.parse(),s.getCourse());
+		
+		return null;
+		
+	}
+
+}

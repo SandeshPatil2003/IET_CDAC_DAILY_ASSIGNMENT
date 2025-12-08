@@ -1,0 +1,21 @@
+package com.demo.SpringBootStudent.beans;
+
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Student {
+	
+	@Id
+	private int sid;
+	private String sname;
+	@DateTimeFormat
+	private LocalDate dob;
+	private String course;
+	
+
+}

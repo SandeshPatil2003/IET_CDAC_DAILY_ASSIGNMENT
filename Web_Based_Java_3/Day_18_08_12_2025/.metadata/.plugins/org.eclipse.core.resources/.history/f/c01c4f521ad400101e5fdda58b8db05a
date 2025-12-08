@@ -1,0 +1,9 @@
+package com.demo.SpringBootStudent.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.demo.SpringBootStudent.beans.Student;
+
+public interface StudentDao extends JpaRepository<Student, ID>{
+
+}

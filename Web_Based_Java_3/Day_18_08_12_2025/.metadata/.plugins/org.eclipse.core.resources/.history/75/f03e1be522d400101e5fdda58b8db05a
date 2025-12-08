@@ -1,0 +1,9 @@
+package com.demo.SpringBootStudent.mapper;
+
+public class StudentDtoMapper {
+	
+	public static Student mapToStudent() {
+		
+	}
+
+}
