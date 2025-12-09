@@ -1,0 +1,31 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.SpringBootMVCCURD.beans.Booking;
+import com.demo.SpringBootMVCCURD.beans.User;
+import com.demo.SpringBootMVCCURD.beans.VehicleServices;
+import com.demo.SpringBootMVCCURD.dao.BookingDao;
+import com.demo.SpringBootMVCCURD.dao.VehicleServiceDao;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+	
+	@Autowired
+	BookingDao bdao;
+	
+	@Autowired
+	VehicleServiceDao vdao;
+	
+
+	@Override
+	public Booking createBooking(User user, int sid, String bookingDate) {
+		
+		Optional<VehicleServices> vs = vdao.findById(sid);
+		return null;
+	}
+
+}

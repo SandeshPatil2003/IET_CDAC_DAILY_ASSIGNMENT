@@ -1,0 +1,18 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import org.springframework.stereotype.Service;
+
+import com.demo.SpringBootMVCCURD.beans.User;
+
+@Aut
+
+@Service
+public class LoginServiceImpl implements LoginService{
+
+	@Override
+	public User validateUser(String uname, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

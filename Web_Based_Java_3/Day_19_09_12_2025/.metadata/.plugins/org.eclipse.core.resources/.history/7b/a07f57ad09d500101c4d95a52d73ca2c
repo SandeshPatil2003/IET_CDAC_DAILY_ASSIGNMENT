@@ -1,0 +1,26 @@
+package com.demo.SpringBootMVCCURD.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/vehicle")
+public class VehicleController {
+	
+	@GetMapping("/addvehicle")
+	public ModelAndView addVehicle(HttpSession session) {
+		
+		if(session.getAttribute("user") == null) {
+			return new ModelAndView("login","message","Pehle login to karle bhai badme vehicle add karna");
+
+		}
+		
+		return new ModelAndView("addvehicle","user",session.getAttribute("user"));
+				
+	}
+
+}

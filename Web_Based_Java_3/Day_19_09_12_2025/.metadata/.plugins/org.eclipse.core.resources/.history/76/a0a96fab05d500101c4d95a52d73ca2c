@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Profile</title>
+</head>
+<body>
+
+
+<h1>Edit Profile of ${user.email }</h1>
+
+<form action="updateprofile" method="post">
+Email :
+  <input type="email" name="email" id="email" value="${user.email}">
+<br />
+
+Date of Birth :
+ <input type="date" name="dob" id="dob" value="${user.dob}">
+ 
+ <button type="submit">Update Profile</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Booking for : ${user.email}</h1>
+<h3>Confirm Booking Details</h1>
+
+	<h3>Selected Service : ${service.sname}</h3>
+	
+	<div>
+	 <p>Duration : ${service.duration}</p>
+	 <p>Price : ${service.price}</p>
+	</div>
+	
+	<h4>Schedule Your Booking</h4>
+	
+	
+	<form action="booking/confirmbooking" method="post">
+	
+	<input type="hidden" name="uid" value="${user.uid }">
+	<input type="hidden" name="sid" value="${service.sid }">
+	
+	Preffered Date :
+	<input type="date" name=bokingDate" id="bokingDate"/>
+	
+	<br /><br />
+	<button>Book Service</button>
+	</form>
+
+</body>
+</html>

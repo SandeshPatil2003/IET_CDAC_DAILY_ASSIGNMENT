@@ -1,0 +1,61 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Services")
+public class VehicleServices {
+	
+	@Id
+	private int sid;
+	private String sname;
+	private double duration;
+	private double price;
+	public VehicleServices() {
+		super();
+	}
+	public VehicleServices(int sid, String sname, double duration, double price) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.duration = duration;
+		this.price = price;
+	}
+	public int getSid() {
+		return sid;
+	}
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public double getDuration() {
+		return duration;
+	}
+	public void setDuration(double duration) {
+		this.duration = duration;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "VehicleServices [sid=" + sid + ", sname=" + sname + ", duration=" + duration + ", price=" + price + "]";
+	}
+	
+	
+	
+	
+
+	
+
+}

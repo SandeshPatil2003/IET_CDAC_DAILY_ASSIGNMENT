@@ -1,0 +1,23 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="booking101")
+public class Booking {
+	
+	@Id
+	private int bookingId;
+	@ManyToOne
+	  @JoinColumn(name = "user_id")
+	private User user;
+	
+	 @ManyToOne
+	    @JoinColumn(name = "service_id", nullable = false)
+	    private VehicleServices service;
+
+}

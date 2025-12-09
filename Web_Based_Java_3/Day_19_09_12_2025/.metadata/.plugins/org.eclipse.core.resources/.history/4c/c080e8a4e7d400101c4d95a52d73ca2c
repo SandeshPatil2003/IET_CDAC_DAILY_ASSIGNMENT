@@ -1,0 +1,5 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+public class VehicleServices {
+
+}

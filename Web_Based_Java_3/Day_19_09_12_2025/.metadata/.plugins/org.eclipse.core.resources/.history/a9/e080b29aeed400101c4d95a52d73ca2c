@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vehicle Services</title>
+</head>
+<body>
+
+<h1>Vehicle Services</h1>
+<h3>${message}</h3>
+
+<table>
+
+<tr>
+<th>Service Id</th>
+<th>Service Name</th>
+<th>Service Duration</th>
+<th>Service Price</th>
+<th>Book </th>
+</tr>
+
+<c:forEach var="s" items="${vslist}">
+<tr>
+<td>${s.sid}</td>
+<td>${s.sname}</td>
+<td>${s.duration}</td>
+<td>${s.price}</td>]
+<td><button type="submit" id="book" name="book" value=${}>Book</button></td>
+</tr>
+
+</c:forEach>
+
+</table>
+
+</body>
+</html>

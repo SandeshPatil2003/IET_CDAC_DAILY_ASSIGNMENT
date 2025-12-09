@@ -1,0 +1,18 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class User {
+	
+	@Id
+	private int uid;
+	private String uname;
+	private String email;
+	private String password;
+	
+	
+	
+
+}

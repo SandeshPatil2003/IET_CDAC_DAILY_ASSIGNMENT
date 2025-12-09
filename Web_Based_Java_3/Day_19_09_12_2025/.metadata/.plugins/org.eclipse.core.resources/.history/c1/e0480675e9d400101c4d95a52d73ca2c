@@ -1,0 +1,20 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.demo.SpringBootMVCCURD.beans.VehicleServices;
+import com.demo.SpringBootMVCCURD.dao.VehicleServiceDao;
+
+public class VehicleServiceImpl implements VehicleService{
+
+	@Autowired
+	VehicleServiceDao vsdao;
+	@Override
+	public List<VehicleServices> getAllService() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

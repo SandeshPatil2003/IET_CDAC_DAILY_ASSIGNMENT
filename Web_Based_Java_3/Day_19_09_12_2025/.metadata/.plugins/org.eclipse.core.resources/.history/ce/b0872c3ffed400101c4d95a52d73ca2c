@@ -1,0 +1,10 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import com.demo.SpringBootMVCCURD.beans.Booking;
+import com.demo.SpringBootMVCCURD.beans.User;
+
+public interface BookingService {
+
+	Booking createBooking(User user, int sid, String bookingDate);
+
+}

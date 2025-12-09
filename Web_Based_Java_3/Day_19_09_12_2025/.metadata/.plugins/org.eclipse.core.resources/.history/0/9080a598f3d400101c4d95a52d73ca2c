@@ -1,0 +1,15 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="booking101")
+public class Booking {
+	
+	@Id
+	private int bookingId;
+	private 
+
+}

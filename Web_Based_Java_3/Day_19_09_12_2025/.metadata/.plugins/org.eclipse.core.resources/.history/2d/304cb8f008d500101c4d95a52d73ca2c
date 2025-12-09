@@ -1,0 +1,88 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Vehicle101")
+public class Vehicle {
+	
+	@Id
+	@GeneratedValue(s)
+	private int vid;
+	private String model;
+	private int engno;
+	private String type;
+	
+	@ManyToOne
+	@JoinColumn(name = "user_id", nullable = false)
+	
+	private User owner;
+	
+	public Vehicle(String model, int engno, String type, User owner) {
+		super();
+		this.model = model;
+		this.engno = engno;
+		this.type = type;
+		this.owner = owner;
+	}
+
+	public Vehicle() {
+		super();
+	}
+
+	public int getVid() {
+		return vid;
+	}
+
+	public void setVid(int vid) {
+		this.vid = vid;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getEngno() {
+		return engno;
+	}
+
+	public void setEngno(int engno) {
+		this.engno = engno;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public User getOwner() {
+		return owner;
+	}
+
+	public void setOwner(User owner) {
+		this.owner = owner;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [vid=" + vid + ", model=" + model + ", engno=" + engno + ", type=" + type + ", owner=" + owner
+				+ "]";
+	}
+	
+	
+	
+	
+
+}

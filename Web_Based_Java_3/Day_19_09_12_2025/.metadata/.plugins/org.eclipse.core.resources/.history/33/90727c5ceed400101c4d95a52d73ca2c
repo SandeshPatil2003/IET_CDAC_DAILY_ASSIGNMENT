@@ -1,0 +1,56 @@
+package com.demo.SpringBootMVCCURD.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.demo.SpringBootMVCCURD.beans.VehicleServices;
+import com.demo.SpringBootMVCCURD.service.VehicleServiceService;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/menu")
+public class MenuController {
+	
+	
+	
+	
+	@GetMapping("/")
+	public String showMenuPage(HttpSession session, Model model) {
+		
+		if(session.getAttribute("user") == null){
+			
+		return "redirect:login/loginpage";
+		}
+		
+		model.addAttribute("user", session.getAttribute("user"));
+		
+		return "menu";
+		
+	}
+	
+	@GetMapping("/services")
+	public String getAllServices() {
+		
+		return "redirect:/service/showservices";
+	}
+		
+//		if(session.getAttribute("user") == null) {
+//			return new ModelAndView("redirect:login/loginpage");
+//		}
+//		
+//		List<VehicleServices> vslist = vservice.getAllService();
+//		
+//		if(vslist!=null) {
+//		return new ModelAndView("redirect:service/showServices","vslist",vslist);
+//		}
+//		return new ModelAndView("redirect:menu/","message","No service Available");
+//		
+//	}
+}

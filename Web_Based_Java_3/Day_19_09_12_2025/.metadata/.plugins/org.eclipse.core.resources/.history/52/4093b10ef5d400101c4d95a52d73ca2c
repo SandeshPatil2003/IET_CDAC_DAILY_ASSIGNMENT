@@ -1,0 +1,5 @@
+package com.demo.SpringBootMVCCURD.dao;
+
+public interface BookingDao {
+
+}

@@ -1,0 +1,41 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="User101")
+public class User {
+	
+	@Id
+	private int uid;
+	private String uname;
+	private String email;
+	private String password;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private LocalDate dob;
+	//private String role;
+	public User() {
+		super();
+	}
+	public User(int uid, String uname, String email, String password, LocalDate dob) {
+		super();
+		this.uid = uid;
+		this.uname = uname;
+		this.email = email;
+		this.password = password;
+		this.dob = dob;
+	}
+	
+	
+	
+	
+	
+	
+
+}

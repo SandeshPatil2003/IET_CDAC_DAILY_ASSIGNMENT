@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Vehicle</title>
+</head>
+<body>
+<h3>${message }</h3>
+
+<form action="insertvehicle" method="post">
+id model engno type user
+
+Enter Vehicle Model :
+<imput type="text" id="model" name="model" />
+<br />
+
+Enter Engine number :
+<input type="number" id="engno" name="engno"/>
+<br />
+
+Enter Vehicle Type (Ev/Disel):
+<imput type="text" id="type" name="type" />
+
+<button type="submit">Add Vehicle</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Table
+public class VehicleServices {
+
+}

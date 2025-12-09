@@ -1,0 +1,53 @@
+package com.demo.SpringBootMVCCURD.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.demo.SpringBootMVCCURD.beans.User;
+import com.demo.SpringBootMVCCURD.service.LoginService;
+
+import ch.qos.logback.core.model.Model;
+import jakarta.annotation.PostConstruct;
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/login")
+public class LoginController {
+	
+	@Autowired
+	LoginService lservice;
+	
+	
+	@GetMapping("/loginpage")
+	public ModelAndView loginpage() {
+		
+		
+		return new ModelAndView("login");
+	}
+	
+	@PostMapping("/validate")
+	public ModelAndView validateUser(@RequestParam(value="email") String email,
+			@RequestParam(value="password") String password, 
+			HttpSession session){
+		
+		User user = lservice.validateUser(email,password);
+		//HttpSession session = null;
+		
+		if(user !=null) {
+			session.setAttribute("user", user);
+		
+			return new ModelAndView("redirect:/menu/");
+		}
+		return new ModelAndView("login","message","Inavlid Credentials");
+//		return new ModelAndView("redirect:login/loginPage","message","Inavlid Credentials");
+		
+	}
+
+}

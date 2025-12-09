@@ -1,0 +1,31 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.SpringBootMVCCURD.beans.VehicleServices;
+import com.demo.SpringBootMVCCURD.dao.VehicleServiceDao;
+
+@Service
+public class VehicleServiceImpl implements VehicleServiceService{
+
+	@Autowired
+	VehicleServiceDao vsdao;
+	
+	
+	@Override
+	public List<VehicleServices> getAllService() {
+		
+		return vsdao.findAll();
+	}
+
+
+	@Override
+	public VehicleServices getServiceById(int sid) {
+		vsdao.findById(sid)';'
+		return null;
+	}
+
+}

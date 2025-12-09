@@ -1,0 +1,48 @@
+package com.demo.SpringBootMVCCURD.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.demo.SpringBootMVCCURD.beans.User;
+import com.demo.SpringBootMVCCURD.service.LoginService;
+
+import jakarta.annotation.PostConstruct;
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/login")
+public class LoginController {
+	
+	@Autowired
+	LoginService lservice;
+	
+	
+	@GetMapping("/loginpage")
+	public ModelAndView loginpage() {
+		
+		
+		return new ModelAndView("login");
+	}
+	
+	@PostMapping("/validate")
+	public ModelAndView validateUser(@PathVariable String email, @PathVariable String password) {
+		
+		User user = lservice.validateUser(email,password);
+		//HttpSession session = null;
+		
+		if(user !=null) {
+			//session.setAttribute("user", user);
+			
+			return new ModelAndView("menupage","user",user);
+		}
+		return new ModelAndView("redirect:/loginPage");
+		
+	}
+
+}

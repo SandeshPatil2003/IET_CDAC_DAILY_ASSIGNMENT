@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vehicle Services</title>
+</head>
+<body>
+
+<h1>Vehicle Services</h1>
+<h3>${message}</h3>
+
+<table>
+
+<tr>
+<th>Service Id</th>
+<th>Service Name</th>
+<th>Service Duration</th>
+<th>Service Price</th>
+</tr>
+
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import jakarta.websocket.server.ServerEndpoint;
+
+@Ser
+public class LoginServiceImpl implements LoginService{
+
+}

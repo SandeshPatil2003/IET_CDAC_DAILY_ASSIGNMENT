@@ -1,0 +1,21 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.SpringBootMVCCURD.beans.Booking;
+import com.demo.SpringBootMVCCURD.beans.User;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+	
+	@Autowired
+	
+
+	@Override
+	public Booking createBooking(User user, int sid, String bookingDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

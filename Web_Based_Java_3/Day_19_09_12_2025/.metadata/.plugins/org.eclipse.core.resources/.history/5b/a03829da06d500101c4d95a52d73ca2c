@@ -1,0 +1,44 @@
+package com.demo.SpringBootMVCCURD.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.demo.SpringBootMVCCURD.beans.User;
+import com.demo.SpringBootMVCCURD.service.ProfileService;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/profile")
+public class ProfileController {
+	
+	@Autowired
+	ProfileService pservice;
+	
+	@GetMapping("/editprofile")
+	public ModelAndView editProfile(HttpSession session)
+	{
+		if(session.getAttribute("user")==null) {
+			return new ModelAndView("redirect:login/loginpage","message","Pehle login to karle bhai badme edit karna");
+			
+		}
+		return new ModelAndView("editprofile","user",session.getAttribute("user"));
+		
+	}
+	
+	@PostMapping("/updateprofile")
+	public ModelAndView updateProfile(@ModelAttribute User user) {
+		
+		User user = pservice.updateProfile(user);
+		
+	}
+	
+
+}

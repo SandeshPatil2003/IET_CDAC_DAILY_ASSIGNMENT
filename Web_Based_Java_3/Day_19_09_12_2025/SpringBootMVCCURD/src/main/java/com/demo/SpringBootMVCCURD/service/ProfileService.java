@@ -1,0 +1,11 @@
+package com.demo.SpringBootMVCCURD.service;
+
+import org.springframework.web.servlet.ModelAndView;
+
+import com.demo.SpringBootMVCCURD.beans.User;
+
+public interface ProfileService {
+
+	User updateProfile(User user);
+
+}

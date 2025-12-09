@@ -1,0 +1,17 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Vehicle101")
+public class Vehicle {
+	
+	@Id
+	private int vid;
+	private String model;
+	private 
+	
+
+}

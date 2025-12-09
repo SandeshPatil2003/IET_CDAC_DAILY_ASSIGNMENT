@@ -1,0 +1,99 @@
+package com.demo.SpringBootMVCCURD.beans;
+
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Bookings101")
+public class Booking {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int bookingId;
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
+	
+	@ManyToOne
+	@JoinColumn(name = "service_id")
+	private VehicleServices service;
+	
+	
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private LocalDate bookingDate;
+
+
+	public Booking() {
+		super();
+	}
+
+
+	public Booking(User user, VehicleServices service, LocalDate bookingDate) {
+		super();
+		this.user = user;
+		this.service = service;
+		this.bookingDate = bookingDate;
+	}
+
+
+	public int getBookingId() {
+		return bookingId;
+	}
+
+
+	public void setBookingId(int bookingId) {
+		this.bookingId = bookingId;
+	}
+
+
+	public User getUser() {
+		return user;
+	}
+
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+
+	public VehicleServices getService() {
+		return service;
+	}
+
+
+	public void setService(VehicleServices service) {
+		this.service = service;
+	}
+
+
+	public LocalDate getBookingDate() {
+		return bookingDate;
+	}
+
+
+	public void setBookingDate(LocalDate bookingDate) {
+		this.bookingDate = bookingDate;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Booking [bookingId=" + bookingId + ", user=" + user + ", service=" + service + ", bookingDate="
+				+ bookingDate + "]";
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Booking Confirmed for user : ${user.email} }</h1>
+
+<h4>Booking Details</h4>
+<div>
+	<p>Service Name : ${ service.sname}</p>
+	<p>Price : ${ service.price}</p>
+	<p>Booking Date:${booking.bookingDate}</p> 
+	
+</div>
+<a href="/menu/">Menu</a>
+<a href="">Show Services</a>
+
+</body>
+</html>
