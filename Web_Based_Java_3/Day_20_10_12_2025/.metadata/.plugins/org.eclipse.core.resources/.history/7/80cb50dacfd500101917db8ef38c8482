@@ -1,0 +1,6 @@
+package com.movies.movies.service;
+
+@Service
+public class LoginServiceImpl implements LoginService {
+
+}

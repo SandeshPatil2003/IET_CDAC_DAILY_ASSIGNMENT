@@ -1,0 +1,11 @@
+package com.movies.movies.beans;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name=)
+public class User {
+	
+	
+
+}

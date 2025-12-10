@@ -1,0 +1,23 @@
+package com.movies.movies.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.movies.movies.beans.User;
+import com.movies.movies.dao.LoginDao;
+
+@Service
+public class LoginServiceImpl implements LoginService {
+	
+	@Autowired
+	LoginDao ldao;
+
+	@Override
+	public User validateUser(String uname, String password) {
+		// TODO Auto-generated method stub
+		
+		ldao.findAll(null, null)
+		return ldao.validateUser(uname,password);
+	}
+
+}

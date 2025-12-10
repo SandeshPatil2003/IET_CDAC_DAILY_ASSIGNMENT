@@ -1,0 +1,6 @@
+package com.movies.movies.dao;
+
+@Repo
+public interface LoginDao {
+
+}

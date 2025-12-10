@@ -1,0 +1,130 @@
+package com.movies.movies.beans;
+
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="user101")
+public class User {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int uid;
+	private String uname;
+	private String password;
+	private String email;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private LocalDate dob;
+	
+	
+	
+	public User() {
+		super();
+	}
+
+
+
+	public User(int uid, String uname, String password, String email, LocalDate dob) {
+		super();
+		this.uid = uid;
+		this.uname = uname;
+		this.password = password;
+		this.email = email;
+		this.dob = dob;
+	}
+	
+	
+	public User( String uname, String password, String email, LocalDate dob) {
+		super();
+		
+		this.uname = uname;
+		this.password = password;
+		this.email = email;
+		this.dob = dob;
+	}
+
+
+
+	public int getUid() {
+		return uid;
+	}
+
+
+
+	public void setUid(int uid) {
+		this.uid = uid;
+	}
+
+
+
+	public String getUname() {
+		return uname;
+	}
+
+
+
+	public void setUname(String uname) {
+		this.uname = uname;
+	}
+
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+
+	public LocalDate getDob() {
+		return dob;
+	}
+
+
+
+	public void setDob(LocalDate dob) {
+		this.dob = dob;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "User [uid=" + uid + ", uname=" + uname + ", password=" + password + ", email=" + email + ", dob=" + dob
+				+ "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

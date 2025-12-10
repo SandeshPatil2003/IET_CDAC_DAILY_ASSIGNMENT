@@ -1,0 +1,16 @@
+package com.movies.movies.beans;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="user101")
+public class User {
+	
+	@GE\
+	private int uid;
+	p
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package com.movies.movies.controller;
+
+
+@Controller
+public class MainController {
+
+}

@@ -1,0 +1,10 @@
+package com.movies.movies.beans;
+
+
+@Entity
+
+public class User {
+	
+	
+
+}
