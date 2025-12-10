@@ -1,0 +1,97 @@
+
+
+jdbc connection jar
+java war project 
+java war html crud servlet
+java war jsp crud servlet jstl diff mapping
+
+when maven then spring and springboot
+else dynamic web project servlet web.xml, in lib mysql connector, and find apache runtime, dopost doget,
+
+http request response session 
+
+maven hibernate onetoone , manytoone, manytomany
+criteria query, inheritance
+
+hibernate menu crud hibernate util
+
+maven then spring 
+
+spring jdbc template, autowiring,propertyplace holder,
+annotation configuration
+
+spring aop
+
+spring war student registration
+
+spring boot mvc crud initializer+ self webapp views webinf
+
+spring boot rest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
