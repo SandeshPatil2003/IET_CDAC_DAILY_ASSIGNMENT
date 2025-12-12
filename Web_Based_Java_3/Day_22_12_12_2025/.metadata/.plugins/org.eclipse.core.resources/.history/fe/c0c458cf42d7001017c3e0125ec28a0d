@@ -1,0 +1,55 @@
+package com.springjdbc.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.springjdbc.beans.Product;
+
+@Repository
+public class ProductDaoImpl implements ProductDao {
+
+	@Autowired
+	JdbcTemplate jt;
+
+	@Override
+	public List<Product> showAll() {
+		List<Product> plist = jt.query("select * from products303", (rs, n) -> {
+
+			Product p = new Product();
+			p.setPid(rs.getInt("pid"));
+			p.setName(rs.getString("pname"));
+			p.setQty(rs.getInt("qty"));
+			p.setPrice(rs.getDouble("price"));
+			p.setMfgdate(rs.getDate("mfgdate").toLocalDate());
+
+			return p;
+		});
+
+		return plist;
+	}
+
+	@Override
+	public Product findById(int pid) {
+		
+		Product p =jt.queryForObject("select * from products303 where pid=?",new Object[] {pid},
+				
+		(rs,n)->
+			{
+				Product p = new Product (rs.getInt("pid"),rs.getString("pname"),rs.getInt("qty"),
+						rs.getDouble("price"))
+			
+			}
+				
+				)
+		return null;
+	}
+	
+	
+	
+	
+	
+
+}

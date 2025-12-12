@@ -1,0 +1,10 @@
+package com.j.beans;
+
+public class Product {
+	
+	private int pid;
+	private int qty;
+	private double price;
+	private mf
+
+}

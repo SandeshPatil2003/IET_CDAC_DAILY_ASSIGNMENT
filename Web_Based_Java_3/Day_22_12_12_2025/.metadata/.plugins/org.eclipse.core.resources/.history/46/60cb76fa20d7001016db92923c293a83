@@ -1,0 +1,16 @@
+package com.springjdbc.service;
+
+import org.springframework.stereotype.Service;
+
+import com.springjdbc.beans.User;
+
+
+@Service
+public class LoginServiceImpl implements LoginService{
+
+	public User validateUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

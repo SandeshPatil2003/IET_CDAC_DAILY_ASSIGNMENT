@@ -1,0 +1,9 @@
+package com.j.service;
+
+import java.util.Scanner;
+
+public interface ProductService {
+
+	boolean addProduct(Scanner sc);
+
+}

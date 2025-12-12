@@ -1,0 +1,5 @@
+package com.springjdbc.controller;
+
+public interface LoginDao {
+
+}

@@ -1,0 +1,15 @@
+package com.springjdbc.beans;
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity; 
+
+@Entity
+public class User {
+	
+	private int uid;
+	private String uname;
+	private String pass;
+
+	private LocalDate dob;
+
+}

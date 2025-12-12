@@ -1,0 +1,33 @@
+package com.springjdbc.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.springjdbc.beans.User;
+
+@Repository
+public class LoginDaoImpl implements LoginDao{
+	
+	@Autowired
+	JdbcTemplate jt;
+
+	
+	public User validateUser(String uname, String pass) {
+		
+		User user = jt.queryForObject("select * from user303 where uname=? AND pass=?",
+				new Object[] {uname, pass},
+				(rs,n)->{
+					User u = new User(rs.getInt("uid"),
+							rs.getString("uname"),
+							rs.getString("pass"),
+							rs.getDate("dob").toLocalDate());
+				}) ;
+				
+		return u;
+		
+	}
+	
+	
+
+}

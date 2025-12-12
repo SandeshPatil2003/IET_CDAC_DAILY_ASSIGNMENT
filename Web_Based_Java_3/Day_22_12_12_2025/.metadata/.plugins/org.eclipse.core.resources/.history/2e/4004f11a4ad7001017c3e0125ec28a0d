@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UPDATE FORM</title>
+</head>
+<body>
+<h3>UPDATE FORM</h3>
+<br>
+<form action="insert" typr>
+PRODUCT ID <input type="text" name="pid" id="pid" value=${product.pid} readonly><br>
+PRODUCT NAME 	<input type="text" name="pname" id="pname" value=${product.pname}><br>
+QUANTITY	<input type="number" name="qty" id="qty" value=${product.qty}><br>
+PRICE	<input type="text" name="price" id="price" value=${product.price}><br>
+MFG DATE	<input type="date" name="date" id="date" value=${product.mfgdate}><br>
+
+<button type="submit"></button>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+package com.springjdbc.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springjdbc.beans.Product;
+import com.springjdbc.dao.ProductDao;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+	
+	@Autowired
+	ProductDao pdao;
+
+	@Override
+	public List<Product> showAll() {
+		
+		return pdao.showAll();
+	}
+
+	@Override
+	public Product findById(int pid) {
+		
+		return pdao.findById(pid);
+	}
+
+	@Override
+	public boolean update(Product p) {
+		
+		return pdao.update(p);
+		
+	}
+
+	@Override
+	public boolean delete(int pid) {
+		
+		return pdao.delete
+	}
+
+}

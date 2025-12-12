@@ -1,0 +1,4 @@
+1765444503086	Rename resource 'application.properties'
+1765445079992	Move 'data.properties' to 'WEB-INF'
+1765445084481	Move 'springconfig.xml' to 'WEB-INF'
+1765445105328	Rename resource 'springconfig.xml'

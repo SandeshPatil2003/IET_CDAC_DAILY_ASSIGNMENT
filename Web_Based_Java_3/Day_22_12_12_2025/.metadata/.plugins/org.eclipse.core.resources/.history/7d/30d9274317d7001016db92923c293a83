@@ -1,0 +1,135 @@
+package com.j.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.j.beans.Product;
+
+public class ProductDaoImpl implements ProductDao {
+	
+	
+	static Connection conn;
+	
+	static {
+				conn=DBUtil.getMyConnection();
+	}
+
+	@Override
+	public boolean addProduct(Product p) {
+		
+		try {
+			PreparedStatement insert = conn.prepareStatement("insert into products303 values (default,?,?,?,?)");
+			
+			insert.setString(1,p.getName());
+			insert.setInt(2, p.getQty());
+			insert.setDouble(3,p.getPrice());
+			insert.setDate(4, Date.valueOf(p.getMfgdate()));
+			
+			int n= insert.executeUpdate();
+			
+			return n>0;
+			
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return false;
+	}
+
+	@Override
+	public List<Product> displayALL() {
+		
+		
+		
+		try {
+			PreparedStatement show = conn.prepareStatement("select * from products303");
+			
+			ResultSet rs = show.executeQuery();
+			
+			
+		List <Product> plist = new ArrayList<>();
+			
+			while(rs.next())
+			{
+				
+				
+				Product p = new Product(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getDouble(4),rs.getDate(5).toLocalDate());
+				plist.add(p);
+			}
+			
+			return plist;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public Product findById(int pid) {
+		
+		try {
+			PreparedStatement show = conn.prepareStatement("select * from products303 where pid=?");
+			
+			ResultSet rs = show.executeQuery();
+			
+			if(rs.next())
+			{
+				Product p = new Product(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getDouble(4),rs.getDate(5).toLocalDate());
+				return p;
+			}
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public boolean updateProduct(Product p1) {
+		
+		try {
+			PreparedStatement update = conn.prepareStatement("update products303 set pname=?,qty=?,price=?,mfgdate=? where pid= ?");
+		
+				update.setString(1, p1.getName());
+				update.setInt(2, p1.getQty());
+				update.setDouble(3,p1.getPrice());
+				update.setDate(4,valuep1.getMfgdate());
+				
+			int n =update.executeUpdate();
+			
+			return
+		
+		
+		
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+
+}

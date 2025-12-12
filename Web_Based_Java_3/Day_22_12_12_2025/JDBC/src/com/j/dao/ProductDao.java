@@ -1,0 +1,19 @@
+package com.j.dao;
+
+import java.util.List;
+
+import com.j.beans.Product;
+
+public interface ProductDao {
+
+	boolean addProduct(Product p);
+
+	List<Product> displayALL();
+
+	Product findById(int pid);
+
+	boolean updateProduct(Product p1);
+
+	boolean deleteById(int pid);
+
+}

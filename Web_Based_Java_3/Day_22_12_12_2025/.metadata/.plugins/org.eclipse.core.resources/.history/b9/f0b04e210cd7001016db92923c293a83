@@ -1,0 +1,46 @@
+package com.j.beans;
+
+import java.time.LocalDate;
+
+public class Product {
+	
+	private int pid;
+	private String name;
+	private int qty;
+	private double price;
+	private LocalDate mfgdate;
+	
+	
+	
+	public Product() {
+		super();
+	}
+
+
+
+	public Product(int pid, String name, int qty, double price, LocalDate mfgdate) {
+		super();
+		this.pid = pid;
+		this.name = name;
+		this.qty = qty;
+		this.price = price;
+		this.mfgdate = mfgdate;
+	}
+	
+	public Product( String name, int qty, double price, LocalDate mfgdate) {
+		super();
+		
+		this.name = name;
+		this.qty = qty;
+		this.price = price;
+		this.mfgdate = mfgdate;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

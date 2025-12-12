@@ -1,0 +1,65 @@
+package com.springjdbc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.service.annotation.PatchExchange;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.springjdbc.beans.Product;
+import com.springjdbc.service.ProductService;
+
+@Controller
+@RequestMapping("/product")
+public class ProductController {
+	
+	@Autowired
+	ProductService pservice;
+	
+	@GetMapping("/showall")
+	public ModelAndView showAllProd() {
+		
+		List<Product> plist = pservice.showAll();
+		
+		
+		return new ModelAndView ("showall","plist",plist);
+	}
+	
+	@GetMapping("/edit/{pid}")
+	public ModelAndView update(@PathVariable("pid") int pid) {
+
+		Product p = pservice.findById(pid);
+
+		if (p != null) {
+			return new ModelAndView("updateform", "product", p);
+
+		} else {
+
+			return new ModelAndView("redirect:/product/showall");
+		}
+
+	}
+	
+	@PostMapping("/insert")
+	public ModelAndView insert(@ModelAttribute Product product)
+	{
+		
+		
+		boolean status = pservice.update(product);
+		
+		if
+		return null;
+		
+		
+	}
+	
+	
+	
+}

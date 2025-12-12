@@ -1,0 +1,7 @@
+package com.demo.beans;
+
+
+@Enti
+public class Author {
+
+}

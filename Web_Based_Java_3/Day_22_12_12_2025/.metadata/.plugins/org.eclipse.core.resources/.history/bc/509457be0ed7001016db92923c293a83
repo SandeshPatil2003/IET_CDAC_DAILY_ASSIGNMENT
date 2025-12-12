@@ -1,0 +1,45 @@
+package com.j.service;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import com.j.beans.Product;
+import com.j.dao.ProductDao;
+import com.j.dao.ProductDaoImpl;
+
+public class ProductServiceImpl implements ProductService {
+	
+	ProductDao pdao = new ProductDaoImpl();
+
+	@Override
+	public boolean addProduct(Scanner sc) {
+		
+		
+		
+		System.out.println("ENTER NAME	:" );
+		String pname = sc.next();
+		
+		System.out.println("ENTER QUANTIY	:" );
+		int qty = sc.nextInt();
+		
+		System.out.println("ENTER PRICE	:" );
+		double price = sc.nextDouble();
+		
+		System.out.println("ENTER MFGDATE:  (dd/MM/yyyy) " );
+		String date = sc.next();
+		
+		DateTimeFormatter dt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		LocalDate mfgdate = LocalDate.parse(date,dt);
+		
+		Product p = new Product(pname,qty,price,mfgdate);
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}

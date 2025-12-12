@@ -1,0 +1,15 @@
+package com.springjdbc.dao;
+
+import java.util.List;
+
+import com.springjdbc.beans.Product;
+
+public interface ProductDao {
+
+	List<Product> showAll();
+
+	Product findById(int pid);
+
+	boolean update(Product p);
+
+}

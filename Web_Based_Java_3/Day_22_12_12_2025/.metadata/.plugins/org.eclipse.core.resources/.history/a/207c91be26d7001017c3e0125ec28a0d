@@ -1,0 +1,39 @@
+package com.springjdbc.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.springjdbc.beans.User;
+
+
+@Repository
+public class LoginDaoImpl implements LoginDao{
+
+	@Autowired
+	JdbcTemplate jt;
+	
+//	@Override
+//	public Product findByPid(int pid) {
+//		try {
+//		Product p=jdbcTemplate.queryForObject("select * from product where pid=?",
+//				new Object[] {pid},BeanPropertyRowMapper.newInstance(Product.class)
+//				);
+//		return p;
+//		}catch(EmptyResultDataAccessException e) {
+//			System.out.println(e.getMessage());
+//			return null;
+//		}
+//		
+//	}
+	
+	
+	@Override
+	public User validateUser(String uname, String pass) {
+		
+		User user = jt.queryForObject("select * from user303 where uname=? AND pass=?"
+				,, null);
+		return null;
+	}
+
+}

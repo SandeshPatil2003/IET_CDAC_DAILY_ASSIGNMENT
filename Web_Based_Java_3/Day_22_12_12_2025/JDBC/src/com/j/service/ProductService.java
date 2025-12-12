@@ -1,0 +1,20 @@
+package com.j.service;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.j.beans.Product;
+
+public interface ProductService {
+
+	boolean addProduct(Scanner sc);
+
+	List<Product> displayALL();
+
+	Product findById(int pid);
+
+	boolean editById(int pid, Scanner sc);
+
+	boolean deleteById(int pid);
+
+}

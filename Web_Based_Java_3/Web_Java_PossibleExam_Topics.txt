@@ -28,6 +28,12 @@ spring boot mvc crud initializer+ self webapp views webinf
 
 spring boot rest
 
+jsp jstl dbutil jar commandline
+spring mvc - jdbctemplate views
+spring boot mvc --> jdbctemplate views
+spring boot restful postman
+
+
 
 
 

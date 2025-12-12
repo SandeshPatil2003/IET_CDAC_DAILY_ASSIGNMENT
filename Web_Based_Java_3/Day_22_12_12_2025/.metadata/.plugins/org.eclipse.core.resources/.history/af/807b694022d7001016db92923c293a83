@@ -1,0 +1,40 @@
+package com.springjdbc.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.springjdbc.beans.User;
+
+@Repository
+public class LoginDaoImpl implements LoginDao{
+	
+	@Autowired
+	JdbcTemplate jt;
+
+	
+	public User validateUser(String uname, String pass) {
+		
+	    String sql = "SELECT * FROM user303 WHERE uname=? AND pass=?";
+		 @SuppressWarnings("deprecation")
+		User user = jt.queryForObject(
+		            sql,
+		            new Object[] {uname, pass},
+		            
+		            // Define the RowMapper lambda expression correctly
+		            (rs, n) -> {
+		                // The lambda body MUST return a User object directly
+		                return new User(
+		                    rs.getInt("uid"),
+		                    rs.getString("uname"),
+		                    rs.getString("pass"),
+		                    rs.getDate("dob").toLocalDate()
+		                );
+		            }
+		        );
+		
+	}
+	
+	
+
+}

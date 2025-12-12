@@ -1,0 +1,20 @@
+package com.springjdbc.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springjdbc.beans.User;
+
+
+@Service
+public class LoginServiceImpl implements LoginService{
+	
+	@Autowired
+	LoginDao ldao;
+
+	public User validateUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

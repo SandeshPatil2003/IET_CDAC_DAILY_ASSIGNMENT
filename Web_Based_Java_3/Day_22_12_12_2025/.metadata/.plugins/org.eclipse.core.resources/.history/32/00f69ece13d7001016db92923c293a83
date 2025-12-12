@@ -1,0 +1,9 @@
+package com.j.dao;
+
+import com.j.beans.Product;
+
+public interface ProductDao {
+
+	boolean addProduct(Product p);
+
+}

@@ -1,0 +1,15 @@
+package com.springjdbc.dao;
+
+import com.springjdbc.beans.User;
+
+
+
+public class LoginDaoImpl implements LoginDao{
+
+	@Override
+	public User validateUser(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

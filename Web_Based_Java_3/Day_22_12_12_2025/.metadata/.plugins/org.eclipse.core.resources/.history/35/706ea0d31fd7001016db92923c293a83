@@ -1,0 +1,14 @@
+package com.springjdbc.beans;
+
+public class User {
+	@Entity
+
+
+	@Id
+	private int uid;
+	private String uname;
+	private String pass;
+
+	private LocalDate dob;
+
+}
