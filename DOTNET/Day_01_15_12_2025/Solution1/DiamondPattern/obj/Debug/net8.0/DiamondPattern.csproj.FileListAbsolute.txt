@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\bin\Debug\net8.0\DiamondPattern.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\bin\Debug\net8.0\DiamondPattern.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\bin\Debug\net8.0\DiamondPattern.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\bin\Debug\net8.0\DiamondPattern.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\bin\Debug\net8.0\DiamondPattern.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\refint\DiamondPattern.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\DiamondPattern.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Solution1\DiamondPattern\obj\Debug\net8.0\ref\DiamondPattern.dll

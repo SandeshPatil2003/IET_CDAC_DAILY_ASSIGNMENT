@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\bin\Debug\net8.0\BasedDerived.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\bin\Debug\net8.0\BasedDerived.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\bin\Debug\net8.0\BasedDerived.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\bin\Debug\net8.0\BasedDerived.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\bin\Debug\net8.0\BasedDerived.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\refint\BasedDerived.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\BasedDerived.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\BasedDerived\obj\Debug\net8.0\ref\BasedDerived.dll

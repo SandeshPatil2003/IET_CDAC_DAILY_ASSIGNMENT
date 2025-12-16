@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\bin\Debug\net8.0\InterfaceFirst.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\bin\Debug\net8.0\InterfaceFirst.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\bin\Debug\net8.0\InterfaceFirst.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\bin\Debug\net8.0\InterfaceFirst.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\bin\Debug\net8.0\InterfaceFirst.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\refint\InterfaceFirst.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\InterfaceFirst.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\InterfaceFirst\obj\Debug\net8.0\ref\InterfaceFirst.dll

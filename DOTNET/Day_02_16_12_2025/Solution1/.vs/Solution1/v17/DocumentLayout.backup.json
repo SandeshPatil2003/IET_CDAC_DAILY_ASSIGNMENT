@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA235BF-A70C-4452-9210-B20522CCF5B6}|InterfaceFirst\\InterfaceFirst.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_02_16_12_2025\\solution1\\interfacefirst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BA235BF-A70C-4452-9210-B20522CCF5B6}|InterfaceFirst\\InterfaceFirst.csproj|solutionrelative:interfacefirst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA235BF-A70C-4452-9210-B20522CCF5B6}|InterfaceFirst\\InterfaceFirst.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_02_16_12_2025\\solution1\\interfacefirst\\firstinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BA235BF-A70C-4452-9210-B20522CCF5B6}|InterfaceFirst\\InterfaceFirst.csproj|solutionrelative:interfacefirst\\firstinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA235BF-A70C-4452-9210-B20522CCF5B6}|InterfaceFirst\\InterfaceFirst.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_02_16_12_2025\\solution1\\interfacefirst\\firstinterfaceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BA235BF-A70C-4452-9210-B20522CCF5B6}|InterfaceFirst\\InterfaceFirst.csproj|solutionrelative:interfacefirst\\firstinterfaceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FirstInterfaceImpl.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\InterfaceFirst\\FirstInterfaceImpl.cs",
+              "RelativeDocumentMoniker": "InterfaceFirst\\FirstInterfaceImpl.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\InterfaceFirst\\FirstInterfaceImpl.cs",
+              "RelativeToolTip": "InterfaceFirst\\FirstInterfaceImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T11:10:35.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FirstInterface.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\InterfaceFirst\\FirstInterface.cs",
+              "RelativeDocumentMoniker": "InterfaceFirst\\FirstInterface.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\InterfaceFirst\\FirstInterface.cs",
+              "RelativeToolTip": "InterfaceFirst\\FirstInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T11:08:37.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\InterfaceFirst\\Program.cs",
+              "RelativeDocumentMoniker": "InterfaceFirst\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_02_16_12_2025\\Solution1\\InterfaceFirst\\Program.cs",
+              "RelativeToolTip": "InterfaceFirst\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T11:07:17.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

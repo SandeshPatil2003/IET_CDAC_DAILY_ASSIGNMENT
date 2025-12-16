@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\bin\Debug\net8.0\MenuDrivenConsole.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\bin\Debug\net8.0\MenuDrivenConsole.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\bin\Debug\net8.0\MenuDrivenConsole.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\bin\Debug\net8.0\MenuDrivenConsole.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\bin\Debug\net8.0\MenuDrivenConsole.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\refint\MenuDrivenConsole.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\MenuDrivenConsole.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_02_16_12_2025\Solution1\MenuDrivenConsole\obj\Debug\net8.0\ref\MenuDrivenConsole.dll
