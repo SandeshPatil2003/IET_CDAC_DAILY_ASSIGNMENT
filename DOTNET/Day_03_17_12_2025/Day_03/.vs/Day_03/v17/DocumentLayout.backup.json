@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_03_17_12_2025\\day_03\\loggingdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|solutionrelative:loggingdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_03_17_12_2025\\day_03\\loggingdemo\\sqlserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|solutionrelative:loggingdemo\\sqlserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_03_17_12_2025\\day_03\\loggingdemo\\mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|solutionrelative:loggingdemo\\mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_03_17_12_2025\\day_03\\loggingdemo\\databasefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|solutionrelative:loggingdemo\\databasefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_03_17_12_2025\\day_03\\loggingdemo\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|solutionrelative:loggingdemo\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_03_17_12_2025\\day_03\\loggingdemo\\applogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A29DF026-4865-4C49-9B0E-4A4073D2F46E}|LoggingDemo\\LoggingDemo.csproj|solutionrelative:loggingdemo\\applogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQLServer.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\SQLServer.cs",
+              "RelativeDocumentMoniker": "LoggingDemo\\SQLServer.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\SQLServer.cs",
+              "RelativeToolTip": "LoggingDemo\\SQLServer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:28:56.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MySQL.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\MySQL.cs",
+              "RelativeDocumentMoniker": "LoggingDemo\\MySQL.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\MySQL.cs",
+              "RelativeToolTip": "LoggingDemo\\MySQL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:28:55.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseFactory.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\DatabaseFactory.cs",
+              "RelativeDocumentMoniker": "LoggingDemo\\DatabaseFactory.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\DatabaseFactory.cs",
+              "RelativeToolTip": "LoggingDemo\\DatabaseFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:11:33.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\Database.cs",
+              "RelativeDocumentMoniker": "LoggingDemo\\Database.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\Database.cs",
+              "RelativeToolTip": "LoggingDemo\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:11:32.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\Program.cs",
+              "RelativeDocumentMoniker": "LoggingDemo\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\Program.cs*",
+              "RelativeToolTip": "LoggingDemo\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:03:21.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppLogger.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\AppLogger.cs",
+              "RelativeDocumentMoniker": "LoggingDemo\\AppLogger.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_03_17_12_2025\\Day_03\\LoggingDemo\\AppLogger.cs",
+              "RelativeToolTip": "LoggingDemo\\AppLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:16:56.002Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

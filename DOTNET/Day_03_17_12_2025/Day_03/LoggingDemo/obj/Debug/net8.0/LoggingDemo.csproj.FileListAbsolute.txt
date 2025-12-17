@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\bin\Debug\net8.0\LoggingDemo.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\bin\Debug\net8.0\LoggingDemo.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\bin\Debug\net8.0\LoggingDemo.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\bin\Debug\net8.0\LoggingDemo.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\bin\Debug\net8.0\LoggingDemo.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\refint\LoggingDemo.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\LoggingDemo.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\LoggingDemo\obj\Debug\net8.0\ref\LoggingDemo.dll

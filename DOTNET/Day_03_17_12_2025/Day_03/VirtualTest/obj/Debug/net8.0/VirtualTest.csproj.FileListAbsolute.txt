@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\bin\Debug\net8.0\VirtualTest.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\bin\Debug\net8.0\VirtualTest.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\bin\Debug\net8.0\VirtualTest.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\bin\Debug\net8.0\VirtualTest.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\bin\Debug\net8.0\VirtualTest.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\refint\VirtualTest.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\VirtualTest.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_03_17_12_2025\Day_03\VirtualTest\obj\Debug\net8.0\ref\VirtualTest.dll
