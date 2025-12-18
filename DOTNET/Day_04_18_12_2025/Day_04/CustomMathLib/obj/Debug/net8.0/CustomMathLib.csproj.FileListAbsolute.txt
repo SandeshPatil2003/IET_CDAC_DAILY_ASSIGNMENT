@@ -1,0 +1,11 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\bin\Debug\net8.0\CustomMathLib.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\bin\Debug\net8.0\CustomMathLib.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\bin\Debug\net8.0\CustomMathLib.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\CustomMathLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\CustomMathLib.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\CustomMathLib.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\CustomMathLib.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\CustomMathLib.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\refint\CustomMathLib.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\CustomMathLib.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_04_18_12_2025\Day_04\CustomMathLib\obj\Debug\net8.0\ref\CustomMathLib.dll
