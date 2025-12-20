@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\bin\Debug\net6.0\OldSerialization.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\bin\Debug\net6.0\OldSerialization.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\bin\Debug\net6.0\OldSerialization.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\bin\Debug\net6.0\OldSerialization.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\bin\Debug\net6.0\OldSerialization.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\refint\OldSerialization.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\OldSerialization.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_06_20_12_2025\Day_06\OldSerialization\obj\Debug\net6.0\ref\OldSerialization.dll

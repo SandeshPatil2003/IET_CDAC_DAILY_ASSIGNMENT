@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36804.6 d17.14
+VisualStudioVersion = 17.14.36804.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDelegate", "GenericDelegate\GenericDelegate.csproj", "{06E59F09-36F7-4BD1-A966-B9D26795D9F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling", "FileHandling\FileHandling.csproj", "{EC0F6F50-9F26-41FC-AAFC-AFCB6C6A8891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldSerialization", "OldSerialization\OldSerialization.csproj", "{2F06CD89-1087-4F69-9A8D-71D7735400ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{A45DE868-1565-4A0E-BC37-B28A83E71532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{63367BAA-FDB2-41BF-BE27-DD30EF4D2AA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMath", "MyMath\MyMath.csproj", "{35A19D24-19F7-4A0A-8C82-776D438DC88E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{EC0F6F50-9F26-41FC-AAFC-AFCB6C6A8891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC0F6F50-9F26-41FC-AAFC-AFCB6C6A8891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC0F6F50-9F26-41FC-AAFC-AFCB6C6A8891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F06CD89-1087-4F69-9A8D-71D7735400ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F06CD89-1087-4F69-9A8D-71D7735400ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F06CD89-1087-4F69-9A8D-71D7735400ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F06CD89-1087-4F69-9A8D-71D7735400ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45DE868-1565-4A0E-BC37-B28A83E71532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45DE868-1565-4A0E-BC37-B28A83E71532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45DE868-1565-4A0E-BC37-B28A83E71532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45DE868-1565-4A0E-BC37-B28A83E71532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63367BAA-FDB2-41BF-BE27-DD30EF4D2AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63367BAA-FDB2-41BF-BE27-DD30EF4D2AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63367BAA-FDB2-41BF-BE27-DD30EF4D2AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63367BAA-FDB2-41BF-BE27-DD30EF4D2AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A19D24-19F7-4A0A-8C82-776D438DC88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A19D24-19F7-4A0A-8C82-776D438DC88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A19D24-19F7-4A0A-8C82-776D438DC88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A19D24-19F7-4A0A-8C82-776D438DC88E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
