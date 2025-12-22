@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F12720EA-8097-4EAB-8C2E-7D374CE6983D}|CSharpFeatures\\CSharpFeatures.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\csharpfeatures\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12720EA-8097-4EAB-8C2E-7D374CE6983D}|CSharpFeatures\\CSharpFeatures.csproj|solutionrelative:csharpfeatures\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0AC38-8F85-4B8F-A9F9-FDB91DDC363C}|ORM\\ORM.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\orm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0AC38-8F85-4B8F-A9F9-FDB91DDC363C}|ORM\\ORM.csproj|solutionrelative:orm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8CF87E8-7C1F-4D85-A899-98F0248AD9D3}|ReflectionCustomAttributes\\ReflectionCustomAttributes.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\reflectioncustomattributes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8CF87E8-7C1F-4D85-A899-98F0248AD9D3}|ReflectionCustomAttributes\\ReflectionCustomAttributes.csproj|solutionrelative:reflectioncustomattributes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0AC38-8F85-4B8F-A9F9-FDB91DDC363C}|ORM\\ORM.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\orm\\orm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A4C0AC38-8F85-4B8F-A9F9-FDB91DDC363C}|ORM\\ORM.csproj|solutionrelative:orm\\orm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D854EF1-DFD1-433A-9138-6F315A78AB83}|EmpLib\\EmpLib.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\emplib\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D854EF1-DFD1-433A-9138-6F315A78AB83}|EmpLib\\EmpLib.csproj|solutionrelative:emplib\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D45CF33-9021-4D01-ABB5-AAF588DEC7AF}|IETAttribute\\IETAttribute.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\ietattribute\\iet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D45CF33-9021-4D01-ABB5-AAF588DEC7AF}|IETAttribute\\IETAttribute.csproj|solutionrelative:ietattribute\\iet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D090BB-84A2-410A-AAB2-7920768B19D2}|Table\\Table.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_07_22_12_2025\\day_07\\table\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D090BB-84A2-410A-AAB2-7920768B19D2}|Table\\Table.csproj|solutionrelative:table\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\CSharpFeatures\\Program.cs",
+              "RelativeDocumentMoniker": "CSharpFeatures\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\CSharpFeatures\\Program.cs",
+              "RelativeToolTip": "CSharpFeatures\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T12:45:49.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ORM",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\ORM\\ORM.csproj",
+              "RelativeDocumentMoniker": "ORM\\ORM.csproj",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\ORM\\ORM.csproj",
+              "RelativeToolTip": "ORM\\ORM.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-22T12:40:26.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\ORM\\Program.cs",
+              "RelativeDocumentMoniker": "ORM\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\ORM\\Program.cs",
+              "RelativeToolTip": "ORM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T12:34:11.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\Table\\Table.cs",
+              "RelativeDocumentMoniker": "Table\\Table.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\Table\\Table.cs",
+              "RelativeToolTip": "Table\\Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T12:22:04.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IET.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\IETAttribute\\IET.cs",
+              "RelativeDocumentMoniker": "IETAttribute\\IET.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\IETAttribute\\IET.cs",
+              "RelativeToolTip": "IETAttribute\\IET.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T12:21:55.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Emp.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\EmpLib\\Emp.cs",
+              "RelativeDocumentMoniker": "EmpLib\\Emp.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\EmpLib\\Emp.cs",
+              "RelativeToolTip": "EmpLib\\Emp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T12:19:04.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\ReflectionCustomAttributes\\Program.cs",
+              "RelativeDocumentMoniker": "ReflectionCustomAttributes\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_07_22_12_2025\\Day_07\\ReflectionCustomAttributes\\Program.cs",
+              "RelativeToolTip": "ReflectionCustomAttributes\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAwAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T12:17:05.88Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

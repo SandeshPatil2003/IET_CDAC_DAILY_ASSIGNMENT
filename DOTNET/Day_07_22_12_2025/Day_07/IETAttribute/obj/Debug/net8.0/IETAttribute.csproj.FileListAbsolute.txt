@@ -1,0 +1,11 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\bin\Debug\net8.0\IETAttribute.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\bin\Debug\net8.0\IETAttribute.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\bin\Debug\net8.0\IETAttribute.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\IETAttribute.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\IETAttribute.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\IETAttribute.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\IETAttribute.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\IETAttribute.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\refint\IETAttribute.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\IETAttribute.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\IETAttribute\obj\Debug\net8.0\ref\IETAttribute.dll

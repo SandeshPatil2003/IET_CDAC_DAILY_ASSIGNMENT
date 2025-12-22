@@ -1,0 +1,11 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\bin\Debug\net8.0\Table.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\bin\Debug\net8.0\Table.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\bin\Debug\net8.0\Table.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\Table.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\Table.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\Table.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\Table.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\Table.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\refint\Table.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\Table.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_07_22_12_2025\Day_07\Table\obj\Debug\net8.0\ref\Table.dll
