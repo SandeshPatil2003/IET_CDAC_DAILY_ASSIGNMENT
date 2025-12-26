@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\bin\Debug\net8.0\CSharpFeaturesLinq.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\bin\Debug\net8.0\CSharpFeaturesLinq.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\bin\Debug\net8.0\CSharpFeaturesLinq.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\bin\Debug\net8.0\CSharpFeaturesLinq.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\bin\Debug\net8.0\CSharpFeaturesLinq.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\refint\CSharpFeaturesLinq.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\CSharpFeaturesLinq.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesLinq\obj\Debug\net8.0\ref\CSharpFeaturesLinq.dll

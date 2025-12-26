@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\bin\Debug\net8.0\CSharpFeaturesForLINQ.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\bin\Debug\net8.0\CSharpFeaturesForLINQ.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\bin\Debug\net8.0\CSharpFeaturesForLINQ.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\bin\Debug\net8.0\CSharpFeaturesForLINQ.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\bin\Debug\net8.0\CSharpFeaturesForLINQ.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\refint\CSharpFeaturesForLINQ.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\CSharpFeaturesForLINQ.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\CSharpFeaturesForLINQ\obj\Debug\net8.0\ref\CSharpFeaturesForLINQ.dll

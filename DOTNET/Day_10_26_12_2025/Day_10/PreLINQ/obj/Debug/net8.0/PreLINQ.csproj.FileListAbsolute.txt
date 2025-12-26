@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\bin\Debug\net8.0\PreLINQ.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\bin\Debug\net8.0\PreLINQ.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\bin\Debug\net8.0\PreLINQ.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\bin\Debug\net8.0\PreLINQ.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\bin\Debug\net8.0\PreLINQ.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\refint\PreLINQ.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\PreLINQ.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_09_24_12_2025\Day_10\PreLINQ\obj\Debug\net8.0\ref\PreLINQ.dll
