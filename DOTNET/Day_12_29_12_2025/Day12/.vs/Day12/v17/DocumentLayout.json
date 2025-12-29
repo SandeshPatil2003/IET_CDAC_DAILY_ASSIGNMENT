@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\secondentityframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|solutionrelative:secondentityframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\secondentityframework\\migrations\\20251229133809_studentclassmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|solutionrelative:secondentityframework\\migrations\\20251229133809_studentclassmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\secondentityframework\\dal\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|solutionrelative:secondentityframework\\dal\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\secondentityframework\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|solutionrelative:secondentityframework\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\secondentityframework\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|solutionrelative:secondentityframework\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B094946-4CC2-4397-AD77-0525A1DF5FCD}|FirstEntityFramework\\FirstEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\firstentityframework\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0B094946-4CC2-4397-AD77-0525A1DF5FCD}|FirstEntityFramework\\FirstEntityFramework.csproj|solutionrelative:firstentityframework\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\secondentityframework\\secondentityframework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A95E3998-A485-4AED-9237-3A46D5A79F24}|SecondEntityFramework\\SecondEntityFramework.csproj|solutionrelative:secondentityframework\\secondentityframework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B094946-4CC2-4397-AD77-0525A1DF5FCD}|FirstEntityFramework\\FirstEntityFramework.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_12_29_12_2025\\day12\\firstentityframework\\models\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B094946-4CC2-4397-AD77-0525A1DF5FCD}|FirstEntityFramework\\FirstEntityFramework.csproj|solutionrelative:firstentityframework\\models\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251229133809_StudentClassMigration.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\Migrations\\20251229133809_StudentClassMigration.cs",
+              "RelativeDocumentMoniker": "SecondEntityFramework\\Migrations\\20251229133809_StudentClassMigration.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\Migrations\\20251229133809_StudentClassMigration.cs",
+              "RelativeToolTip": "SecondEntityFramework\\Migrations\\20251229133809_StudentClassMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T13:38:10.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\FirstEntityFramework\\appsettings.json",
+              "RelativeDocumentMoniker": "FirstEntityFramework\\appsettings.json",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\FirstEntityFramework\\appsettings.json",
+              "RelativeToolTip": "FirstEntityFramework\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-29T13:31:25.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\Program.cs",
+              "RelativeDocumentMoniker": "SecondEntityFramework\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\Program.cs",
+              "RelativeToolTip": "SecondEntityFramework\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:36:43.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\appsettings.json",
+              "RelativeDocumentMoniker": "SecondEntityFramework\\appsettings.json",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\appsettings.json",
+              "RelativeToolTip": "SecondEntityFramework\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-29T12:36:51.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\DAL\\TestDbContext.cs",
+              "RelativeDocumentMoniker": "SecondEntityFramework\\DAL\\TestDbContext.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\DAL\\TestDbContext.cs",
+              "RelativeToolTip": "SecondEntityFramework\\DAL\\TestDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:42:05.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "SecondEntityFramework\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\Models\\Student.cs",
+              "RelativeToolTip": "SecondEntityFramework\\Models\\Student.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:41:01.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SecondEntityFramework",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\SecondEntityFramework.csproj",
+              "RelativeDocumentMoniker": "SecondEntityFramework\\SecondEntityFramework.csproj",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\SecondEntityFramework\\SecondEntityFramework.csproj",
+              "RelativeToolTip": "SecondEntityFramework\\SecondEntityFramework.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-29T12:36:50.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Emp.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\FirstEntityFramework\\Models\\Emp.cs",
+              "RelativeDocumentMoniker": "FirstEntityFramework\\Models\\Emp.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_12_29_12_2025\\Day12\\FirstEntityFramework\\Models\\Emp.cs",
+              "RelativeToolTip": "FirstEntityFramework\\Models\\Emp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:42:59.753Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
