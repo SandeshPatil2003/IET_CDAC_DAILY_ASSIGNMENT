@@ -1,0 +1,14 @@
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\bin\Debug\net8.0\Thread1.exe
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\bin\Debug\net8.0\Thread1.deps.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\bin\Debug\net8.0\Thread1.runtimeconfig.json
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\bin\Debug\net8.0\Thread1.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\bin\Debug\net8.0\Thread1.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.AssemblyInfo.cs
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\refint\Thread1.dll
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.pdb
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\Thread1.genruntimeconfig.cache
+C:\Users\IET\Desktop\000000074_75_DOTNET\Day_13_30_12_2025\Day13\Thread1\obj\Debug\net8.0\ref\Thread1.dll
