@@ -1,0 +1,11 @@
+﻿@model VB_VD_TD.Models.Cust
+
+<tr>
+    <td>@Model.cId</td>
+    <td>@Model.cName</td>
+    <td>@Model.Bill.ToString("C")</td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@Model.cId">Edit</a> |
+        <a asp-action="Details" asp-route-id="@Model.cId">Details</a>
+    </td>
+</tr>

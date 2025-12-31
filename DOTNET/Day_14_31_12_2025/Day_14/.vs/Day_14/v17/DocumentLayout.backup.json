@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\models\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\controllers\\empscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\empscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\data\\webapplication1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\data\\webapplication1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D60F147-6BEB-4E4F-A69E-E753B9A8E1CA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\testmigration\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|solutionrelative:testmigration\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\testmigration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|solutionrelative:testmigration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\testmigration\\dal\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|solutionrelative:testmigration\\dal\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\testmigration\\testmigration.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|solutionrelative:testmigration\\testmigration.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_14_31_12_2025\\day_14\\testmigration\\models\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE8B158-9189-4DA4-A754-A67D74E276D6}|TestMigration\\TestMigration.csproj|solutionrelative:testmigration\\models\\emp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ClassesController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ClassesController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:35:31.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Models\\Class.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Class.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Models\\Class.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:34:38.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:34:03.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WebApplication1Context.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Data\\WebApplication1Context.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Data\\WebApplication1Context.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Data\\WebApplication1Context.cs",
+              "RelativeToolTip": "WebApplication1\\Data\\WebApplication1Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:33:46.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpsController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Controllers\\EmpsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmpsController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Controllers\\EmpsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\EmpsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwBsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:33:18.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Emp.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Models\\Emp.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Emp.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\Models\\Emp.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Emp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:31:40.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-31T12:30:39.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\DAL\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "TestMigration\\DAL\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\DAL\\MyDbContext.cs",
+              "RelativeToolTip": "TestMigration\\DAL\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:24:52.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\appsettings.json",
+              "RelativeDocumentMoniker": "TestMigration\\appsettings.json",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\appsettings.json",
+              "RelativeToolTip": "TestMigration\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-31T12:18:45.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestMigration",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\TestMigration.csproj",
+              "RelativeDocumentMoniker": "TestMigration\\TestMigration.csproj",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\TestMigration.csproj",
+              "RelativeToolTip": "TestMigration\\TestMigration.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-31T12:14:49.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Emp.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\Models\\Emp.cs",
+              "RelativeDocumentMoniker": "TestMigration\\Models\\Emp.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\Models\\Emp.cs",
+              "RelativeToolTip": "TestMigration\\Models\\Emp.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:12:04.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\Program.cs",
+              "RelativeDocumentMoniker": "TestMigration\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_14_31_12_2025\\Day_14\\TestMigration\\Program.cs",
+              "RelativeToolTip": "TestMigration\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T12:11:28.409Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

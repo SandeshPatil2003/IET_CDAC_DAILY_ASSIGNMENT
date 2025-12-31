@@ -1,0 +1,11 @@
+﻿@model VB_VD_TD.Models.Emp
+
+<tr>
+    <td>@Model.eId</td>
+    <td>@Model.eName</td>
+    <td>@Model.eSal.ToString("C")</td> @* Formats as Currency *@
+    <td>
+        <a asp-action="Edit" asp-route-id="@Model.eId">Edit</a> |
+        <a asp-action="Details" asp-route-id="@Model.eId">Details</a>
+    </td>
+</tr>

@@ -1,0 +1,39 @@
+﻿@model VB_VD_TD.Models.ViewModel1
+
+@{
+    ViewData["Title"] = "Company Records 2025";
+}
+
+<div class="container">
+    <h2 class="mt-4">Employee Records</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* Automatically loops through elist using Emp.cshtml *@
+            @Html.DisplayFor(m => m.elist)
+        </tbody>
+    </table>
+
+    <h2 class="mt-5">Customer Records</h2>
+    <table class="table table-hover table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Bill Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* Automatically loops through clist using Cust.cshtml *@
+            @Html.DisplayFor(m => m.clist)
+        </tbody>
+    </table>
+</div>

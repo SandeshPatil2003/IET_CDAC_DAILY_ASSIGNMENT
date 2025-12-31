@@ -1,0 +1,47 @@
+﻿@model IEnumerable<VB_VD_TD.Models.Emp>
+
+@{
+    ViewData["Title"] = "Emp";
+}
+
+<h1>Emp</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.eId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.eName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.eSal)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.eId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eSal)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
