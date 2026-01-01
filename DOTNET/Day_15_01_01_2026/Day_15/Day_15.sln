@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36804.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapLayoutPartialView", "BootstrapLayoutPartialView\BootstrapLayoutPartialView.csproj", "{C6FB0119-1D4B-4229-BF54-01B927DF0D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCStudentDB", "MVCStudentDB\MVCStudentDB.csproj", "{D563C62C-DE23-4898-BE2A-691AC500F9CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6FB0119-1D4B-4229-BF54-01B927DF0D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FB0119-1D4B-4229-BF54-01B927DF0D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FB0119-1D4B-4229-BF54-01B927DF0D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FB0119-1D4B-4229-BF54-01B927DF0D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D563C62C-DE23-4898-BE2A-691AC500F9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D563C62C-DE23-4898-BE2A-691AC500F9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D563C62C-DE23-4898-BE2A-691AC500F9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D563C62C-DE23-4898-BE2A-691AC500F9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FCA6437-2830-42BA-B010-85B08D762E14}
+	EndGlobalSection
+EndGlobal

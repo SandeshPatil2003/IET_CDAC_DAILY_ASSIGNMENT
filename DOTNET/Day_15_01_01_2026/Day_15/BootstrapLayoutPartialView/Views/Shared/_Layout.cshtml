@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <header style=" background-color :chartreuse; color:black ; display:flex; padding:5px"  >
+
+        <h3><b>COMPANY</b></h3> 
+        
+    </header>
+
+    <nav style="font-family:inherit">
+        <a href="/">Home</a> |
+        <a href="~/Home/Index">Index</a> |
+        <a href="~/Home/AllStudents">All Students</a> |
+        <a href=""></a> |
+        <a href=""></a>
+    </nav>
+    
+    <div style=" flex:1">
+        @RenderBody()
+    </div>
+
+    <footer style=" background-color :black ; color:chartreuse ; display:flex; padding:5px; position: fixed; bottom: 0; width:100%">
+
+        <h4><i><b>COMPANY</b></i></h4>
+    </footer>
+
+     <script src="~/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

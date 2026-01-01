@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\views\\home\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\views\\home\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_15_01_01_2026\\day_15\\mvcstudentdb\\mvcstudentdb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D563C62C-DE23-4898-BE2A-691AC500F9CA}|MVCStudentDB\\MVCStudentDB.csproj|solutionrelative:mvcstudentdb\\mvcstudentdb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVCStudentDB\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVCStudentDB\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:53:20.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "MVCStudentDB\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "MVCStudentDB\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:35:53.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "MVCStudentDB\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Models\\Student.cs",
+              "RelativeToolTip": "MVCStudentDB\\Models\\Student.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:29:42.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Program.cs",
+              "RelativeDocumentMoniker": "MVCStudentDB\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Program.cs",
+              "RelativeToolTip": "MVCStudentDB\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAxwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:29:14.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\appsettings.json",
+              "RelativeDocumentMoniker": "MVCStudentDB\\appsettings.json",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\appsettings.json",
+              "RelativeToolTip": "MVCStudentDB\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-01T10:32:27.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Views\\Home\\Show.cshtml",
+              "RelativeDocumentMoniker": "MVCStudentDB\\Views\\Home\\Show.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\Views\\Home\\Show.cshtml",
+              "RelativeToolTip": "MVCStudentDB\\Views\\Home\\Show.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-01T10:32:18.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MVCStudentDB",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\MVCStudentDB.csproj",
+              "RelativeDocumentMoniker": "MVCStudentDB\\MVCStudentDB.csproj",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_15_01_01_2026\\Day_15\\MVCStudentDB\\MVCStudentDB.csproj",
+              "RelativeToolTip": "MVCStudentDB\\MVCStudentDB.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-01T10:15:04.27Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
