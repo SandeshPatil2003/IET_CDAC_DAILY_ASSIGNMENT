@@ -1,0 +1,78 @@
+﻿@model IEnumerable<VSB.Models.VehicleService>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VehicleServices</title>
+</head>
+<body>
+
+    @if (TempData["ErrMsg"] != null)
+    {
+        <h3>@TempData["ErrMsg"]</h3>
+    }
+
+
+<div>
+    <h4>VehicleService</h4>
+    <hr />
+
+    <table>
+        <thead>
+            <th>Service Name</th>
+            <th>Service Duration</th>
+            <th>Service Price</th>
+        </thead>
+        <tbody>
+        @foreach (var s in Model)
+        {
+            <tr>
+
+                <td>@s.SName</td>
+                <td>@s.SDuration</td>
+                <td>@s.SPrice</td>
+         <td><a asp-action="Edit" asp-route-id="@s.SId">Edit</a>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@s.SId">Delete</a>
+                        </td>
+                    </tr>
+            
+        }
+            </tbody>
+        </table>
+        @* <dl class="row">
+
+          @
+            <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SDuration)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SDuration)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SPrice)
+        </dd>
+    </dl> *@
+</div>
+<div>
+    @* <a asp-action="Edit" asp-route-id="@Model.">Edit</a> | *@
+        <a asp-action="AddService">Add Service</a>
+</div>
+</body>
+</html>

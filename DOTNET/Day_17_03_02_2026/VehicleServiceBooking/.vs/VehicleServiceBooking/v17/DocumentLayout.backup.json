@@ -1,0 +1,305 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\models\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\models\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\views\\service\\vehicleservices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\views\\service\\vehicleservices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\views\\service\\editpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\views\\service\\editpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\views\\service\\addservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\views\\service\\addservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VehicleServiceDB/True/SqlTable/dbo.UserTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Migrations\\20260103051437_VSM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VSB\\Migrations\\20260103051437_VSM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\dal\\vsdbutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\dal\\vsdbutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Migrations\\20260103051147_VSMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VSB\\Migrations\\20260103051147_VSMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|c:\\users\\iet\\desktop\\000000074_75_dotnet\\day_17_03_02_2026\\vehicleservicebooking\\vsb\\vsb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE70DBD8-3940-4393-98D4-2E1D9A5ECA88}|VSB\\VSB.csproj|solutionrelative:vsb\\vsb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Models\\VehicleService.cs",
+              "RelativeDocumentMoniker": "VSB\\Models\\VehicleService.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Models\\VehicleService.cs",
+              "RelativeToolTip": "VSB\\Models\\VehicleService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:05:01.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehicleServices.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Service\\VehicleServices.cshtml",
+              "RelativeDocumentMoniker": "VSB\\Views\\Service\\VehicleServices.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Service\\VehicleServices.cshtml",
+              "RelativeToolTip": "VSB\\Views\\Service\\VehicleServices.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T05:47:44.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "VSB\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "VSB\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwE8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:43:20.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Service\\EditPage.cshtml",
+              "RelativeDocumentMoniker": "VSB\\Views\\Service\\EditPage.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Service\\EditPage.cshtml",
+              "RelativeToolTip": "VSB\\Views\\Service\\EditPage.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T07:24:18.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddService.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Service\\AddService.cshtml",
+              "RelativeDocumentMoniker": "VSB\\Views\\Service\\AddService.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Service\\AddService.cshtml",
+              "RelativeToolTip": "VSB\\Views\\Service\\AddService.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T06:54:33.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Models\\User.cs",
+              "RelativeDocumentMoniker": "VSB\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Models\\User.cs",
+              "RelativeToolTip": "VSB\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:38:40.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "VSB\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "VSB\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwC4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:15:22.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Login\\Register.cshtml",
+              "RelativeDocumentMoniker": "VSB\\Views\\Login\\Register.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Login\\Register.cshtml",
+              "RelativeToolTip": "VSB\\Views\\Login\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T05:19:15.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.UserTable [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VehicleServiceDB/True/SqlTable/dbo.UserTable.sql",
+              "ToolTip": "dbo.UserTable [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-03T05:36:47.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "VSB\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "VSB\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:10:37.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "VSB\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "VSB\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T05:31:04.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Program.cs",
+              "RelativeDocumentMoniker": "VSB\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Program.cs",
+              "RelativeToolTip": "VSB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:46:21.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VSB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VSB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T05:10:58.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260103051437_VSM.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Migrations\\20260103051437_VSM.cs",
+              "RelativeDocumentMoniker": "VSB\\Migrations\\20260103051437_VSM.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Migrations\\20260103051437_VSM.cs",
+              "RelativeToolTip": "VSB\\Migrations\\20260103051437_VSM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:14:37.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260103051147_VSMigration.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Migrations\\20260103051147_VSMigration.cs",
+              "RelativeDocumentMoniker": "VSB\\Migrations\\20260103051147_VSMigration.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\Migrations\\20260103051147_VSMigration.cs",
+              "RelativeToolTip": "VSB\\Migrations\\20260103051147_VSMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:11:47.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VSDbUtil.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\DAL\\VSDbUtil.cs",
+              "RelativeDocumentMoniker": "VSB\\DAL\\VSDbUtil.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\DAL\\VSDbUtil.cs",
+              "RelativeToolTip": "VSB\\DAL\\VSDbUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:47:35.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VSB",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\VSB.csproj",
+              "RelativeDocumentMoniker": "VSB\\VSB.csproj",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\000000074_75_DOTNET\\Day_17_03_02_2026\\VehicleServiceBooking\\VSB\\VSB.csproj",
+              "RelativeToolTip": "VSB\\VSB.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-03T04:46:43.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
